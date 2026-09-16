@@ -1,0 +1,155 @@
+CITYTEL SISTEM SRL — CONTENUTI LANDING PAGE
+=============================================
+Testo riscritto e adattato dal documento originale, sezione per sezione.
+Tagliato: i due paragrafi di storia aziendale duplicati (versione "sobria" e
+versione "enfatica" dicevano la stessa cosa) e i giri di frase introduttivi
+senza contenuto informativo. Tenuto e riscritto in forma breve: storia,
+servizi, lavori, certificazioni, clienti, contatti.
+
+
+[1] NAVBAR
+----------
+Logo: Citytel Sistem
+Menu: Chi siamo | Servizi | Lavori | Perché sceglierci | Clienti | Contatti
+CTA: Richiedi un preventivo
+
+
+[2] HERO
+--------
+Eyebrow: Dal 2007, telecomunicazioni e impianti tecnologici
+Titolo: Reti, impianti e software su misura, chiavi in mano
+Sottotitolo: Progettiamo, realizziamo e manuteniamo infrastrutture di
+telecomunicazione, impianti tecnologici e soluzioni software per aziende ed
+enti pubblici.
+CTA primaria: Richiedi un preventivo
+CTA secondaria: Scopri i servizi
+
+
+[3] CHI SIAMO
+-------------
+Titolo: Chi siamo
+Testo: Citytel Sistem Srl nasce nel 2007 dall'esperienza ventennale di un
+team di tecnici specializzati in telecomunicazioni. Dal 2013 disponiamo di
+un laboratorio dedicato alla produzione di bretelle ottiche, pigtail e
+cablaggi ferroviari premontati. Dal 2023 abbiamo ampliato l'offerta con la
+progettazione FTTH e lo sviluppo software su misura. Lavoriamo con enti
+pubblici e aziende private, garantendo precisione, flessibilità e
+affidabilità in ogni progetto.
+
+Numeri in evidenza:
+- Dal 2007 sul mercato
+- Laboratorio proprio dal 2013
+- 3 nuove aree di business dal 2023 (FTTH, software, servizi su misura)
+
+
+[4] SERVIZI (10 card)
+---------------------
+1. Progettazione FTTH
+   Reti in fibra ottica fino a casa del cliente, progettate su misura con i
+   Piani di Numerazione Internet di TIM e Open Fiber.
+
+2. Sviluppo software su misura
+   Applicazioni e gestionali personalizzati per le esigenze operative della
+   tua azienda.
+
+3. Impianti chiavi in mano
+   Dalla progettazione alla messa in servizio: impianti tecnologici completi
+   e pronti all'uso.
+
+4. Cablaggi strutturati e reti LAN/WAN
+   Reti dati robuste e scalabili, con manutenzione degli apparati attivi.
+
+5. Posa e collaudo cavi rame/fibra
+   Posa, giunzione, terminazione e collaudo per connessioni affidabili e a
+   bassa latenza.
+
+6. Infrastrutture stradali e ripristini
+   Opere stradali e ripristini eseguiti nel rispetto degli standard di
+   qualità e sicurezza.
+
+7. Impianti fotovoltaici
+   Installazione e manutenzione di impianti ad alta efficienza per un
+   risparmio energetico concreto.
+
+8. Sicurezza e antincendio
+   Impianti antincendio, antintrusione e controllo accessi per la sicurezza
+   dei tuoi spazi.
+
+9. Videosorveglianza
+   Sistemi di videosorveglianza progettati per un controllo continuo degli
+   ambienti.
+
+10. Cavi e quadristica precablata
+    Fornitura di cavi preconnettorizzati e quadristica precablata, testata
+    e pronta all'uso.
+
+Nota: se in fase di sviluppo risultano troppe per una sola griglia, le prime
+6 (più richieste/core business) possono restare in evidenza e le restanti 4
+andare in un accordion "Altri servizi" nella stessa sezione.
+
+
+[5] I NOSTRI LAVORI (NEW)
+--------------------------
+Titolo: I nostri lavori
+Sottotitolo: Le nostre attività raccontate nel dettaglio, ognuna sul proprio
+portale.
+
+3 card, ognuna con: titolo del sito, breve descrizione, bottone "Vai al
+sito" (apre in una nuova scheda).
+
+  >> Titoli, descrizioni e URL dei 3 siti non presenti nel documento
+     originale: da fornire per completare la sezione. Placeholder usati
+     sotto: "Sito 1 / 2 / 3".
+
+
+[6] PERCHÉ SCEGLIERCI (certificazioni e affidabilità)
+------------------------------------------------------
+Titolo: Perché scegliere Citytel Sistem
+
+- Certificati ISO 9001:2015, ISO 14001:2015, ISO 45001:2018
+- Abilitati Legge 46/90, categorie a-b-c-d-e-f-g
+- Attestazione SOA: OS19/III (reti TLC e cablaggi), OS30/II (impianti
+  sicurezza), OS5/I (opere stradali)
+- Qualificati presso TIM, Fastweb, Vodafone, Open Fiber
+- In fase di qualificazione presso Leonardo Spa
+- Garanzia: eventuali errori di progettazione a noi imputabili vengono
+  corretti a nostre spese
+
+
+[7] CLIENTI / PORTFOLIO
+------------------------
+Titolo: Chi si affida a noi
+Loghi/elenco: Open Fiber, TIM, Fondazione Policlinico Universitario
+Agostino Gemelli, Terna, Interporto Campano, CIS, Sirti, Sielte, Valtellina
+
+
+[8] CONTATTI
+------------
+Titolo: Parliamo del tuo progetto
+Sottotitolo: Raccontaci le tue esigenze: ti rispondiamo con una proposta su
+misura.
+Form: Nome, Azienda, Email, Telefono, Messaggio -> bottone "Invia richiesta"
+Info dirette: indirizzo sede, telefono, email
+  >> NON presenti nel documento originale: da fornire per completare la
+     sezione.
+
+
+[9] FOOTER
+----------
+Logo + payoff breve
+Link rapidi: Chi siamo | Servizi | Lavori | Perché sceglierci | Clienti |
+Contatti
+Sede legale / P.IVA: >> da fornire
+Copyright: © 2026 Citytel Sistem Srl. Tutti i diritti riservati.
+
+
+CONTENUTI NON PORTATI SUL SITO (e perché)
+-------------------------------------------
+- Paragrafo duplicato di storia aziendale (versione lunga/enfatica): stessa
+  informazione della versione breve già in "Chi siamo", ridondante.
+- Frase introduttiva generica prima dell'elenco servizi ("colonna portante
+  su cui si fonda la nostra reputazione..."): riempitivo, sostituito da un
+  sottotitolo breve nella sezione Servizi.
+- Paragrafo sui KPI Qualità come testo a sé: il concetto utile (garanzia sui
+  costi di correzione) è stato mantenuto come punto elenco in "Perché
+  sceglierci"; il resto era generico.

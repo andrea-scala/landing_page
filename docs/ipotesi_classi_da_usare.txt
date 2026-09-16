@@ -1,0 +1,232 @@
+CITYTEL SISTEM SRL — CLASSI BOOTSTRAP 5 PER SEZIONE
+======================================================
+Ipotesi: Bootstrap 5.3, container standard (non fluid) tranne dove indicato.
+
+01. NAVBAR
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">...</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto me-3 gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="#chi-siamo">...</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servizi">...</a></li>
+            <li class="nav-item"><a class="nav-link" href="#lavori">...</a></li>
+            <li class="nav-item"><a class="nav-link" href="#perche-sceglierci">...</a></li>
+            <li class="nav-item"><a class="nav-link" href="#clienti">...</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contatti">...</a></li>
+          </ul>
+          <a class="btn btn-primary" href="#contatti">Richiedi un preventivo</a>
+        </div>
+      </div>
+    </nav>
+
+02. HERO
+    <section class="py-5 py-lg-6" id="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="badge rounded-pill text-bg-light mb-3">Dal 2007...</span>
+            <h1 class="display-5 fw-bold mb-3">...</h1>
+            <p class="lead text-secondary mb-4">...</p>
+            <div class="d-flex gap-3">
+              <a class="btn btn-primary btn-lg" href="#contatti">Richiedi un preventivo</a>
+              <a class="btn btn-outline-secondary btn-lg" href="#servizi">Scopri i servizi</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid rounded-4" src="..." alt="...">
+          </div>
+        </div>
+      </div>
+    </section>
+
+03. CHI SIAMO
+    <section class="py-5 bg-light" id="chi-siamo">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-7">
+            <h2 class="h1 mb-3">Chi siamo</h2>
+            <p class="text-secondary">...</p>
+          </div>
+          <div class="col-lg-5">
+            <div class="row row-cols-1 row-cols-sm-3 g-3 text-center">
+              <div class="col"><div class="fs-2 fw-bold">2007</div><div class="text-secondary small">...</div></div>
+              <div class="col"><div class="fs-2 fw-bold">2013</div><div class="text-secondary small">...</div></div>
+              <div class="col"><div class="fs-2 fw-bold">2023</div><div class="text-secondary small">...</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+04. SERVIZI
+    <section class="py-5" id="servizi">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="h1">Cosa facciamo</h2>
+          <p class="text-secondary">...</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-diagram-3 fs-2 text-primary mb-3"></i>
+                <h3 class="h5 card-title">...</h3>
+                <p class="card-text text-secondary">...</p>
+              </div>
+            </div>
+          </div>
+          <!-- ripeti per le 6 card in evidenza -->
+        </div>
+
+        <div class="accordion mt-5" id="altriServizi">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#s1">
+                Altri servizi
+              </button>
+            </h2>
+            <div id="s1" class="accordion-collapse collapse" data-bs-parent="#altriServizi">
+              <div class="accordion-body">...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+05. I NOSTRI LAVORI (NEW — card verso siti esterni)
+    <section class="py-5 bg-light" id="lavori">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="h1">I nostri lavori</h2>
+          <p class="text-secondary">...</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+              <img class="card-img-top" src="..." alt="Sito 1">
+              <div class="card-body">
+                <h3 class="h5 card-title">Sito 1</h3>
+                <p class="card-text text-secondary">...</p>
+                <a class="btn btn-outline-primary" href="https://..." target="_blank" rel="noopener">
+                  Vai al sito <i class="bi bi-box-arrow-up-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ripeti per Sito 2 e Sito 3 -->
+        </div>
+      </div>
+    </section>
+
+06. PERCHÉ SCEGLIERCI / CERTIFICAZIONI
+    <section class="py-5" id="perche-sceglierci">
+      <div class="container">
+        <h2 class="h1 text-center mb-5">Perché scegliere Citytel Sistem</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col d-flex gap-3">
+            <i class="bi bi-check-circle-fill text-success fs-4"></i>
+            <span>Certificati ISO 9001, ISO 14001, ISO 45001</span>
+          </div>
+          <!-- ripeti per gli altri 4-5 punti -->
+        </div>
+      </div>
+    </section>
+
+07. CLIENTI / PORTFOLIO
+    <section class="py-5 bg-light" id="clienti">
+      <div class="container">
+        <h2 class="h1 text-center mb-5">Chi si affida a noi</h2>
+        <div class="d-flex flex-wrap justify-content-center align-items-center gap-5">
+          <img class="logo-client" src="..." alt="Open Fiber">
+          <img class="logo-client" src="..." alt="TIM">
+          <!-- ripeti per gli altri loghi -->
+        </div>
+      </div>
+      <!-- CSS custom: .logo-client { filter: grayscale(1); opacity:.7; height:40px }
+           .logo-client:hover { filter:none; opacity:1 } -->
+    </section>
+
+08. CONTATTI
+    <section class="py-5" id="contatti">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <h2 class="h1 mb-3">Parliamo del tuo progetto</h2>
+            <p class="text-secondary mb-4">...</p>
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Azienda</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Telefono</label>
+                <input type="tel" class="form-control">
+              </div>
+              <div class="col-12">
+                <label class="form-label">Messaggio</label>
+                <textarea class="form-control" rows="4"></textarea>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary btn-lg" type="submit">Invia richiesta</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-5">
+            <ul class="list-unstyled text-secondary">
+              <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>...indirizzo...</li>
+              <li class="mb-2"><i class="bi bi-telephone me-2"></i>...telefono...</li>
+              <li class="mb-2"><i class="bi bi-envelope me-2"></i>...email...</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+09. FOOTER
+    <footer class="py-5 bg-dark text-white">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="fw-bold fs-5 mb-2">Citytel Sistem</div>
+            <p class="text-white-50 small">...payoff...</p>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li><a class="link-light link-underline-opacity-0" href="#chi-siamo">Chi siamo</a></li>
+              <li><a class="link-light link-underline-opacity-0" href="#servizi">Servizi</a></li>
+              <li><a class="link-light link-underline-opacity-0" href="#lavori">Lavori</a></li>
+              <!-- ripeti per le altre ancore -->
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p class="text-white-50 small mb-0">Sede legale / P.IVA ...</p>
+          </div>
+        </div>
+        <hr class="border-secondary my-4">
+        <p class="text-white-50 small mb-0 text-center">© 2026 Citytel Sistem Srl. Tutti i diritti riservati.</p>
+      </div>
+    </footer>
+
+
+NOTE GENERALI
+---------------
+- Icone: libreria "Bootstrap Icons" (bi bi-...), CDN separato da Bootstrap.
+- Colore accento: sostituire "primary" nel tema Bootstrap (variabile
+  --bs-primary) con il colore del logo Citytel, non lasciare il blu di
+  default.
+- Bottoni CTA: sempre stessa etichetta/azione ripetuta in navbar, hero e
+  form finale ("Richiedi un preventivo" / "Invia richiesta").
+- Sezione "Lavori": ogni link esterno con target="_blank" rel="noopener"
+  e icona bi-box-arrow-up-right per segnalare l'uscita dal sito.

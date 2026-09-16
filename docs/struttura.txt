@@ -1,0 +1,85 @@
+CITYTEL SISTEM SRL — SCHELETRO LANDING PAGE
+=============================================
+Ordine sezioni dall'alto in basso. Per ogni sezione: tipo elementi,
+gerarchia testo, elementi grafici richiesti.
+
+01. NAVBAR (fissa in alto, sticky)
+    - Logo azienda (sinistra)
+    - Menu orizzontale: Chi siamo, Servizi, Lavori, Perché sceglierci,
+      Clienti, Contatti (ancore verso le sezioni sottostanti)
+    - Bottone CTA "Richiedi un preventivo" (destra, colore accento)
+    - Su mobile: menu collassa in hamburger
+
+02. HERO (full-width, prima schermata)
+    - Eyebrow/badge piccolo: "Dal 2007..."
+    - H1: titolo principale
+    - Paragrafo sottotitolo (1-2 righe)
+    - 2 bottoni CTA affiancati (primario pieno, secondario outline)
+    - Immagine/illustrazione a destra o sfondo: impianto/fibra ottica/tecnico
+      al lavoro (foto reale consigliata, non stock generico)
+
+03. CHI SIAMO (due colonne: testo + numeri)
+    - H2: "Chi siamo"
+    - Paragrafo descrittivo (colonna sinistra, ~60% larghezza)
+    - 3 mini-stat in colonna destra o riga sotto (numero grande + etichetta):
+      "2007" / "2013" / "2023"
+    - Immagine opzionale (laboratorio, sede, team)
+
+04. SERVIZI (griglia di card)
+    - H2: "Cosa facciamo"
+    - Sottotitolo breve 1 riga
+    - Griglia di card, ognuna con: icona, titolo servizio, 1-2 righe
+      descrizione
+    - 10 servizi totali: 6 in evidenza su griglia fissa + 4 in un accordion
+      "Altri servizi" sotto la griglia (per non appesantire la pagina)
+
+05. I NOSTRI LAVORI (NEW — 3 card verso siti esterni)
+    - H2: "I nostri lavori"
+    - Sottotitolo breve 1 riga
+    - Griglia di 3 card (una per sito): immagine/copertina, titolo sito,
+      breve descrizione, bottone "Vai al sito" con icona link esterno
+    - Ogni card apre il rispettivo sito in una nuova scheda
+      (target="_blank" rel="noopener")
+    - Titoli, descrizioni, immagini e URL dei 3 siti: da fornire
+      (attualmente segnaposto "Sito 1 / 2 / 3")
+
+06. PERCHÉ SCEGLIERCI / CERTIFICAZIONI (lista a badge)
+    - H2: "Perché scegliere Citytel Sistem"
+    - Lista di 5-6 badge/box, ognuno con: icona check, testo breve
+      (certificazione, SOA, qualifiche, garanzia)
+    - Layout a griglia 2-3 colonne
+
+07. CLIENTI / PORTFOLIO (striscia loghi)
+    - H2: "Chi si affida a noi"
+    - Striscia orizzontale di loghi clienti (statica o carosello scorrevole)
+    - Loghi in scala di grigio, colore al passaggio del mouse
+
+08. CONTATTI (form + info)
+    - H2: "Parliamo del tuo progetto"
+    - Sottotitolo breve
+    - Due colonne:
+      - Sinistra: form (Nome, Azienda, Email, Telefono, Messaggio, bottone
+        Invia)
+      - Destra: info dirette (indirizzo, telefono, email) + mappa
+        incorporata (opzionale)
+
+09. FOOTER
+    - Logo + payoff breve
+    - Colonna link rapidi (stesse ancore del menu, incluso "Lavori")
+    - Sede legale / P.IVA
+    - Icone social (se presenti)
+    - Riga copyright in basso, separata da bordo sottile
+
+
+NOTE TECNICHE GENERALI
+------------------------
+- Una sola pagina, sezioni ancorate dal menu (scroll fluido).
+- Ogni sezione con padding verticale generoso, alternare sfondo bianco /
+  sfondo grigio chiaro per separare visivamente le sezioni senza bisogno di
+  bordi.
+- Icone servizi: set coerente (es. Bootstrap Icons), stesso stile per tutte.
+- Immagini mancanti nel documento originale: foto reali di cantieri,
+  laboratorio, squadra al lavoro danno più credibilità di icone generiche,
+  soprattutto in Hero, Chi siamo e Lavori.
+- La sezione "Lavori" porta l'utente fuori dalla landing page (altri siti):
+  segnalarlo visivamente con l'icona di link esterno su ogni bottone.
