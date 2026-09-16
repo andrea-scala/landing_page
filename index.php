@@ -85,53 +85,11 @@
      HERO SECTION
 =========================== -->
 <?php require 'sezioni/hero.php'; ?>
-<section id="hero" class="py-6 bg-tech-light">
-      <div class="container text-center mt-2">
-        <h1 class="display-5">Reti, impianti e software su misura, chiavi in mano</h1>
-        <p class="lead">Progettiamo, realizziamo e manuteniamo infrastrutture di
-        telecomunicazione, impianti tecnologici e soluzioni software per aziende
-        ed enti pubblici.</p>
-        <a href="#contatti" class="btn btn-primary btn-lg mt-3">Richiedi un preventivo</a>
-      </div>
-    </section>
 
 <!-- ===========================
-    INTRODUZIONE ISTITUZIONALE
+    CHI SIAMO
 =========================== -->
-<section class="py-4 bg-white">
-    <div class="container">
-        <div class="section-divider-icon text-center">  <i class="bi bi-shield-check"></i>  </div>
-          <div class="mx-auto row"> 
-            
-            <div class="col-12 text-center">
-              <img class="img-fluid" style="width:70%;"src="./assets/img/MEasyT.jpg"> 
-            </div>
-            
-        </div>  
-        <h2 class="text-center section-title mb-4">
-            Soluzione integrata per monitoraggio, sicurezza e ottimizzazione operativa 
-        </h2>
-
-        <p class="lead text-center max-w-800 mb-4">
-            EasyTrack® è una soluzione tecnologica integrata e all’avanguardia, progettata per rivoluzionare
-            il monitoraggio e la localizzazione in tempo reale all’interno delle strutture sanitarie.
-        </p>
-
-        <p class="max-w-800 mb-3">
-            La sua architettura modulare consente un’integrazione progressiva e flessibile, perfettamente
-            allineata ai piani di sviluppo della struttura. Grazie a un sistema scalabile e interoperabile,
-            EasyTrack® migliora l’efficienza operativa, la sicurezza e l’ottimizzazione dei processi,
-            offrendo un vantaggio competitivo concreto all’organizzazione sanitaria e agli utenti finali.
-        </p>
-
-        <p class="max-w-800">
-            Con un design replicabile e facilmente integrabile con i sistemi esistenti, la piattaforma assicura
-            un rapido ritorno sull’investimento e un’esperienza utente superiore, ponendo le basi per una
-            roadmap tecnologica sostenibile e in continua evoluzione.
-        </p>
-
-    </div>
-</section>
+<?php require 'sezioni/chisiamo.php'; ?>
 
 <!-- =========================== 
 MACRO-SEZIONE: PILASTRI + ARCHITETTURA 
