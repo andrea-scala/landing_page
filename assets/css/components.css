@@ -1,0 +1,54 @@
+/* ===== CARD ===== */
+.card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+    margin-bottom: var(--space-lg);
+    font-weight: 700;
+}
+
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+}
+
+/* ===== CTA SECTION ===== */
+.cta-section {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 5rem 0;
+}
+
+/* ===== ICON DIVIDER ===== */
+.section-divider-icon {
+    
+    width: 100%;
+    text-align: center;
+    margin: var(--space-lg) 0;
+    border-bottom: 1px solid #d0d7de;
+}
+
+.section-divider-icon i {
+    
+    top: 0.7rem; /* solleva l’icona sopra la linea */
+    padding: 0 0.5rem;
+    font-size: 1.6rem;
+   
+}
+

@@ -1,0 +1,14 @@
+.max-w-800 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.macro-section {
+    scroll-margin-top: 80px; /* evita che la navbar copra i titoli */
+}
+

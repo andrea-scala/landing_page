@@ -1,120 +1,113 @@
 CITYTEL SISTEM SRL — CLASSI BOOTSTRAP 5 PER SEZIONE
 ======================================================
-Ipotesi: Bootstrap 5.3, container standard (non fluid) tranne dove indicato.
+Basato sul sistema di design esistente (sito_old.zip): riuso invariato di
+variables.css, base.css, components.css, utilities.css. Nessuna nuova
+palette/font: si applica lo stesso stile già in uso, cambia solo il
+contenuto.
 
-01. NAVBAR
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+RIEPILOGO SISTEMA ESISTENTE
+------------------------------
+- Colori: --color-primary #0d6efd, --color-primary-dark #0a58ca,
+  --color-text #343a40, --color-border #d8dee4, --color-bg-light #e8f4ff,
+  --color-bg-dark #0a3d62
+- Font: --font-heading Poppins (peso 600/700), --font-body Inter
+- Spacing: --space-xs .5rem, sm 1rem, md 1.5rem, lg 2rem, xl 4rem
+- Radius: --radius-md 12px | Ombra solo hover: --shadow-hover
+- Classi di utilità già pronte: .bg-tech-light, .bg-tech-dark,
+  .section-title, .section-divider-icon, .cta-section, .macro-section,
+  .max-w-800
+- File CDN uguali a EasyTrack: Bootstrap 5.3.2 + Bootstrap Icons 1.11.1 +
+  Google Fonts Poppins/Inter
+
+
+01. NAVBAR (identica a EasyTrack)
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">...</a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <a class="navbar-brand fw-bold" href="#">
+          <img class="img-fluid" style="height:50px;width:auto" src="./assets/img/logo-citytel.png">
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav ms-auto me-3 gap-lg-3">
-            <li class="nav-item"><a class="nav-link" href="#chi-siamo">...</a></li>
-            <li class="nav-item"><a class="nav-link" href="#servizi">...</a></li>
-            <li class="nav-item"><a class="nav-link" href="#lavori">...</a></li>
-            <li class="nav-item"><a class="nav-link" href="#perche-sceglierci">...</a></li>
-            <li class="nav-item"><a class="nav-link" href="#clienti">...</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contatti">...</a></li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#chi-siamo">Chi siamo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#lavori">Lavori</a></li>
+            <li class="nav-item"><a class="nav-link" href="#perche-sceglierci">Perché sceglierci</a></li>
+            <li class="nav-item"><a class="nav-link" href="#clienti">Clienti</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
           </ul>
-          <a class="btn btn-primary" href="#contatti">Richiedi un preventivo</a>
         </div>
       </div>
     </nav>
+    Nota: navbar fixed-top -> tutte le sezioni con id-ancora vanno avvolte
+    in un contenitore con classe "macro-section" (scroll-margin-top 80px,
+    già definita in utilities.css) per non far coprire i titoli.
 
-02. HERO
-    <section class="py-5 py-lg-6" id="hero">
+02. HERO (centrato, come EasyTrack, non a due colonne)
+    <section id="hero" class="py-6 bg-tech-light">
+      <div class="container text-center mt-2">
+        <h1 class="display-5">Reti, impianti e software su misura, chiavi in mano</h1>
+        <p class="lead">Progettiamo, realizziamo e manuteniamo infrastrutture di
+        telecomunicazione, impianti tecnologici e soluzioni software per aziende
+        ed enti pubblici.</p>
+        <a href="#contatti" class="btn btn-primary btn-lg mt-3">Richiedi un preventivo</a>
+      </div>
+    </section>
+
+03. CHI SIAMO (come "Introduzione istituzionale" di EasyTrack)
+    <section class="py-4 bg-white macro-section" id="chi-siamo">
       <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <span class="badge rounded-pill text-bg-light mb-3">Dal 2007...</span>
-            <h1 class="display-5 fw-bold mb-3">...</h1>
-            <p class="lead text-secondary mb-4">...</p>
-            <div class="d-flex gap-3">
-              <a class="btn btn-primary btn-lg" href="#contatti">Richiedi un preventivo</a>
-              <a class="btn btn-outline-secondary btn-lg" href="#servizi">Scopri i servizi</a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <img class="img-fluid rounded-4" src="..." alt="...">
-          </div>
+        <div class="section-divider-icon text-center"><i class="bi bi-building"></i></div>
+        <h2 class="text-center section-title mb-4">Chi siamo</h2>
+        <p class="lead text-center max-w-800 mb-4">...frase di apertura forte...</p>
+        <p class="max-w-800 mb-3">...corpo del paragrafo Chi siamo...</p>
+        <div class="row g-3 text-center mt-4">
+          <div class="col-md-4"><div class="fs-2 fw-bold">2007</div><div class="text-secondary small">fondazione</div></div>
+          <div class="col-md-4"><div class="fs-2 fw-bold">2013</div><div class="text-secondary small">laboratorio</div></div>
+          <div class="col-md-4"><div class="fs-2 fw-bold">2023</div><div class="text-secondary small">nuove aree</div></div>
         </div>
       </div>
     </section>
 
-03. CHI SIAMO
-    <section class="py-5 bg-light" id="chi-siamo">
+04. SERVIZI (come "Componenti/Benefici" di EasyTrack: card h-100 p-4 text-center)
+    <section class="py-4 bg-light macro-section" id="servizi">
       <div class="container">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-7">
-            <h2 class="h1 mb-3">Chi siamo</h2>
-            <p class="text-secondary">...</p>
-          </div>
-          <div class="col-lg-5">
-            <div class="row row-cols-1 row-cols-sm-3 g-3 text-center">
-              <div class="col"><div class="fs-2 fw-bold">2007</div><div class="text-secondary small">...</div></div>
-              <div class="col"><div class="fs-2 fw-bold">2013</div><div class="text-secondary small">...</div></div>
-              <div class="col"><div class="fs-2 fw-bold">2023</div><div class="text-secondary small">...</div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-04. SERVIZI
-    <section class="py-5" id="servizi">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="h1">Cosa facciamo</h2>
-          <p class="text-secondary">...</p>
-        </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <div class="col">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body">
-                <i class="bi bi-diagram-3 fs-2 text-primary mb-3"></i>
-                <h3 class="h5 card-title">...</h3>
-                <p class="card-text text-secondary">...</p>
-              </div>
+        <div class="section-divider-icon text-center"><i class="bi bi-tools"></i></div>
+        <h2 class="text-center section-title mb-5">Cosa facciamo</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+              <i class="bi bi-diagram-3 fs-1 mb-3"></i>
+              <h5>Progettazione FTTH</h5>
+              <p>...</p>
             </div>
           </div>
           <!-- ripeti per le 6 card in evidenza -->
         </div>
-
-        <div class="accordion mt-5" id="altriServizi">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#s1">
-                Altri servizi
-              </button>
-            </h2>
-            <div id="s1" class="accordion-collapse collapse" data-bs-parent="#altriServizi">
-              <div class="accordion-body">...</div>
-            </div>
-          </div>
-        </div>
+        <!-- restanti 4 servizi: stesso pattern .card usato altrove nel sito
+             per elenchi lunghi (vedi sezione "Componenti", 9 card in griglia
+             col-md-4/col-lg-3), niente accordion: coerenza con lo stile
+             esistente che non lo usa -->
       </div>
     </section>
 
-05. I NOSTRI LAVORI (NEW — card verso siti esterni)
-    <section class="py-5 bg-light" id="lavori">
+05. I NOSTRI LAVORI (card verso siti esterni, stesso pattern "Modelli di Fornitura")
+    <section class="py-4 bg-white macro-section" id="lavori">
       <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="h1">I nostri lavori</h2>
-          <p class="text-secondary">...</p>
-        </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100 border-0 shadow-sm">
-              <img class="card-img-top" src="..." alt="Sito 1">
-              <div class="card-body">
-                <h3 class="h5 card-title">Sito 1</h3>
-                <p class="card-text text-secondary">...</p>
-                <a class="btn btn-outline-primary" href="https://..." target="_blank" rel="noopener">
-                  Vai al sito <i class="bi bi-box-arrow-up-right ms-1"></i>
-                </a>
-              </div>
+        <div class="section-divider-icon text-center"><i class="bi bi-box-arrow-up-right"></i></div>
+        <h2 class="text-center section-title mb-5">I nostri lavori</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+              <img class="img-fluid mb-3" src="./assets/img/lavoro-1.png">
+              <h5>Sito 1</h5>
+              <p>...</p>
+              <a href="https://..." target="_blank" rel="noopener" class="btn btn-outline-primary mt-2">
+                Vai al sito <i class="bi bi-box-arrow-up-right ms-1"></i>
+              </a>
             </div>
           </div>
           <!-- ripeti per Sito 2 e Sito 3 -->
@@ -122,85 +115,69 @@ Ipotesi: Bootstrap 5.3, container standard (non fluid) tranne dove indicato.
       </div>
     </section>
 
-06. PERCHÉ SCEGLIERCI / CERTIFICAZIONI
-    <section class="py-5" id="perche-sceglierci">
+06. PERCHÉ SCEGLIERCI / CERTIFICAZIONI (come "Compatibilità normativa": list-group)
+    <section class="py-4 macro-section" id="perche-sceglierci">
       <div class="container">
-        <h2 class="h1 text-center mb-5">Perché scegliere Citytel Sistem</h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <div class="col d-flex gap-3">
-            <i class="bi bi-check-circle-fill text-success fs-4"></i>
-            <span>Certificati ISO 9001, ISO 14001, ISO 45001</span>
-          </div>
-          <!-- ripeti per gli altri 4-5 punti -->
-        </div>
+        <div class="section-divider-icon text-center"><i class="bi bi-patch-check"></i></div>
+        <h2 class="text-center section-title mb-4">Perché scegliere Citytel Sistem</h2>
+        <ul class="list-group mb-4">
+          <li class="list-group-item">Certificati ISO 9001, ISO 14001, ISO 45001</li>
+          <li class="list-group-item">Abilitati Legge 46/90, categorie a-b-c-d-e-f-g</li>
+          <li class="list-group-item">Attestazione SOA OS19/III, OS30/II, OS5/I</li>
+          <li class="list-group-item">Qualificati presso TIM, Fastweb, Vodafone, Open Fiber</li>
+          <li class="list-group-item">In fase di qualificazione presso Leonardo Spa</li>
+          <li class="list-group-item">Garanzia: correggiamo a nostre spese eventuali errori di progettazione</li>
+        </ul>
       </div>
     </section>
 
 07. CLIENTI / PORTFOLIO
-    <section class="py-5 bg-light" id="clienti">
+    <section class="py-4 bg-light macro-section" id="clienti">
       <div class="container">
-        <h2 class="h1 text-center mb-5">Chi si affida a noi</h2>
+        <div class="section-divider-icon text-center"><i class="bi bi-people"></i></div>
+        <h2 class="text-center section-title mb-5">Chi si affida a noi</h2>
         <div class="d-flex flex-wrap justify-content-center align-items-center gap-5">
           <img class="logo-client" src="..." alt="Open Fiber">
           <img class="logo-client" src="..." alt="TIM">
           <!-- ripeti per gli altri loghi -->
         </div>
       </div>
-      <!-- CSS custom: .logo-client { filter: grayscale(1); opacity:.7; height:40px }
+      <!-- CSS custom da aggiungere: .logo-client { filter: grayscale(1); opacity:.7; height:40px }
            .logo-client:hover { filter:none; opacity:1 } -->
     </section>
 
-08. CONTATTI
-    <section class="py-5" id="contatti">
+08. CONTATTI (form) + CTA FINALE (identica a EasyTrack: bg-primary)
+    <section class="py-4 bg-white macro-section" id="contatti-form">
       <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-7">
-            <h2 class="h1 mb-3">Parliamo del tuo progetto</h2>
-            <p class="text-secondary mb-4">...</p>
-            <form class="row g-3">
-              <div class="col-md-6">
-                <label class="form-label">Nome</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Azienda</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control">
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Telefono</label>
-                <input type="tel" class="form-control">
-              </div>
-              <div class="col-12">
-                <label class="form-label">Messaggio</label>
-                <textarea class="form-control" rows="4"></textarea>
-              </div>
-              <div class="col-12">
-                <button class="btn btn-primary btn-lg" type="submit">Invia richiesta</button>
-              </div>
-            </form>
-          </div>
-          <div class="col-lg-5">
-            <ul class="list-unstyled text-secondary">
-              <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>...indirizzo...</li>
-              <li class="mb-2"><i class="bi bi-telephone me-2"></i>...telefono...</li>
-              <li class="mb-2"><i class="bi bi-envelope me-2"></i>...email...</li>
-            </ul>
-          </div>
-        </div>
+        <div class="section-divider-icon text-center"><i class="bi bi-envelope"></i></div>
+        <h2 class="text-center section-title mb-4">Parliamo del tuo progetto</h2>
+        <form class="row g-3 max-w-800 mx-auto">
+          <div class="col-md-6"><label class="form-label">Nome</label><input type="text" class="form-control"></div>
+          <div class="col-md-6"><label class="form-label">Azienda</label><input type="text" class="form-control"></div>
+          <div class="col-md-6"><label class="form-label">Email</label><input type="email" class="form-control"></div>
+          <div class="col-md-6"><label class="form-label">Telefono</label><input type="tel" class="form-control"></div>
+          <div class="col-12"><label class="form-label">Messaggio</label><textarea class="form-control" rows="4"></textarea></div>
+          <div class="col-12 text-center"><button class="btn btn-primary btn-lg" type="submit">Invia richiesta</button></div>
+        </form>
       </div>
     </section>
 
-09. FOOTER
-    <footer class="py-5 bg-dark text-white">
+    <section class="py-4 bg-primary text-white text-center" id="contatti">
+      <div class="container">
+        <h2 class="fw-bold">Hai un progetto? Parliamone.</h2>
+        <p class="lead">indirizzo · telefono · email >> da fornire</p>
+        <a href="#contatti-form" class="btn btn-light btn-lg">Contattaci</a>
+      </div>
+    </section>
+
+09. FOOTER (non presente in EasyTrack: pattern Bootstrap standard, stessi
+    colori dello schema — bg-tech-dark invece di bg-dark generico)
+    <footer class="py-5 bg-tech-dark">
       <div class="container">
         <div class="row g-4">
           <div class="col-md-4">
             <div class="fw-bold fs-5 mb-2">Citytel Sistem</div>
-            <p class="text-white-50 small">...payoff...</p>
+            <p class="small">...payoff...</p>
           </div>
           <div class="col-md-4">
             <ul class="list-unstyled">
@@ -211,22 +188,26 @@ Ipotesi: Bootstrap 5.3, container standard (non fluid) tranne dove indicato.
             </ul>
           </div>
           <div class="col-md-4">
-            <p class="text-white-50 small mb-0">Sede legale / P.IVA ...</p>
+            <p class="small mb-0">Sede legale / P.IVA ...</p>
           </div>
         </div>
         <hr class="border-secondary my-4">
-        <p class="text-white-50 small mb-0 text-center">© 2026 Citytel Sistem Srl. Tutti i diritti riservati.</p>
+        <p class="small mb-0 text-center">© 2026 Citytel Sistem Srl. Tutti i diritti riservati.</p>
       </div>
     </footer>
 
 
-NOTE GENERALI
----------------
-- Icone: libreria "Bootstrap Icons" (bi bi-...), CDN separato da Bootstrap.
-- Colore accento: sostituire "primary" nel tema Bootstrap (variabile
-  --bs-primary) con il colore del logo Citytel, non lasciare il blu di
-  default.
-- Bottoni CTA: sempre stessa etichetta/azione ripetuta in navbar, hero e
-  form finale ("Richiedi un preventivo" / "Invia richiesta").
-- Sezione "Lavori": ogni link esterno con target="_blank" rel="noopener"
-  e icona bi-box-arrow-up-right per segnalare l'uscita dal sito.
+DIFFERENZE RISPETTO ALLA VERSIONE PRECEDENTE DI QUESTO FILE
+---------------------------------------------------------------
+- navbar sticky-top -> fixed-top (come sito esistente), quindi ogni
+  sezione con id-ancora ora ha anche classe "macro-section"
+- hero da due colonne (testo+immagine) a centrato singola colonna
+- ogni sezione ora apre con .section-divider-icon + h2.section-title
+  invece di header libero
+- card senza shadow di default (solo su :hover, via components.css),
+  niente accordion "altri servizi" (mai usato nel sito esistente:
+  preferita griglia diretta)
+- CTA finale in stile bg-primary text-white, come chiusura EasyTrack,
+  separata dal form dei contatti
+- footer non esiste nel sito di riferimento: proposto ex-novo riusando
+  --color-bg-dark
