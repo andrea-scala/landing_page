@@ -17,17 +17,9 @@
     --space-md: 1.5rem;
     --space-lg: 2rem;
     --space-xl: 4rem;
-
-    /* ===== MARGIN AND PADDING ===== */
-    --margin-xs: var(--space-xs);
-    --margin-sm: var(--space-sm);
-    --margin-md: var(--space-md);
-    --margin-lg: var(--space-lg);
-    --margin-xl: calc(var(--space-xl) + .8rem);
-    --padding-7: calc(var(--space-xl) + 1rem);
-    --padding-8: calc(var(--space-xl) + 2rem);
-    --padding-9: calc(var(--space-xl) + 3rem);
-    --padding-10: calc(var(--space-xl) + 5rem);
+   
+    /* ===== MARGIN ===== */
+    --hero-margin-top: 4.8rem;
 
     /* ===== RADIUS ===== */
     --radius-md: 12px;
