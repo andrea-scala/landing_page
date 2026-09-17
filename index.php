@@ -50,8 +50,6 @@
 </head>
 
 
-</head>
-
 <body>
 
     <!-- ===========================
@@ -59,7 +57,7 @@
 =========================== -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
         <div class="container-fluid mx-md-5">
-            <a class="navbar-brand fw-bold" href="#"><img class="img-fluid" style="height:50px;width:auto"
+            <a class="navbar-brand fw-bold" href="#"><img alt="placeholder_alt_text" class="img-fluid" style="height:50px;width:auto"
                     src="./assets/img/EasyTrack.png"> </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -115,7 +113,7 @@ MACRO-SEZIONE: PILASTRI + ARCHITETTURA
 
         <section class="py-4 bg-light">
             <div class="container">
-                <div class="section-divider-icon text-center"> <i class="bi bi-server"></i> </div>
+                <div class="section-divider-icon text-center"> <i aria-hidden="true" class="bi bi-server"></i> </div>
                 <h2 class="text-center section-title mb-5">
                     I Tre Pilastri del Sistema
                 </h2>
@@ -123,7 +121,7 @@ MACRO-SEZIONE: PILASTRI + ARCHITETTURA
                 <div class="row g-4">
 
                     <div class="col-md-4 text-center">
-                        <img class="img-fluid" src="./assets/img/MMonPaz.png">
+                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/MMonPaz.png">
                         <h5 class="fw-semibold">Monitoraggio Pazienti</h5>
                         <p class="max-w-800 mx-auto">
                             Dispositivi indossabili e sensori ambientali per rilevare condizioni critiche e
@@ -132,7 +130,7 @@ MACRO-SEZIONE: PILASTRI + ARCHITETTURA
                     </div>
 
                     <div class="col-md-4 text-center">
-                        <img class="img-fluid" src="./assets/img/MlocRis.png">
+                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/MlocRis.png">
                         <h5 class="fw-semibold">Localizzazione Risorse</h5>
                         <p class="max-w-800 mx-auto">
                             Tracciamento in tempo reale di attrezzature, asset mobili e personale.
@@ -140,7 +138,7 @@ MACRO-SEZIONE: PILASTRI + ARCHITETTURA
                     </div>
 
                     <div class="col-md-4 text-center">
-                        <img class="img-fluid" src="./assets/img/Minter.png">
+                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/Minter.png">
                         <h5 class="fw-semibold">Interoperabilità</h5>
                         <p class="max-w-800 mx-auto">
                             Integrazione con cartelle cliniche elettroniche, API sanitarie e software gestionali.
@@ -157,7 +155,7 @@ MACRO-SEZIONE: PILASTRI + ARCHITETTURA
         <section class="py-4 bg-white">
             <div class="container">
                 <div class="section-divider-icon">
-                    <i class="bi bi-diagram-3"></i>
+                    <i aria-hidden="true" class="bi bi-diagram-3"></i>
                 </div>
 
                 <h2 class="text-center section-title mb-4">
@@ -203,7 +201,7 @@ MACRO-SEZIONE: PILASTRI + ARCHITETTURA
     <section id="componenti" class="py-4 bg-light">
         <div class="container">
             <div class="section-divider-icon">
-                <i class="bi bi-hdd-network"></i>
+                <i aria-hidden="true" class="bi bi-hdd-network"></i>
             </div>
 
             <h2 class="text-center mb-5">Componenti Tecnologici Principali</h2>
@@ -217,7 +215,7 @@ MACRO-SEZIONE: PILASTRI + ARCHITETTURA
 
                 <div class="col-md-4">
                     <div class="card h-100 p-3">
-                        <img class="img-fluid" src="./assets/img/11.png">
+                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/11.png">
                         <h6>Tag BLE a doppia tecnologia</h6>
                         <p>Dispositivi indossabili e ambientali per monitoraggio continuo.</p>
                     </div>
@@ -225,7 +223,7 @@ MACRO-SEZIONE: PILASTRI + ARCHITETTURA
 
                 <div class="col-md-4">
                     <div class="card h-100 p-3">
-                        <img class="img-fluid" src="./assets/img/12.png">
+                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/12.png">
                         <h6>Tag AoA ad alta precisione</h6>
                         <p>Localizzazione avanzata con accuratezza centimetrica.</p>
                     </div>
@@ -233,7 +231,7 @@ MACRO-SEZIONE: PILASTRI + ARCHITETTURA
 
                 <div class="col-md-4">
                     <div class="card h-100 p-3">
-                        <img class="img-fluid" src="./assets/img/13.png">
+                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/13.png">
                         <h6>Gateway BLE realtime</h6>
                         <p>Raccolta dati in tempo reale con copertura estesa.</p>
                     </div>
@@ -241,7 +239,7 @@ MACRO-SEZIONE: PILASTRI + ARCHITETTURA
 
                 <div class="col-md-4">
                     <div class="card h-100 p-3">
-                        <img class="img-fluid" src="./assets/img/14.png">
+                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/14.png">
                         <h6>Gateway AoA ad elevata precisione</h6>
                         <p>Infrastruttura dedicata alla localizzazione direzionale.</p>
                     </div>
@@ -249,7 +247,7 @@ MACRO-SEZIONE: PILASTRI + ARCHITETTURA
 
                 <div class="col-md-4">
                     <div class="card h-100 p-3">
-                        <img class="img-fluid" src="./assets/img/15.png">
+                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/15.png">
                         <h6>Gateway Mesh ad alta efficienza</h6>
                         <p>Rete distribuita per continuità operativa in ambienti complessi.</p>
                     </div>
@@ -257,7 +255,7 @@ MACRO-SEZIONE: PILASTRI + ARCHITETTURA
 
                 <div class="col-md-4">
                     <div class="card h-100 p-3">
-                        <img class="img-fluid" src="./assets/img/16.png">
+                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/16.png">
                         <h6>Server MQTT & Backend modulare</h6>
                         <p>Architettura scalabile, sicura e interoperabile.</p>
                     </div>
@@ -265,7 +263,7 @@ MACRO-SEZIONE: PILASTRI + ARCHITETTURA
 
                 <div class="col-md-4">
                     <div class="card h-100 p-3">
-                        <img class="img-fluid" src="./assets/img/17.png">
+                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/17.png">
                         <h6>Dashboard operativa</h6>
                         <p>Monitoraggio centralizzato, gestione alert e analisi dei flussi.</p>
                     </div>
@@ -273,7 +271,7 @@ MACRO-SEZIONE: PILASTRI + ARCHITETTURA
 
                 <div class="col-md-4">
                     <div class="card h-100 p-3">
-                        <img class="img-fluid" src="./assets/img/18.png">
+                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/18.png">
                         <h6>Engine eventi</h6>
                         <p>Logiche personalizzabili per classificazione e instradamento alert.</p>
                     </div>
@@ -281,7 +279,7 @@ MACRO-SEZIONE: PILASTRI + ARCHITETTURA
 
                 <div class="col-md-4">
                     <div class="card h-100 p-3">
-                        <img class="img-fluid" src="./assets/img/19.png">
+                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/19.png">
                         <h6>Integrazione futura con robotica e AI</h6>
                         <p>Supporto per automazione logistica e analisi predittiva.</p>
                     </div>
@@ -300,7 +298,7 @@ MACRO-SEZIONE: MODULI + ROADMAP
 =========================== -->
         <section class="py-4 bg-white">
             <div class="container">
-                <div class="section-divider-icon"> <i class="bi bi-layers"></i> </div>
+                <div class="section-divider-icon"> <i aria-hidden="true" class="bi bi-layers"></i> </div>
                 <h2 class="text-center mb-4">Una Piattaforma che Cresce con la tua Struttura</h2>
 
                 <p class="text-center mb-4">
@@ -403,7 +401,7 @@ MACRO-SEZIONE: MODULI + ROADMAP
 
         <section class="py-4 bg-light">
             <div class="container">
-                <div class="section-divider-icon"> <i class="bi bi-box-arrow-up-right"></i> </div>
+                <div class="section-divider-icon"> <i aria-hidden="true" class="bi bi-box-arrow-up-right"></i> </div>
                 <h2 class="text-center mb-4">Architettura scalabile e flessibile</h2>
 
                 <p class="text-center mb-4">
@@ -452,7 +450,7 @@ MACRO-SEZIONE: MODULI + ROADMAP
 
     <section id="normativa" class="py-4">
         <div class="container">
-            <div class="section-divider-icon"> <i class="bi bi-book"></i> </div>
+            <div class="section-divider-icon"> <i aria-hidden="true" class="bi bi-book"></i> </div>
             <h2 class="text-center mb-4">Conformità Normativa e Formazione</h2>
 
             <p class="text-center mb-4">
@@ -490,14 +488,14 @@ MACRO-SEZIONE: MODULI + ROADMAP
 =========================== -->
     <section id="benefici" class="py-4 bg-light">
         <div class="container">
-            <div class="section-divider-icon"> <i class="bi bi-bookmark-plus"></i> </div>
+            <div class="section-divider-icon"> <i aria-hidden="true" class="bi bi-bookmark-plus"></i> </div>
             <h2 class="text-center mb-5">Benefici per la Struttura</h2>
 
             <div class="row g-4">
 
                 <div class="col-md-4">
                     <div class="card h-100 p-4 text-center">
-                        <i class="bi bi-layers fs-1 mb-3"></i>
+                        <i aria-hidden="true" class="bi bi-layers fs-1 mb-3"></i>
                         <h5>Modularità e Scalabilità </h5>
                         <p>Il sistema cresce in modo progressivo, adattandosi ai piani di sviluppo della struttura
                             sanitaria.</p>
@@ -506,7 +504,7 @@ MACRO-SEZIONE: MODULI + ROADMAP
 
                 <div class="col-md-4">
                     <div class="card h-100 p-4 text-center">
-                        <i class="bi bi-gear-wide-connected fs-1 mb-3"></i>
+                        <i aria-hidden="true" class="bi bi-gear-wide-connected fs-1 mb-3"></i>
                         <h5>Ottimizzazione dei Processi</h5>
                         <p>Riduzione dei tempi operativi, minimizzazione degli errori e miglioramento dei flussi di
                             lavoro.</p>
@@ -515,7 +513,7 @@ MACRO-SEZIONE: MODULI + ROADMAP
 
                 <div class="col-md-4">
                     <div class="card h-100 p-4 text-center">
-                        <i class="bi bi-arrows-angle-expand fs-1 mb-3"></i>
+                        <i aria-hidden="true" class="bi bi-arrows-angle-expand fs-1 mb-3"></i>
                         <h5>Interoperabilità Totale</h5>
                         <p>Integrazione fluida con software esistenti, cartelle cliniche elettroniche e API sanitarie.
                         </p>
@@ -524,7 +522,7 @@ MACRO-SEZIONE: MODULI + ROADMAP
 
                 <div class="col-md-4">
                     <div class="card h-100 p-4 text-center">
-                        <i class="bi bi-graph-up-arrow fs-1 mb-3"></i>
+                        <i aria-hidden="true" class="bi bi-graph-up-arrow fs-1 mb-3"></i>
                         <h5>Supporto Decisionale Avanzato</h5>
                         <p>AI e analytics predittivi trasformano i dati in insight utili per decisioni strategiche.</p>
                     </div>
@@ -532,7 +530,7 @@ MACRO-SEZIONE: MODULI + ROADMAP
 
                 <div class="col-md-4">
                     <div class="card h-100 p-4 text-center">
-                        <i class="bi bi-universal-access fs-1 mb-3"></i>
+                        <i aria-hidden="true" class="bi bi-universal-access fs-1 mb-3"></i>
                         <h5>Accessibilità e Inclusività </h5>
                         <p>Interfacce vocali e strumenti digitali migliorano l'usabilità per tutti gli operatori.</p>
                     </div>
@@ -540,7 +538,7 @@ MACRO-SEZIONE: MODULI + ROADMAP
 
                 <div class="col-md-4">
                     <div class="card h-100 p-4 text-center">
-                        <i class="bi bi-shield-check fs-1 mb-3"></i>
+                        <i aria-hidden="true" class="bi bi-shield-check fs-1 mb-3"></i>
                         <h5>Sicurezza Proattiva</h5>
                         <p>Geofencing dinamico e monitoraggio continuo garantiscono protezione e prevenzione.</p>
                     </div>
@@ -556,7 +554,7 @@ MACRO-SEZIONE: MODULI + ROADMAP
     <section id="fornitura" class="py-4">
         <div class="container">
 
-            <div class="section-divider-icon"> <i class="bi bi-person-workspace"></i> </div>
+            <div class="section-divider-icon"> <i aria-hidden="true" class="bi bi-person-workspace"></i> </div>
             <h2 class="text-center mb-4">Modelli di Fornitura della Soluzione</h2>
             <p class="text-center mb-5">
                 EasyTrack® può essere adottato in modo flessibile, in base alle esigenze operative e infrastrutturali
@@ -569,7 +567,7 @@ MACRO-SEZIONE: MODULI + ROADMAP
                 <div class="col-md-4">
 
                     <div class="card h-100 p-4 text-center">
-                        <img class="img-fluid" src="./assets/img/1.png">
+                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/1.png">
                         <h5>Fornitura Software</h5>
                         <p>
                             La piattaforma EasyTrack® può essere integrata direttamente nei sistemi esistenti,
@@ -580,7 +578,7 @@ MACRO-SEZIONE: MODULI + ROADMAP
 
                 <div class="col-md-4">
                     <div class="card h-100 p-4 text-center">
-                        <img class="img-fluid" src="./assets/img/2.png">
+                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/2.png">
                         <h5>Supporto alla Progettazione</h5>
                         <p>
                             Affianchiamo la struttura sanitaria o l'impresa incaricata nella progettazione
@@ -592,7 +590,7 @@ MACRO-SEZIONE: MODULI + ROADMAP
 
                 <div class="col-md-4">
                     <div class="card h-100 p-4 text-center">
-                        <img class="img-fluid" src="./assets/img/3.png">
+                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/3.png">
                         <h5>Implementazione Chiavi in Mano</h5>
                         <p>
                             Realizziamo l'intera infrastruttura da zero: progettazione, installazione, configurazione e
@@ -616,6 +614,11 @@ MACRO-SEZIONE: MODULI + ROADMAP
             <a href="#" class="btn btn-light btn-lg">Contattaci</a>
         </div>
     </section>
+
+    <!-- ===========================
+     FOOTER
+=========================== -->
+    <?php require 'sezioni/footer.php'; ?>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

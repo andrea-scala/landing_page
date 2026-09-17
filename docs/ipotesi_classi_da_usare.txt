@@ -24,7 +24,7 @@ RIEPILOGO SISTEMA ESISTENTE
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">
-          <img class="img-fluid" style="height:50px;width:auto" src="./assets/img/logo-citytel.png">
+          <img alt="placeholder_alt_text" class="img-fluid" style="height:50px;width:auto" src="./assets/img/logo-citytel.png">
         </a>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -60,7 +60,7 @@ RIEPILOGO SISTEMA ESISTENTE
 03. CHI SIAMO (come "Introduzione istituzionale" di EasyTrack)
     <section class="py-4 bg-white macro-section" id="chi-siamo">
       <div class="container">
-        <div class="section-divider-icon text-center"><i class="bi bi-building"></i></div>
+        <div class="section-divider-icon text-center"><i aria-hidden="true" class="bi bi-building"></i></div>
         <h2 class="text-center section-title mb-4">Chi siamo</h2>
         <p class="lead text-center max-w-800 mb-4">...frase di apertura forte...</p>
         <p class="max-w-800 mb-3">...corpo del paragrafo Chi siamo...</p>
@@ -75,12 +75,12 @@ RIEPILOGO SISTEMA ESISTENTE
 04. SERVIZI (come "Componenti/Benefici" di EasyTrack: card h-100 p-4 text-center)
     <section class="py-4 bg-light macro-section" id="servizi">
       <div class="container">
-        <div class="section-divider-icon text-center"><i class="bi bi-tools"></i></div>
+        <div class="section-divider-icon text-center"><i aria-hidden="true" class="bi bi-tools"></i></div>
         <h2 class="text-center section-title mb-5">Cosa facciamo</h2>
         <div class="row g-4">
           <div class="col-md-4">
             <div class="card h-100 p-4 text-center">
-              <i class="bi bi-diagram-3 fs-1 mb-3"></i>
+              <i aria-hidden="true" class="bi bi-diagram-3 fs-1 mb-3"></i>
               <h5>Progettazione FTTH</h5>
               <p>...</p>
             </div>
@@ -97,16 +97,16 @@ RIEPILOGO SISTEMA ESISTENTE
 05. I NOSTRI LAVORI (card verso siti esterni, stesso pattern "Modelli di Fornitura")
     <section class="py-4 bg-white macro-section" id="lavori">
       <div class="container">
-        <div class="section-divider-icon text-center"><i class="bi bi-box-arrow-up-right"></i></div>
+        <div class="section-divider-icon text-center"><i aria-hidden="true" class="bi bi-box-arrow-up-right"></i></div>
         <h2 class="text-center section-title mb-5">I nostri lavori</h2>
         <div class="row g-4">
           <div class="col-md-4">
             <div class="card h-100 p-4 text-center">
-              <img class="img-fluid mb-3" src="./assets/img/lavoro-1.png">
+              <img alt="placeholder_alt_text" class="img-fluid mb-3" src="./assets/img/lavoro-1.png">
               <h5>Sito 1</h5>
               <p>...</p>
               <a href="https://..." target="_blank" rel="noopener" class="btn btn-outline-primary mt-2">
-                Vai al sito <i class="bi bi-box-arrow-up-right ms-1"></i>
+                Vai al sito <i aria-hidden="true" class="bi bi-box-arrow-up-right ms-1"></i>
               </a>
             </div>
           </div>
@@ -118,7 +118,7 @@ RIEPILOGO SISTEMA ESISTENTE
 06. PERCHÉ SCEGLIERCI / CERTIFICAZIONI (come "Compatibilità normativa": list-group)
     <section class="py-4 macro-section" id="perche-sceglierci">
       <div class="container">
-        <div class="section-divider-icon text-center"><i class="bi bi-patch-check"></i></div>
+        <div class="section-divider-icon text-center"><i aria-hidden="true" class="bi bi-patch-check"></i></div>
         <h2 class="text-center section-title mb-4">Perché scegliere Citytel Sistem</h2>
         <ul class="list-group mb-4">
           <li class="list-group-item">Certificati ISO 9001, ISO 14001, ISO 45001</li>
@@ -134,11 +134,11 @@ RIEPILOGO SISTEMA ESISTENTE
 07. CLIENTI / PORTFOLIO
     <section class="py-4 bg-light macro-section" id="clienti">
       <div class="container">
-        <div class="section-divider-icon text-center"><i class="bi bi-people"></i></div>
+        <div class="section-divider-icon text-center"><i aria-hidden="true" class="bi bi-people"></i></div>
         <h2 class="text-center section-title mb-5">Chi si affida a noi</h2>
         <div class="d-flex flex-wrap justify-content-center align-items-center gap-5">
-          <img class="logo-client" src="..." alt="Open Fiber">
-          <img class="logo-client" src="..." alt="TIM">
+          <img alt="placeholder_alt_text" class="logo-client" src="..." alt="Open Fiber">
+          <img alt="placeholder_alt_text" class="logo-client" src="..." alt="TIM">
           <!-- ripeti per gli altri loghi -->
         </div>
       </div>
@@ -149,7 +149,7 @@ RIEPILOGO SISTEMA ESISTENTE
 08. CONTATTI (form) + CTA FINALE (identica a EasyTrack: bg-primary)
     <section class="py-4 bg-white macro-section" id="contatti-form">
       <div class="container">
-        <div class="section-divider-icon text-center"><i class="bi bi-envelope"></i></div>
+        <div class="section-divider-icon text-center"><i aria-hidden="true" class="bi bi-envelope"></i></div>
         <h2 class="text-center section-title mb-4">Parliamo del tuo progetto</h2>
         <form class="row g-3 max-w-800 mx-auto">
           <div class="col-md-6"><label class="form-label">Nome</label><input type="text" class="form-control"></div>
