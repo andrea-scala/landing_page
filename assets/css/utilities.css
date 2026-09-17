@@ -108,6 +108,15 @@
         padding-bottom: 8rem !important;
     }
 
+    .py-md-11 {
+        padding-top: 9rem !important;
+        padding-bottom: 9rem !important;
+    }
+
+    .py-md-12 {
+        padding-top: 10rem !important;
+        padding-bottom: 10rem !important;
+    }
     .px-md-6 {
         padding-left: 4rem !important;
         padding-right: 4rem !important;
@@ -180,3 +189,6 @@ h1.display-5.mt-4.mb-0.fw-bold.w-md-65 {
     line-height: 1.1;
 }
 
+.row {
+    --bs-gutter-x: 0!important;
+}

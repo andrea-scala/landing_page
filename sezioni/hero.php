@@ -1,4 +1,4 @@
-<section id="hero" class="py-4 py-md-10 hero-mt bg-tech-light">
+<section id="hero" class="py-4 py-md-12 hero-mt bg-tech-light">
   <div class="container-fluid text-start px-md-10 px-3">
     <span class="badge text-bg-primary-inverso px-0 mt-5 text-uppercase">Dal 2007, telecomunicazioni e impianti
       tecnologici</span>
