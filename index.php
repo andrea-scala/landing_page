@@ -29,10 +29,11 @@
 
     <!-- ===== FONTS ===== -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
         rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- ===== DESIGN SYSTEM LAYER ===== -->
     <link rel="stylesheet" href="./assets/css/variables.css">
     <link rel="stylesheet" href="./assets/css/base.css">
@@ -57,8 +58,8 @@
 =========================== -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
         <div class="container-fluid mx-md-5">
-            <a class="navbar-brand fw-bold" href="#"><img alt="placeholder_alt_text" class="img-fluid" style="height:50px;width:auto"
-                    src="./assets/img/EasyTrack.png"> </a>
+            <a class="navbar-brand fw-bold" href="#"><img alt="placeholder_alt_text" class="img-fluid"
+                    style="height:50px;width:auto" src="./assets/img/EasyTrack.png"> </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>

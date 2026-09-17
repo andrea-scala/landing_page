@@ -192,3 +192,29 @@ h1.display-5.mt-4.mb-0.fw-bold.w-md-65 {
 .row {
     --bs-gutter-x: 0!important;
 }
+
+.text-justify {
+    text-align: justify !important;
+}
+
+.timeline-horizontal::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 17.66%;
+    right: 17.66%;
+    height: 2px;
+    background-color: #0d6efd87;
+    z-index: 0;
+}
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--bs-primary);
+    border: 3px solid #fff;
+    position: relative;
+    z-index: 1;
+    top: 6px;
+}
+
