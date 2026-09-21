@@ -1,0 +1,66 @@
+/* =============================================
+   SPACING OVERRIDES
+   Estensione della scala spacing di Bootstrap (che si ferma a 5)
+   con step aggiuntivi py-6..10 / px-6..10 e varianti -md-.
+   ============================================= */
+
+.py-6 { padding-top: 4rem; padding-bottom: 4rem; }
+.py-7 { padding-top: 5rem; padding-bottom: 5rem; }
+.py-8 { padding-top: 6rem; padding-bottom: 6rem; }
+.py-9 { padding-top: 7rem; padding-bottom: 7rem; }
+.py-10 { padding-top: 8rem; padding-bottom: 8rem; }
+
+.px-6 { padding-left: 4rem; padding-right: 4rem; }
+.px-7 { padding-left: 5rem; padding-right: 5rem; }
+.px-8 { padding-left: 6rem; padding-right: 6rem; }
+.px-9 { padding-left: 7rem; padding-right: 7rem; }
+.px-10 { padding-left: 8rem; padding-right: 8rem; }
+
+@media (min-width: 768px) {
+    .py-md-6  { padding-top: 4rem !important;  padding-bottom: 4rem !important; }
+    .py-md-7  { padding-top: 5rem !important;  padding-bottom: 5rem !important; }
+    .py-md-8  { padding-top: 6rem !important;  padding-bottom: 6rem !important; }
+    .py-md-9  { padding-top: 7rem !important;  padding-bottom: 7rem !important; }
+    .py-md-10 { padding-top: 8rem !important;  padding-bottom: 8rem !important; }
+    .py-md-11 { padding-top: 9rem !important;  padding-bottom: 9rem !important; }
+    .py-md-12 { padding-top: 10rem !important; padding-bottom: 10rem !important; }
+
+    .px-md-6  { padding-left: 4rem !important;  padding-right: 4rem !important; }
+    .px-md-7  { padding-left: 5rem !important;  padding-right: 5rem !important; }
+    .px-md-8  { padding-left: 6rem !important;  padding-right: 6rem !important; }
+    .px-md-9  { padding-left: 7rem !important;  padding-right: 7rem !important; }
+    .px-md-10 { padding-left: 8rem !important;  padding-right: 8rem !important; }
+    .px-md-11 { padding-left: 9rem !important;  padding-right: 9rem !important; }
+    .px-md-12 { padding-left: 10rem !important; padding-right: 10rem !important; }
+    .px-md-13 { padding-left: 11rem !important; padding-right: 11rem !important; }
+
+    .w-md-30  { width: 30% !important; }
+    .w-md-35  { width: 35% !important; }
+    .w-md-40  { width: 40% !important; }
+    .w-md-45  { width: 45% !important; }
+    .w-md-50  { width: 50% !important; }
+    .w-md-55  { width: 55% !important; }
+    .w-md-60  { width: 60% !important; }
+    .w-md-65  { width: 65% !important; }
+    .w-md-70  { width: 70% !important; }
+    .w-md-75  { width: 75% !important; }
+    .w-md-80  { width: 80% !important; }
+    .w-md-85  { width: 85% !important; }
+    .w-md-90  { width: 90% !important; }
+    .w-md-95  { width: 95% !important; }
+    .w-md-100 { width: 100% !important; }
+
+    .col-md-3dat5 {
+        flex: 0 0 auto;
+        width: 28% !important;
+    }
+
+    .flex-basis-md-0 {
+        flex-basis: 0 !important;
+    }
+
+    .section-padding-md {
+        padding-left: var(--padding-section) !important;
+        padding-right: var(--padding-section) !important;
+    }
+}

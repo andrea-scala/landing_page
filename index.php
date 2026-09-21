@@ -20,7 +20,7 @@
 
     <!-- Favicon -->
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <title>EasyTrack® Monitoraggio, Sicurezza e Ottimizzazione</title>
 
     <!-- ===== FRAMEWORKS ===== -->
@@ -38,7 +38,9 @@
     <link rel="stylesheet" href="./assets/css/variables.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/components.css">
-    <link rel="stylesheet" href="./assets/css/utilities.css">
+    <link rel="stylesheet" href="./assets/css/layout-utils.css">
+    <link rel="stylesheet" href="./assets/css/spacing-overrides.css">
+    <link rel="stylesheet" href="./assets/css/page-specific.css">
     <style>
         @media (min-width: 768px) {
             .mx-md-5 {
@@ -106,94 +108,96 @@
     <!-- =========================== 
 MACRO-SEZIONE: PILASTRI + ARCHITETTURA 
 =========================== -->
-    <div id="architettura" class="macro-section">
+    <!-- <div id="architettura" class="macro-section"> -->
 
-        <!-- ===========================
+    <!-- ============================ SERVIZI =========================== -->
+    <?php require 'sezioni/servizi.php'; ?>
+    <!-- ===========================
      PILASTRI DEL SISTEMA
 =========================== -->
 
-        <section class="py-4 bg-light">
-            <div class="container">
-                <div class="section-divider-icon text-center"> <i aria-hidden="true" class="bi bi-server"></i> </div>
-                <h2 class="text-center section-title mb-5">
-                    I Tre Pilastri del Sistema
-                </h2>
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="section-divider-icon text-center"> <i aria-hidden="true" class="bi bi-server"></i> </div>
+            <h2 class="text-center section-title mb-5">
+                I Tre Pilastri del Sistema
+            </h2>
 
-                <div class="row g-4">
+            <div class="row g-4">
 
-                    <div class="col-md-4 text-center">
-                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/MMonPaz.png">
-                        <h5 class="fw-semibold">Monitoraggio Pazienti</h5>
-                        <p class="max-w-800 mx-auto">
-                            Dispositivi indossabili e sensori ambientali per rilevare condizioni critiche e
-                            comportamenti anomali.
-                        </p>
-                    </div>
-
-                    <div class="col-md-4 text-center">
-                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/MlocRis.png">
-                        <h5 class="fw-semibold">Localizzazione Risorse</h5>
-                        <p class="max-w-800 mx-auto">
-                            Tracciamento in tempo reale di attrezzature, asset mobili e personale.
-                        </p>
-                    </div>
-
-                    <div class="col-md-4 text-center">
-                        <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/Minter.png">
-                        <h5 class="fw-semibold">Interoperabilità</h5>
-                        <p class="max-w-800 mx-auto">
-                            Integrazione con cartelle cliniche elettroniche, API sanitarie e software gestionali.
-                        </p>
-                    </div>
-
+                <div class="col-md-4 text-center">
+                    <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/MMonPaz.png">
+                    <h5 class="fw-semibold">Monitoraggio Pazienti</h5>
+                    <p class="max-w-800 mx-auto">
+                        Dispositivi indossabili e sensori ambientali per rilevare condizioni critiche e
+                        comportamenti anomali.
+                    </p>
                 </div>
-            </div>
-        </section>
 
-        <!-- ===========================
+                <div class="col-md-4 text-center">
+                    <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/MlocRis.png">
+                    <h5 class="fw-semibold">Localizzazione Risorse</h5>
+                    <p class="max-w-800 mx-auto">
+                        Tracciamento in tempo reale di attrezzature, asset mobili e personale.
+                    </p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img alt="placeholder_alt_text" class="img-fluid" src="./assets/img/Minter.png">
+                    <h5 class="fw-semibold">Interoperabilità</h5>
+                    <p class="max-w-800 mx-auto">
+                        Integrazione con cartelle cliniche elettroniche, API sanitarie e software gestionali.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
      ARCHITETTURA DEL SISTEMA
 =========================== -->
-        <section class="py-4 bg-white">
-            <div class="container">
-                <div class="section-divider-icon">
-                    <i aria-hidden="true" class="bi bi-diagram-3"></i>
-                </div>
-
-                <h2 class="text-center section-title mb-4">
-                    Architettura del Sistema
-                </h2>
-
-                <p class="max-w-800 mb-4">
-                    L’architettura di EasyTrack® si basa su un modello modulare e interoperabile,
-                    progettato per integrarsi in modo naturale con i sistemi informativi già presenti
-                    nella struttura sanitaria. Ogni componente è pensato per crescere progressivamente,
-                    garantendo scalabilità, continuità operativa e un’evoluzione tecnologica sostenibile.
-                </p>
-
-                <h5 class="fw-semibold text-center">I Tre Pilastri Fondamentali</h5>
-                <ul class="max-w-800">
-                    <li class="mb-2">
-                        <strong>Monitoraggio dei pazienti:</strong> dispositivi indossabili e sensori ambientali
-                        per rilevare condizioni critiche e comportamenti anomali.
-                    </li>
-                    <li class="mb-2">
-                        <strong>Localizzazione delle risorse:</strong> tracciamento in tempo reale di attrezzature,
-                        asset mobili e personale per ottimizzare i flussi operativi.
-                    </li>
-                    <li class="mb-2">
-                        <strong>Interoperabilità:</strong> integrazione con cartelle cliniche elettroniche,
-                        API sanitarie e software gestionali, con comunicazione bidirezionale.
-                    </li>
-                </ul>
-
-                <p class="max-w-800 mt-3">
-                    Questa architettura consente alla struttura sanitaria di adottare EasyTrack® in modo progressivo,
-                    integrando moduli e funzionalità secondo priorità operative e piani di sviluppo, senza interruzioni
-                    dei servizi esistenti.
-                </p>
-
+    <section class="py-4 bg-white">
+        <div class="container">
+            <div class="section-divider-icon">
+                <i aria-hidden="true" class="bi bi-diagram-3"></i>
             </div>
-        </section>
+
+            <h2 class="text-center section-title mb-4">
+                Architettura del Sistema
+            </h2>
+
+            <p class="max-w-800 mb-4">
+                L’architettura di EasyTrack® si basa su un modello modulare e interoperabile,
+                progettato per integrarsi in modo naturale con i sistemi informativi già presenti
+                nella struttura sanitaria. Ogni componente è pensato per crescere progressivamente,
+                garantendo scalabilità, continuità operativa e un’evoluzione tecnologica sostenibile.
+            </p>
+
+            <h5 class="fw-semibold text-center">I Tre Pilastri Fondamentali</h5>
+            <ul class="max-w-800">
+                <li class="mb-2">
+                    <strong>Monitoraggio dei pazienti:</strong> dispositivi indossabili e sensori ambientali
+                    per rilevare condizioni critiche e comportamenti anomali.
+                </li>
+                <li class="mb-2">
+                    <strong>Localizzazione delle risorse:</strong> tracciamento in tempo reale di attrezzature,
+                    asset mobili e personale per ottimizzare i flussi operativi.
+                </li>
+                <li class="mb-2">
+                    <strong>Interoperabilità:</strong> integrazione con cartelle cliniche elettroniche,
+                    API sanitarie e software gestionali, con comunicazione bidirezionale.
+                </li>
+            </ul>
+
+            <p class="max-w-800 mt-3">
+                Questa architettura consente alla struttura sanitaria di adottare EasyTrack® in modo progressivo,
+                integrando moduli e funzionalità secondo priorità operative e piani di sviluppo, senza interruzioni
+                dei servizi esistenti.
+            </p>
+
+        </div>
+    </section>
     </div>
 
     <!-- ===========================
@@ -623,6 +627,7 @@ MACRO-SEZIONE: MODULI + ROADMAP
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 
 </body>
 

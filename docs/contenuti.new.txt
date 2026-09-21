@@ -42,54 +42,102 @@ Numeri in evidenza:
 - 3 nuove aree di business dal 2023 (FTTH, software, servizi su misura)
 
 
-[4] SERVIZI (10 card)
----------------------
-1. Progettazione FTTH
-   Reti in fibra ottica fino a casa del cliente, progettate su misura con i
-   Piani di Numerazione Internet di TIM e Open Fiber.
+[4] SERVIZI (10 card singole: 6 in evidenza + 4 dietro "Altri servizi")
+----------------------------------------------------------------------------
+Eyebrow: Cosa facciamo
+Titolo: VINCERE
+Sottotitolo: Dalla progettazione delle reti alla sicurezza degli ambienti:
+un unico fornitore per l'intero impianto, chiavi in mano.
 
-2. Sviluppo software su misura
-   Applicazioni e gestionali personalizzati per le esigenze operative della
-   tua azienda.
+Una card per servizio (icona, titolo, breve descrizione), come nel file
+HTML fornito. 6 sempre visibili (le più richieste/core business), le
+restanti 4 nascoste sotto un pulsante "Altri servizi" che le mostra subito
+sotto senza cambiare pagina (collapse, non accordion).
 
-3. Impianti chiavi in mano
-   Dalla progettazione alla messa in servizio: impianti tecnologici completi
-   e pronti all'uso.
+IN EVIDENZA (sempre visibili)
+  1. Progettazione FTTH
+     Reti in fibra ottica fino a casa del cliente, progettate su misura
+     con i Piani di Numerazione Internet di TIM e Open Fiber.
+  2. Sviluppo software su misura
+     Applicazioni e gestionali personalizzati per le esigenze operative
+     della tua azienda.
+  3. Impianti chiavi in mano
+     Dalla progettazione alla messa in servizio: impianti tecnologici
+     completi e pronti all'uso.
+  4. Cablaggi strutturati e reti LAN/WAN
+     Reti dati robuste e scalabili, con manutenzione degli apparati attivi.
+  5. Posa e collaudo cavi rame/fibra
+     Posa, giunzione, terminazione e collaudo per connessioni affidabili
+     e a bassa latenza.
+  6. Infrastrutture stradali e ripristini
+     Opere stradali e ripristini eseguiti nel rispetto degli standard di
+     qualità e sicurezza.
 
-4. Cablaggi strutturati e reti LAN/WAN
-   Reti dati robuste e scalabili, con manutenzione degli apparati attivi.
+Pulsante: "Altri servizi" (testo cambia in "Nascondi" quando aperto)
 
-5. Posa e collaudo cavi rame/fibra
-   Posa, giunzione, terminazione e collaudo per connessioni affidabili e a
-   bassa latenza.
+DIETRO IL PULSANTE (nascosti finché non si clicca)
+  7. Impianti fotovoltaici
+     Installazione e manutenzione di impianti ad alta efficienza per un
+     risparmio energetico concreto.
+  8. Sicurezza e antincendio
+     Impianti antincendio, antintrusione e controllo accessi per la
+     sicurezza dei tuoi spazi.
+  9. Videosorveglianza
+     Sistemi di videosorveglianza progettati per un controllo continuo
+     degli ambienti.
+  10. Cavi e quadristica precablata
+      Fornitura di cavi preconnettorizzati e quadristica precablata,
+      testata e pronta all'uso.
 
-6. Infrastrutture stradali e ripristini
-   Opere stradali e ripristini eseguiti nel rispetto degli standard di
-   qualità e sicurezza.
+oppure
 
+IN EVIDENZA (sempre visibili)
+
+Progettazione FTTH
+Fibra ottica fino a casa del cliente
+Piani di Numerazione Internet TIM e Open Fiber
+Progettazione su misura
+Sviluppo software su misura
+Applicazioni personalizzate
+Gestionali su misura
+Per le esigenze operative dell'azienda
+Impianti chiavi in mano
+Progettazione
+Installazione
+Messa in servizio
+Cablaggi strutturati e reti LAN/WAN
+Reti dati robuste e scalabili
+Manutenzione apparati attivi
+Posa e collaudo cavi rame/fibra
+Posa e giunzione
+Terminazione e collaudo
+Bassa latenza, alta affidabilità
+Infrastrutture stradali e ripristini
+Opere stradali
+Ripristini a norma
+Standard di qualità e sicurezza
+
+Pulsante: "Altri servizi" (testo cambia in "Nascondi" quando aperto)
+
+DIETRO IL PULSANTE (nascosti finché non si clicca)
 7. Impianti fotovoltaici
-   Installazione e manutenzione di impianti ad alta efficienza per un
-   risparmio energetico concreto.
 
-8. Sicurezza e antincendio
-   Impianti antincendio, antintrusione e controllo accessi per la sicurezza
-   dei tuoi spazi.
-
-9. Videosorveglianza
-   Sistemi di videosorveglianza progettati per un controllo continuo degli
-   ambienti.
-
-10. Cavi e quadristica precablata
-    Fornitura di cavi preconnettorizzati e quadristica precablata, testata
-    e pronta all'uso.
-
-Nota: se in fase di sviluppo risultano troppe per una sola griglia, le prime
-6 (più richieste/core business) possono restare in evidenza e le restanti 4
-andare in un accordion "Altri servizi" nella stessa sezione.
-
-
-[5] I NOSTRI LAVORI (NEW)
---------------------------
+Installazione
+Manutenzione
+Alta efficienza energetica
+Sicurezza e antincendio
+Impianti antincendio
+Antintrusione
+Controllo accessi
+Videosorveglianza
+Progettazione sistemi
+Controllo continuo degli ambienti
+Cavi e quadristica precablata
+Cavi preconnettorizzati
+Quadristica precablata
+Testata e pronta all'uso
+[5] I NOSTRI LAVORI
+---------------------
 Titolo: I nostri lavori
 Sottotitolo: Le nostre attività raccontate nel dettaglio, ognuna sul proprio
 portale.
@@ -140,7 +188,13 @@ Logo + payoff breve
 Link rapidi: Chi siamo | Servizi | Lavori | Perché sceglierci | Clienti |
 Contatti
 Sede legale / P.IVA: >> da fornire
-Copyright: © 2026 Citytel Sistem Srl. Tutti i diritti riservati.
+
+Barra legale in fondo (pattern richiesto):
+© [anno] Citytel Sistem Srl | Reg.Imp./Cod.Fis./P.IVA [numero] |
+Privacy Policy | Cookie Policy | Tutti i diritti riservati | Realizzato da
+[nome sviluppatore/agenzia]
+  >> Anno, P.IVA, link Privacy Policy/Cookie Policy (pagine a sé, non
+     incluse in questa landing) e credito "Realizzato da" da fornire.
 
 
 CONTENUTI NON PORTATI SUL SITO (e perché)
@@ -148,10 +202,8 @@ CONTENUTI NON PORTATI SUL SITO (e perché)
 - Paragrafo duplicato di storia aziendale (versione lunga/enfatica): stessa
   informazione della versione breve già in "Chi siamo", ridondante.
 - Frase introduttiva generica prima dell'elenco servizi ("colonna portante
-  su cui si fonda la nostra reputazione..."): riempitivo, sostituito da un
-  sottotitolo breve nella sezione Servizi.
+  su cui si fonda la nostra reputazione..."): riempitivo, sostituito dal
+  sottotitolo breve in "Servizi".
 - Paragrafo sui KPI Qualità come testo a sé: il concetto utile (garanzia sui
   costi di correzione) è stato mantenuto come punto elenco in "Perché
   sceglierci"; il resto era generico.
-
-NB inserire Copyright © Copyright 2021  |   SITE S.p.A.  |   Reg.Imp./Cod.Fis./P.IVA 03983200373   |  Privacy Policy   |   Cookie Policy   |   Tutti i diritti riservati   |   Realizzato da Mediamorphosis

@@ -25,13 +25,17 @@ gerarchia testo, elementi grafici richiesti.
       "2007" / "2013" / "2023"
     - Immagine opzionale (laboratorio, sede, team)
 
-04. SERVIZI (griglia di card)
+04. SERVIZI (10 card singole: 6 in evidenza + 4 dietro "Altri servizi")
     - H2: "Cosa facciamo"
-    - Sottotitolo breve 1 riga
-    - Griglia di card, ognuna con: icona, titolo servizio, 1-2 righe
-      descrizione
-    - 10 servizi totali: 6 in evidenza su griglia fissa + 4 in un accordion
-      "Altri servizi" sotto la griglia (per non appesantire la pagina)
+    - Sottotitolo breve 1 riga (testo definito nel file contenuti)
+    - Griglia dei primi 6 servizi (i più richiesti/core business), ognuno
+      con: icona, titolo servizio, 1-2 righe descrizione
+    - Sotto la griglia: bottone "Altri servizi" che espande in-place
+      (collapse Bootstrap, non accordion) una seconda griglia con i
+      restanti 4 servizi, stesso formato card
+    - Il bottone cambia testo in "Nascondi" quando la sezione è aperta
+    - Niente cambio pagina, niente pattern FAQ: solo mostra/nascondi la
+      griglia aggiuntiva subito sotto
 
 05. I NOSTRI LAVORI (NEW — 3 card verso siti esterni)
     - H2: "I nostri lavori"
@@ -68,7 +72,10 @@ gerarchia testo, elementi grafici richiesti.
     - Colonna link rapidi (stesse ancore del menu, incluso "Lavori")
     - Sede legale / P.IVA
     - Icone social (se presenti)
-    - Riga copyright in basso, separata da bordo sottile
+    - Barra legale in fondo, separata da bordo sottile: copyright con anno
+      e P.IVA, link Privacy Policy, link Cookie Policy, credito
+      "Realizzato da [sviluppatore/agenzia]" — stessa formula in una riga,
+      elementi separati da "|", testo piccolo
 
 
 NOTE TECNICHE GENERALI

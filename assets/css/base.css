@@ -1,3 +1,9 @@
+/* =============================================
+   BASE
+   Reset/default per elementi HTML nudi (body, h1-h6, section).
+   Nessuna classe qui: solo tag e helper bg globali.
+   ============================================= */
+
 body {
     font-family: var(--font-body);
     color: var(--color-text);
@@ -13,6 +19,7 @@ section {
     padding-bottom: var(--space-xl);
 }
 
+/* ===== BACKGROUND VARIANTS ===== */
 .bg-tech-light {
     background-color: var(--color-bg-light);
 }
@@ -29,4 +36,3 @@ section {
 .bg-tech-dark li {
     color: white;
 }
-

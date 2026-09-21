@@ -8,7 +8,7 @@
     --color-bg-dark: #0a3d62;
 
     /* ===== TYPOGRAPHY ===== */
-    --font-body: 'Inter', sans-serif;
+    --font-body: 'Manrope', sans-serif;
     --font-heading: 'Poppins', sans-serif;
 
     /* ===== SPACING SCALE ===== */
@@ -17,7 +17,7 @@
     --space-md: 1.5rem;
     --space-lg: 2rem;
     --space-xl: 4rem;
-   
+
     /* ===== MARGIN ===== */
     --hero-margin-top: 4.8rem;
 
@@ -27,7 +27,8 @@
     /* ===== SHADOWS ===== */
     --shadow-hover: 0 6px 20px rgba(0,0,0,0.08);
 
-    /* ===== FONT FAMILY ===== */
-    --font-body: 'Manrope', sans-serif;
+    /* ===== PADDING =====
+       ATTENZIONE: 20rem = 320px. Verifica sia voluto,
+       altrimenti riduci (es. 4-8rem). */
+    --padding-section: 20rem;
 }
-

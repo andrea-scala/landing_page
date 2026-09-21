@@ -24,7 +24,7 @@ RIEPILOGO SISTEMA ESISTENTE
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">
-          <img alt="placeholder_alt_text" class="img-fluid" style="height:50px;width:auto" src="./assets/img/logo-citytel.png">
+          <img class="img-fluid" style="height:50px;width:auto" src="./assets/img/logo-citytel.png">
         </a>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -60,7 +60,7 @@ RIEPILOGO SISTEMA ESISTENTE
 03. CHI SIAMO (come "Introduzione istituzionale" di EasyTrack)
     <section class="py-4 bg-white macro-section" id="chi-siamo">
       <div class="container">
-        <div class="section-divider-icon text-center"><i aria-hidden="true" class="bi bi-building"></i></div>
+        <div class="section-divider-icon text-center"><i class="bi bi-building"></i></div>
         <h2 class="text-center section-title mb-4">Chi siamo</h2>
         <p class="lead text-center max-w-800 mb-4">...frase di apertura forte...</p>
         <p class="max-w-800 mb-3">...corpo del paragrafo Chi siamo...</p>
@@ -72,41 +72,131 @@ RIEPILOGO SISTEMA ESISTENTE
       </div>
     </section>
 
-04. SERVIZI (come "Componenti/Benefici" di EasyTrack: card h-100 p-4 text-center)
+04. SERVIZI (10 card singole: 6 in evidenza + 4 dietro collapse "Altri servizi")
     <section class="py-4 bg-light macro-section" id="servizi">
       <div class="container">
-        <div class="section-divider-icon text-center"><i aria-hidden="true" class="bi bi-tools"></i></div>
-        <h2 class="text-center section-title mb-5">Cosa facciamo</h2>
+        <div class="section-divider-icon text-center"><i class="bi bi-tools"></i></div>
+        <h2 class="text-center section-title mb-3">Cosa facciamo</h2>
+        <p class="lead text-center max-w-800 mb-5">...sottotitolo breve...</p>
+
+        <!-- 6 SEMPRE VISIBILI -->
         <div class="row g-4">
           <div class="col-md-4">
             <div class="card h-100 p-4 text-center">
-              <i aria-hidden="true" class="bi bi-diagram-3 fs-1 mb-3"></i>
+              <i class="bi bi-diagram-3 fs-1 mb-3"></i>
               <h5>Progettazione FTTH</h5>
-              <p>...</p>
+              <p>Reti in fibra ottica fino a casa del cliente, progettate su misura con i
+                 Piani di Numerazione Internet di TIM e Open Fiber.</p>
             </div>
           </div>
-          <!-- ripeti per le 6 card in evidenza -->
+          <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+              <i class="bi bi-code-slash fs-1 mb-3"></i>
+              <h5>Sviluppo software su misura</h5>
+              <p>Applicazioni e gestionali personalizzati per le esigenze operative della
+                 tua azienda.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+              <i class="bi bi-wrench fs-1 mb-3"></i>
+              <h5>Impianti chiavi in mano</h5>
+              <p>Dalla progettazione alla messa in servizio: impianti tecnologici completi
+                 e pronti all'uso.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+              <i class="bi bi-diagram-3 fs-1 mb-3"></i>
+              <h5>Cablaggi strutturati e reti LAN/WAN</h5>
+              <p>Reti dati robuste e scalabili, con manutenzione degli apparati attivi.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+              <i class="bi bi-plug fs-1 mb-3"></i>
+              <h5>Posa e collaudo cavi rame/fibra</h5>
+              <p>Posa, giunzione, terminazione e collaudo per connessioni affidabili e a
+                 bassa latenza.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+              <i class="bi bi-geo-alt fs-1 mb-3"></i>
+              <h5>Infrastrutture stradali e ripristini</h5>
+              <p>Opere stradali e ripristini eseguiti nel rispetto degli standard di
+                 qualità e sicurezza.</p>
+            </div>
+          </div>
         </div>
-        <!-- restanti 4 servizi: stesso pattern .card usato altrove nel sito
-             per elenchi lunghi (vedi sezione "Componenti", 9 card in griglia
-             col-md-4/col-lg-3), niente accordion: coerenza con lo stile
-             esistente che non lo usa -->
+
+        <!-- BOTTONE APRI/CHIUDI -->
+        <div class="text-center mt-4">
+          <button class="btn btn-outline-primary" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#altriServizi"
+                  aria-expanded="false" aria-controls="altriServizi"
+                  onclick="this.textContent = this.getAttribute('aria-expanded') === 'true' ? 'Altri servizi' : 'Nascondi'">
+            Altri servizi
+          </button>
+        </div>
+
+        <!-- 4 NASCOSTI, MOSTRATI IN-PLACE AL CLICK -->
+        <div class="collapse mt-4" id="altriServizi">
+          <div class="row g-4">
+            <div class="col-md-3">
+              <div class="card h-100 p-4 text-center">
+                <i class="bi bi-sun fs-1 mb-3"></i>
+                <h5>Impianti fotovoltaici</h5>
+                <p>Installazione e manutenzione di impianti ad alta efficienza per un
+                   risparmio energetico concreto.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100 p-4 text-center">
+                <i class="bi bi-shield-lock fs-1 mb-3"></i>
+                <h5>Sicurezza e antincendio</h5>
+                <p>Impianti antincendio, antintrusione e controllo accessi per la
+                   sicurezza dei tuoi spazi.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100 p-4 text-center">
+                <i class="bi bi-camera-video fs-1 mb-3"></i>
+                <h5>Videosorveglianza</h5>
+                <p>Sistemi di videosorveglianza progettati per un controllo continuo
+                   degli ambienti.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100 p-4 text-center">
+                <i class="bi bi-cpu fs-1 mb-3"></i>
+                <h5>Cavi e quadristica precablata</h5>
+                <p>Fornitura di cavi preconnettorizzati e quadristica precablata, testata
+                   e pronta all'uso.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    Nota bottone: la riga onclick sopra e' un fallback minimo in linea; se
+    preferisci JS separato, ascolta gli eventi Bootstrap
+    "show.bs.collapse"/"hide.bs.collapse" su #altriServizi e aggiorna il
+    testo del bottone li', e' piu' pulito dell'inline handler.
 
 05. I NOSTRI LAVORI (card verso siti esterni, stesso pattern "Modelli di Fornitura")
     <section class="py-4 bg-white macro-section" id="lavori">
       <div class="container">
-        <div class="section-divider-icon text-center"><i aria-hidden="true" class="bi bi-box-arrow-up-right"></i></div>
+        <div class="section-divider-icon text-center"><i class="bi bi-box-arrow-up-right"></i></div>
         <h2 class="text-center section-title mb-5">I nostri lavori</h2>
         <div class="row g-4">
           <div class="col-md-4">
             <div class="card h-100 p-4 text-center">
-              <img alt="placeholder_alt_text" class="img-fluid mb-3" src="./assets/img/lavoro-1.png">
+              <img class="img-fluid mb-3" src="./assets/img/lavoro-1.png">
               <h5>Sito 1</h5>
               <p>...</p>
               <a href="https://..." target="_blank" rel="noopener" class="btn btn-outline-primary mt-2">
-                Vai al sito <i aria-hidden="true" class="bi bi-box-arrow-up-right ms-1"></i>
+                Vai al sito <i class="bi bi-box-arrow-up-right ms-1"></i>
               </a>
             </div>
           </div>
@@ -118,7 +208,7 @@ RIEPILOGO SISTEMA ESISTENTE
 06. PERCHÉ SCEGLIERCI / CERTIFICAZIONI (come "Compatibilità normativa": list-group)
     <section class="py-4 macro-section" id="perche-sceglierci">
       <div class="container">
-        <div class="section-divider-icon text-center"><i aria-hidden="true" class="bi bi-patch-check"></i></div>
+        <div class="section-divider-icon text-center"><i class="bi bi-patch-check"></i></div>
         <h2 class="text-center section-title mb-4">Perché scegliere Citytel Sistem</h2>
         <ul class="list-group mb-4">
           <li class="list-group-item">Certificati ISO 9001, ISO 14001, ISO 45001</li>
@@ -134,11 +224,11 @@ RIEPILOGO SISTEMA ESISTENTE
 07. CLIENTI / PORTFOLIO
     <section class="py-4 bg-light macro-section" id="clienti">
       <div class="container">
-        <div class="section-divider-icon text-center"><i aria-hidden="true" class="bi bi-people"></i></div>
+        <div class="section-divider-icon text-center"><i class="bi bi-people"></i></div>
         <h2 class="text-center section-title mb-5">Chi si affida a noi</h2>
         <div class="d-flex flex-wrap justify-content-center align-items-center gap-5">
-          <img alt="placeholder_alt_text" class="logo-client" src="..." alt="Open Fiber">
-          <img alt="placeholder_alt_text" class="logo-client" src="..." alt="TIM">
+          <img class="logo-client" src="..." alt="Open Fiber">
+          <img class="logo-client" src="..." alt="TIM">
           <!-- ripeti per gli altri loghi -->
         </div>
       </div>
@@ -149,7 +239,7 @@ RIEPILOGO SISTEMA ESISTENTE
 08. CONTATTI (form) + CTA FINALE (identica a EasyTrack: bg-primary)
     <section class="py-4 bg-white macro-section" id="contatti-form">
       <div class="container">
-        <div class="section-divider-icon text-center"><i aria-hidden="true" class="bi bi-envelope"></i></div>
+        <div class="section-divider-icon text-center"><i class="bi bi-envelope"></i></div>
         <h2 class="text-center section-title mb-4">Parliamo del tuo progetto</h2>
         <form class="row g-3 max-w-800 mx-auto">
           <div class="col-md-6"><label class="form-label">Nome</label><input type="text" class="form-control"></div>
@@ -192,9 +282,17 @@ RIEPILOGO SISTEMA ESISTENTE
           </div>
         </div>
         <hr class="border-secondary my-4">
-        <p class="small mb-0 text-center">© 2026 Citytel Sistem Srl. Tutti i diritti riservati.</p>
+        <p class="small mb-0 text-center">
+          © <span data-year></span> Citytel Sistem Srl |
+          Reg.Imp./Cod.Fis./P.IVA ... |
+          <a class="link-light" href="/privacy-policy">Privacy Policy</a> |
+          <a class="link-light" href="/cookie-policy">Cookie Policy</a> |
+          Tutti i diritti riservati |
+          Realizzato da ...
+        </p>
       </div>
     </footer>
+    <!-- <span data-year> valorizzato via JS: document.querySelector('[data-year]').textContent = new Date().getFullYear() -->
 
 
 DIFFERENZE RISPETTO ALLA VERSIONE PRECEDENTE DI QUESTO FILE
@@ -211,3 +309,37 @@ DIFFERENZE RISPETTO ALLA VERSIONE PRECEDENTE DI QUESTO FILE
   separata dal form dei contatti
 - footer non esiste nel sito di riferimento: proposto ex-novo riusando
   --color-bg-dark
+
+
+DIFFERENZE — AGGIORNAMENTO MACROAREE E FOOTER LEGALE
+---------------------------------------------------------
+- Sezione Servizi: da griglia unica 6+4 a 4 blocchi sequenziali (uno per
+  macroarea), ognuno con mini-titolo h4 + blurb + riga di card dei servizi
+  di quella macroarea. Aggiunto anche il sottotitolo breve mancante sotto
+  h2 "Cosa facciamo" (era previsto nello scheletro ma non scritto nei
+  contenuti).
+- Footer: riga copyright sostituita da barra legale unica (copyright con
+  anno dinamico e P.IVA, Privacy Policy, Cookie Policy, credito
+  "Realizzato da"), stesso pattern del sito di riferimento fornito
+  dall'utente. Anno, P.IVA e credito da completare.
+
+
+DIFFERENZE — DA 10 CARD A 4 CARD (MACROAREE)
+-------------------------------------------------
+- Sezione Servizi: non più 4 blocchi con riga di card per macroarea (10
+  card totali), ma 4 card totali, una per macroarea. Ogni card = icona +
+  titolo macroarea + <ul> con solo i nomi dei servizi inclusi. Rimossi i
+  paragrafi descrittivi per singolo servizio e i blurb di macroarea: testo
+  troppo lungo per il numero di voci, il dettaglio va dato altrove.
+
+
+DIFFERENZE — DA 4 CARD MACROAREA A 10 CARD (6 + 4 COLLAPSE)
+-------------------------------------------------------------
+- Ripristinate le 10 card singole per servizio (icona + titolo + 1-2 righe
+  descrizione), come nell'HTML fornito dall'utente.
+- Le prime 6 (core business) restano sempre visibili in griglia.
+- Le restanti 4 sono in un contenitore .collapse (id="altriServizi"),
+  aperto/chiuso da un bottone "Altri servizi" con data-bs-toggle="collapse"
+  — non un accordion: nessun wrapper/bordo extra, si espande in-place
+  subito sotto la griglia principale, senza dipendenze aggiuntive (usa
+  bootstrap.bundle.js già incluso).
