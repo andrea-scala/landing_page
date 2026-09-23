@@ -51,6 +51,10 @@ h1.display-5.mt-4.mb-0.fw-bold.w-md-65 {
     font-size: 0.95rem !important; /* ~12px */
 }
 
+.fs-8 {
+    font-size: 0.90rem !important; /* ~11px */
+}
+
 @media (min-width: 768px) {
     .mx-md-5 {
         margin-right: calc(3rem * 2.3) !important;

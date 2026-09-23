@@ -39,8 +39,12 @@
         height: 40px;
     }
 
-    .card ul:not(.list-group-sm) {
+    .card.service-card ul:not(.list-group-sm) {
         min-height: 10.5em;
+    }
+
+    .card.competenze-card ul{
+        min-height: 8em;
     }
 
     .hr-sm{

@@ -73,6 +73,7 @@
     <?php require 'sezioni/chisiamo.php'; ?>
     <?php require 'sezioni/servizi.php'; ?>
     <?php require 'sezioni/lavori.php'; ?>
+    <?php require 'sezioni/perche-sceglierci.php'; ?>
     <?php require 'sezioni/footer.php'; ?>
 
     <!-- Bootstrap JS -->
