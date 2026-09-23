@@ -2,27 +2,22 @@
    PAGE-SPECIFIC
    Stili legati a componenti/pagine precise, non riusabili
    altrove (display-5 hero, timeline, fs-7).
-
    NB: il selettore h1.display-5... è molto specifico e fragile:
    si rompe se cambi anche una sola classe nell'HTML del titolo.
    Consigliato sostituirlo con una classe dedicata, es. .hero-title.
    ============================================= */
-
 .display-5 {
     font-size: calc(2rem + 2.1vw) !important;
     font-weight: 300;
 }
-
 @media (min-width: 1200px) {
     .display-5 {
         font-size: 5rem !important;
     }
 }
-
 h1.display-5.mt-4.mb-0.fw-bold.w-md-65 {
     line-height: 1.1;
 }
-
 /* ===== TIMELINE ORIZZONTALE ===== */
 .timeline-horizontal::before {
     content: "";
@@ -34,7 +29,6 @@ h1.display-5.mt-4.mb-0.fw-bold.w-md-65 {
     background-color: #0d6efd87;
     z-index: 0;
 }
-
 .timeline-dot {
     width: 16px;
     height: 16px;
@@ -45,16 +39,13 @@ h1.display-5.mt-4.mb-0.fw-bold.w-md-65 {
     z-index: 1;
     top: 6px;
 }
-
 /* ===== FONT SIZE HELPER ===== */
 .fs-7 {
     font-size: 0.95rem !important; /* ~12px */
 }
-
 .fs-8 {
     font-size: 0.90rem !important; /* ~11px */
 }
-
 @media (min-width: 768px) {
     .mx-md-5 {
         margin-right: calc(3rem * 2.3) !important;

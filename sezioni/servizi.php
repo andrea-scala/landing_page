@@ -2,7 +2,7 @@
     <div class="container-fluid text-start section-padding-md py-4 d-flex flex-column h-100">
         <span class="badge text-bg-primary-inverso px-0 mt-0 mb-3 text-uppercase align-self-start">Servizi</span>
         <h1 class="mb-3 fw-bold w-md-65">Reti, impianti, sicurezza.</h1>
-        <p class="lead mb-3 w-md-45 fs-6 text-justify manrope-paragrafi-regular">Massima qualità e affidabilità in ogni
+        <p class="lead fw-normal mb-3 w-md-45 fs-6 text-justify manrope-paragrafi-regular">Massima qualità e affidabilità in ogni
             progetto: soluzioni su misura per ogni sfida tecnologica, dalla progettazione alla messa in servizio.</p>
         <?php
         $servizi_evidenza = [
@@ -37,7 +37,6 @@
                 'items' => ['Opere stradali', 'Ripristini a norma', 'Standard di qualità e sicurezza']
             ],
         ];
-
         $servizi_altri = [
             [
                 'icon' => 'solar-panel',
@@ -60,7 +59,6 @@
                 'items' => ['Cavi preconnettorizzati', 'Quadristica precablata testata e pronta all\'uso']
             ],
         ];
-
         function render_servizio(array $s): void
         {
             $icon_svg = file_get_contents(__DIR__ . "/../assets/img/icons/services/{$s['icon']}.svg");
@@ -70,7 +68,6 @@
             $items = $s['items'];
             include __DIR__ . '/partials/service-card.php';
         }
-
         function render_servizio_small(array $s): void
         {
             $icon_svg = file_get_contents(__DIR__ . "/../assets/img/icons/services/{$s['icon']}.svg");
@@ -80,7 +77,6 @@
             include __DIR__ . '/partials/service-card-small.php';
         }
         ?>
-
         <div class="row mb-3 mt-md-0 px-0 justify-content-around g-1">
             <?php foreach ($servizi_evidenza as $s): ?>
                 <div class="col-md-4 align-items-center d-flex flex-column gy-4">
@@ -88,7 +84,6 @@
                 </div>
             <?php endforeach; ?>
         </div>
-
         <div class="text-center">
             <button class="btn btn-primary btn-lg my-5 rounded-pill fs-6 px-3 py-2 flex-grow-1 flex-basis-0"
                 type="button" id="btnAltriServizi" data-bs-toggle="collapse" data-bs-target="#altriServizi"
@@ -96,7 +91,6 @@
                 Altri servizi
             </button>
         </div>
-
         <div class="collapse mb-3" id="altriServizi">
             <div class="row mt-md-0 px-0 justify-content-around g-1">
                 <?php foreach ($servizi_altri as $s): ?>
@@ -106,9 +100,6 @@
                 <?php endforeach; ?>
             </div>
         </div>
-
-
-
         <!-- <div class="row g-4">
             <div class="col-md-4">
                 <div class="card h-100 p-4 text-center">
@@ -121,7 +112,6 @@
                         <path d="M4 6v4" />
                         <path d="M20 8h-16" />
                     </svg>
-
                     <h5>Progettazione FTTH</h5>
                     <ul>
                         <li>Fibra ottica fino a casa del cliente</li>
@@ -138,7 +128,6 @@
                         <path d="M17 8l4 4l-4 4" />
                         <path d="M14 4l-4 16" />
                     </svg>
-
                     <h5>Sviluppo software su misura</h5>
                     <ul>
                         <li>Applicazioni personalizzate</li>
@@ -157,7 +146,6 @@
                         <path d="M16 12l5 5l-4 4l-5 -5" />
                         <path d="M16 17l-1.5 1.5" />
                     </svg>
-
                     <h5>Impianti chiavi in mano</h5>
                     <ul>
                         <li>Progettazione</li>
@@ -179,9 +167,7 @@
                         <path d="M10 20a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
                         <path d="M12 15v3" />
                     </svg>
-
                     <h5>Cablaggi strutturati e reti LAN/WAN</h5>
-
                     <ul>
                         <li>Reti dati robuste e scalabili</li>
                         <li>Manutenzione apparati attivi</li>
@@ -197,7 +183,6 @@
                         <path d="M15 4l-3.5 3.5" />
                         <path d="M20 9l-3.5 3.5" />
                     </svg>
-
                     <h5>Posa e collaudo cavi rame/fibra</h5>
                     <ul>
                         <li>Posa e giunzione</li>
@@ -216,7 +201,6 @@
                         <path d="M12 13v-2" />
                         <path d="M12 18v-2" />
                     </svg>
-
                     <h5>Infrastrutture stradali e ripristini</h5>
                     <ul>
                         <li>Opere stradali</li>
@@ -226,9 +210,6 @@
                 </div>
             </div>
         </div> -->
-
-
-
         <!-- <div class="collapse mt-4" id="altriServizi">
             <div class="row g-4">
                 <div class="col-md-3">
@@ -244,7 +225,6 @@
                             <path d="M12 14v4" />
                             <path d="M7 18h10" />
                         </svg>
-
                         <h5>Impianti fotovoltaici</h5>
                         <ul>
                             <li>Installazione</li>
@@ -261,7 +241,6 @@
                             <path
                                 d="M12 10.941c2.333 -3.308 .167 -7.823 -1 -8.941c0 3.395 -2.235 5.299 -3.667 6.706c-1.43 1.408 -2.333 3.294 -2.333 5.588c0 3.704 3.134 6.706 7 6.706c3.866 0 7 -3.002 7 -6.706c0 -1.712 -1.232 -4.403 -2.333 -5.588c-2.084 3.353 -3.257 3.353 -4.667 2.235" />
                         </svg>
-
                         <h5>Sicurezza e antincendio</h5>
                         <ul>
                             <li>Impianti antincendio</li>
@@ -279,7 +258,6 @@
                                 d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4" />
                             <path d="M3 8a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2l0 -8" />
                         </svg>
-
                         <h5>Videosorveglianza</h5>
                         <ul>
                             <li>Progettazione sistemi</li>
@@ -304,7 +282,6 @@
                             <path d="M14 21v-2" />
                             <path d="M10 21v-2" />
                         </svg>
-
                         <h5>Cavi e quadristica precablata</h5>
                         <ul>
                             <li>Cavi preconnettorizzati</li>

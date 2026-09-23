@@ -3,7 +3,7 @@
     <span class="badge text-bg-primary-inverso px-0 mt-5 text-uppercase">Dal 2007, telecomunicazioni e impianti
       tecnologici</span>
     <h1 class="display-5 mt-4 mb-0 fw-bold w-md-65">Reti, impianti e software su misura, chiavi in mano</h1>
-    <p class="lead mt-4 mt-md-4 mb-0 w-md-50">Progettiamo, realizziamo e manuteniamo infrastrutture di
+    <p class="lead fw-normal mt-4 mt-md-4 mb-0 w-md-50">Progettiamo, realizziamo e manuteniamo infrastrutture di
       telecomunicazione, impianti tecnologici e soluzioni software per aziende
       ed enti pubblici.</p>
     <div class="d-flex flex-row my-0">

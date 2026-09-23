@@ -3,32 +3,26 @@
    Reset/default per elementi HTML nudi (body, h1-h6, section).
    Nessuna classe qui: solo tag e helper bg globali.
    ============================================= */
-
 body {
     font-family: var(--font-body);
     color: var(--color-text);
 }
-
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-weight: 600;
 }
-
 section {
     padding-top: var(--space-xl);
     padding-bottom: var(--space-xl);
 }
-
 /* ===== BACKGROUND VARIANTS ===== */
 .bg-tech-light {
     background-color: var(--color-bg-light);
 }
-
 .bg-tech-dark {
     background-color: var(--color-bg-dark);
     color: white;
 }
-
 .bg-tech-dark h2,
 .bg-tech-dark h3,
 .bg-tech-dark h4,

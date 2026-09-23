@@ -4,9 +4,9 @@
             <!-- <div class="section-divider-icon text-center"><i aria-hidden="true" class="bi bi-building"></i></div> -->
             <span class="badge text-bg-primary-inverso px-0 mt-0 mb-3 text-uppercase">Chi siamo</span>
             <!-- <h2 class="text-center section-title mb-3">Chi siamo</h2> -->
-            <!-- <p class="lead text-center max-w-800 mb-3">Competenza tecnica, affidabilità totale.</p> -->
+            <!-- <p class="lead fw-normal text-center max-w-800 mb-3">Competenza tecnica, affidabilità totale.</p> -->
             <h1 class="mb-3 fw-bold w-md-65">Competenza tecnica, affidabilità totale.</h1>
-            <p class="lead mb-0 w-md-65 fs-6 text-justify manrope-paragrafi-regular">Citytel Sistem Srl nasce nel 2007
+            <p class="lead fw-normal mb-0 w-md-65 fs-6 text-justify manrope-paragrafi-regular">Citytel Sistem Srl nasce nel 2007
                 dall'esperienza ventennale
                 di un
                 team di tecnici specializzati in telecomunicazioni. Dal 2013 disponiamo di
@@ -56,7 +56,5 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 </section>

@@ -4,7 +4,7 @@
             <div class="col-12 col-md-7">
                 <span class="badge text-bg-primary-inverso px-0 mt-0 mb-2 text-uppercase align-self-start">Perché sceglierci</span>
                 <h1 class="mb-3 fw-bold w-md-80">Perché scegliere Citytel Sistem</h1>
-                <p class="lead mb-3 w-md-85 fs-6 text-justify manrope-paragrafi-regular">
+                <p class="lead fw-normal mb-3 w-md-85 fs-6 text-justify manrope-paragrafi-regular">
                     Certificazioni, abilitazioni di legge e attestazioni riconosciute: lavoriamo secondo
                     standard verificabili, con la garanzia che ogni progetto sia conforme dalla progettazione
                     al collaudo.
@@ -47,12 +47,9 @@
                         </div>
                     </div> -->
                 </div>
-                
             </div>
         </div>
-
         <!-- <hr class="text-primary my-4">
-
         <div class="d-flex flex-wrap justify-content-center gap-2">
             <span class="badge text-bg-primary-inverso fs-6 fw-normal px-3 py-2 rounded-pill">Qualificati TIM</span>
             <span class="badge text-bg-primary-inverso fs-6 fw-normal px-3 py-2 rounded-pill">Qualificati Fastweb</span>

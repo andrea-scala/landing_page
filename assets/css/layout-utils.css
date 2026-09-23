@@ -3,47 +3,37 @@
    Utility generiche riusabili in tutto il sito
    (larghezze, allineamento testo, scroll, badge).
    ============================================= */
-
 .max-w-800 {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
-
 .text-center {
     text-align: center;
 }
-
 .text-justify {
     text-align: justify !important;
 }
-
 .macro-section {
     /* evita che la navbar copra i titoli in scroll-to-anchor */
     scroll-margin-top: 80px;
 }
-
 .hero-mt {
     margin-top: var(--hero-margin-top) !important;
 }
-
 .badge {
     letter-spacing: 0.1em !important;
 }
-
 .text-bg-primary-inverso {
     color: RGBA(var(--bs-primary-rgb), var(--bs-text-opacity, 1)) !important;
     background-color: #ffffff00 !important;
 }
-
 .w-70 {
     width: 70% !important;
 }
-
 .flex-basis-0 {
     flex-basis: 0 !important;
 }
-
 /* .row {
     --bs-gutter-x: 0 !important;
 } */
