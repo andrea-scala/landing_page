@@ -62,6 +62,7 @@
     <?php require 'sezioni/servizi.php'; ?>
     <?php require 'sezioni/lavori.php'; ?>
     <?php require 'sezioni/perche-sceglierci.php'; ?>
+    <?php require 'sezioni/clienti.php'; ?>
     <?php require 'sezioni/footer.php'; ?>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
