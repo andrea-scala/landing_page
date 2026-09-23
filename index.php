@@ -52,7 +52,7 @@
                     <li class="nav-item"><a class="nav-link" href="#lavori">Lavori</a></li>
                     <li class="nav-item"><a class="nav-link" href="#perchesceglierci">Perchè sceglierci</a></li>
                     <li class="nav-item"><a class="nav-link" href="#clienti">Clienti</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lavora-con-noi">Lavora con noi</a></li>
                 </ul>
             </div>
         </div>
@@ -63,6 +63,7 @@
     <?php require 'sezioni/lavori.php'; ?>
     <?php require 'sezioni/perche-sceglierci.php'; ?>
     <?php require 'sezioni/clienti.php'; ?>
+    <?php require 'sezioni/lavora-con-noi.php'; ?>
     <?php require 'sezioni/footer.php'; ?>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

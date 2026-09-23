@@ -1,5 +1,5 @@
 <section class="py-4 macro-section bg-light" id="perche-sceglierci">
-    <div class="container-fluid text-start section-padding-md py-4 d-flex flex-column h-100">
+    <div class="container-fluid text-start section-padding-md py-5 d-flex flex-column h-100">
         <span class="badge text-bg-primary-inverso px-0 mt-0 mb-3 text-uppercase align-self-start">Perché sceglierci</span>
         <h1 class="mb-3 fw-bold w-md-65">Perché scegliere Citytel Sistem</h1>
         <p class="lead fw-normal mb-4 w-md-45 fs-6 text-justify manrope-paragrafi-regular">Certificazioni, qualifiche e garanzie

@@ -1,5 +1,5 @@
 <section class="py-4 macro-section bg-light" id="perche-sceglierci">
-    <div class="container-fluid section-padding-md py-3">
+    <div class="container-fluid section-padding-md py-5">
         <div class="row align-items-center g-4 mb-4">
             <div class="col-12 col-md-7">
                 <span class="badge text-bg-primary-inverso px-0 mt-0 mb-2 text-uppercase align-self-start">Perché sceglierci</span>

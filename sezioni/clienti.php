@@ -2,7 +2,7 @@
      VERSIONE A — CON LOGHI
 =========================== -->
 <section class="py-4 bg-white macro-section" id="clienti">
-    <div class="container-fluid text-start section-padding-md py-4">
+    <div class="container-fluid text-start section-padding-md py-5">
         <span class="badge text-bg-primary-inverso px-0 mt-0 mb-3 text-uppercase align-self-start">Clienti</span>
         <h1 class="mb-3 fw-bold w-md-65">Chi si affida a noi</h1>
         <p class="lead fw-normal mb-3 w-md-45 fs-6 text-justify manrope-paragrafi-regular">Enti pubblici e grandi
