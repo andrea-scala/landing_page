@@ -9,7 +9,7 @@
             realtà private che ci hanno scelto per progetti di infrastruttura e telecomunicazioni.</p>
         <?php
         $clienti = [
-            ['nome' => 'Open Fiber', 'logo' => 'logo-openfiber.svg'],
+            ['nome' => 'Open Fiber', 'logo' => 'logo-openfiber.png'],
             ['nome' => 'TIM', 'logo' => 'logo-tim.svg'],
             ['nome' => 'Fondazione Policlinico Universitario Agostino Gemelli', 'logo' => 'logo-gemelli.png'],
             ['nome' => 'Terna', 'logo' => 'logo-terna.png'],
@@ -25,7 +25,7 @@
             <?php foreach (array_merge($clienti, $clienti) as $c): ?>
                 <img src="./assets/img/loghi/<?= htmlspecialchars($c['logo']) ?>"
                      alt="<?= htmlspecialchars($c['nome']) ?>"
-                     class="logo-client flex-shrink-0" height="32">
+                     class="logo-client flex-shrink-0" height="32" loading="lazy">
             <?php endforeach; ?>
         </div>
         </div>

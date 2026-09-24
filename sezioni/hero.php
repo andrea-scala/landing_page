@@ -7,8 +7,8 @@
       telecomunicazione, impianti tecnologici e soluzioni software per aziende
       ed enti pubblici.</p>
     <div class="d-flex flex-row my-0">
-      <div class="col-12 col-md-3dat5 d-flex column-gap-3">
-        <a href="#contatti"
+      <div class="col-12 col-md-hero-cta d-flex column-gap-3">
+        <a href="#footer"
           class="btn btn-primary btn-lg my-5 rounded-pill fs-6 px-md-4 py-md-3 p-3 flex-grow-1 flex-basis-0">Richiedi un
           preventivo</a>
         <a href="#servizi"

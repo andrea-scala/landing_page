@@ -1,11 +1,7 @@
 <section class="py-4 bg-white macro-section" id="chi-siamo">
-    <!-- <div class="container-fluid text-start section-padding-md px-3 row g-1"> -->
     <div class="container-fluid text-start section-padding-md py-5 px-4 px-md-0 row g-4">
         <div class="col-12 col-md-6 order-2 order-md-1">
-            <!-- <div class="section-divider-icon text-center"><i aria-hidden="true" class="bi bi-building"></i></div> -->
             <span class="badge text-bg-primary-inverso px-0 mt-0 mb-3 text-uppercase">Chi siamo</span>
-            <!-- <h2 class="text-center section-title mb-3">Chi siamo</h2> -->
-            <!-- <p class="lead fw-normal text-center max-w-800 mb-3">Competenza tecnica, affidabilità totale.</p> -->
             <h1 class="mb-3 fw-bold w-md-65">Competenza tecnica, affidabilità totale.</h1>
             <p class="lead fw-normal mb-4 w-md-65 fs-6 text-justify manrope-paragrafi-regular">Citytel Sistem Srl nasce
                 nel 2007
@@ -18,24 +14,9 @@
                 pubblici e aziende private, garantendo precisione, flessibilità e
                 affidabilità in ogni progetto.</p>
         </div>
-        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center px-md-6 order-2 order-md-1"><img
-                src="/assets/img/chi-siamo.jpg" class="img-fluid img-responsive" alt="..."></div>
-        <!-- <div class="col-12 my-4">
-            <div class="row g-3 text-center m-0">
-                <div class="col-4 m-0">
-                    <div class="fs-2 fw-bold">2007</div>
-                    <div class="text-secondary small">Entriamo sul mercato</div>
-                </div>
-                <div class="col-4 m-0">
-                    <div class="fs-2 fw-bold">2013</div>
-                    <div class="text-secondary small">Apriamo il nostro laboratorio</div>
-                </div>
-                <div class="col-4 m-0">
-                    <div class="fs-2 fw-bold">2023</div>
-                    <div class="text-secondary small">Nuove aree di competenza (FTTH, software, servizi su misura)</div>
-                </div>
-            </div>
-        </div> -->
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center px-md-6 order-2 order-md-1">
+            <img src="./assets/img/chi-siamo.jpg" class="img-fluid img-responsive" alt="Team tecnico Citytel Sistem al lavoro">
+        </div>
         <div class="col-12 order-3">
             <div class="timeline-horizontal position-relative">
                 <div class="row g-0 text-center">
