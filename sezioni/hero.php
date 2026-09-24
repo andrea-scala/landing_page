@@ -1,5 +1,5 @@
 <section id="hero" class="py-4 py-md-12 hero-mt bg-tech-light">
-  <div class="container-fluid text-start px-md-10 px-3">
+  <div class="container-fluid px-4 px-md-0 text-start px-md-10 px-3">
     <span class="badge text-bg-primary-inverso px-0 mt-5 text-uppercase">Dal 2007, telecomunicazioni e impianti
       tecnologici</span>
     <h1 class="display-5 mt-4 mb-0 fw-bold w-md-65">Reti, impianti e software su misura, chiavi in mano</h1>

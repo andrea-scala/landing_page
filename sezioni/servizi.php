@@ -1,8 +1,8 @@
 <section class="py-4 bg-light macro-section" id="servizi">
-    <div class="container-fluid text-start section-padding-md py-5 d-flex flex-column h-100">
+    <div class="container-fluid px-4 px-md-0 text-start section-padding-md py-5 d-flex flex-column h-100">
         <span class="badge text-bg-primary-inverso px-0 mt-0 mb-3 text-uppercase align-self-start">Servizi</span>
         <h1 class="mb-3 fw-bold w-md-65">Reti, impianti, sicurezza.</h1>
-        <p class="lead fw-normal mb-3 w-md-45 fs-6 text-justify manrope-paragrafi-regular">Massima qualità e affidabilità in ogni
+        <p class="lead fw-normal mb-4 w-md-45 fs-6 text-justify manrope-paragrafi-regular">Massima qualità e affidabilità in ogni
             progetto: soluzioni su misura per ogni sfida tecnologica, dalla progettazione alla messa in servizio.</p>
         <?php
         $servizi_evidenza = [

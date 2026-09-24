@@ -1,7 +1,10 @@
 <section class="py-4 bg-white macro-section" id="lavori">
-    <div class="container-fluid text-start section-padding-md px-3 d-flex flex-column h-100">
-        <div class="section-divider-icon text-center"><i class="bi bi-box-arrow-up-right"></i></div>
-        <h2 class="text-center section-title mb-5">I nostri lavori</h2>
+    <div class="container-fluid px-4 px-md-0 text-start section-padding-md py-4">
+        <span class="badge text-bg-primary-inverso px-0 mt-0 mb-3 text-uppercase align-self-start">Lavori</span>
+        <h1 class="mb-3 fw-bold w-md-65">I nostri lavori</h1>
+        <p class="lead fw-normal mb-4 w-md-45 fs-6 text-justify manrope-paragrafi-regular">Le nostre attività
+            raccontate nel dettaglio, ognuna sul proprio portale.</p>
+
         <?php
         $lavori = [
             [
@@ -23,6 +26,7 @@
                 'url' => 'https://...',
             ],
         ];
+
         function render_lavoro(array $l): void
         {
             $img = $l['img'];
@@ -32,9 +36,10 @@
             include __DIR__ . '/partials/lavoro-card.php';
         }
         ?>
-        <div class="row g-3 mt-md-0 px-0 justify-content-around flex-grow-1">
+
+        <div class="row g-3">
             <?php foreach ($lavori as $l): ?>
-                <div class="col-md-4 d-flex flex-column">
+                <div class="col-12 col-md-4 d-flex flex-column">
                     <?php render_lavoro($l); ?>
                 </div>
             <?php endforeach; ?>

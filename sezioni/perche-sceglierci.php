@@ -1,10 +1,10 @@
 <section class="py-4 macro-section bg-light" id="perche-sceglierci">
-    <div class="container-fluid section-padding-md py-5">
+    <div class="container-fluid px-4 px-md-0 section-padding-md py-5">
         <div class="row align-items-center g-4 mb-4">
             <div class="col-12 col-md-7">
                 <span class="badge text-bg-primary-inverso px-0 mt-0 mb-2 text-uppercase align-self-start">Perché sceglierci</span>
-                <h1 class="mb-3 fw-bold w-md-80">Perché scegliere Citytel Sistem</h1>
-                <p class="lead fw-normal mb-3 w-md-85 fs-6 text-justify manrope-paragrafi-regular">
+                <h1 class="mb-3 fw-bold w-md-65">Perché scegliere Citytel Sistem</h1>
+                <p class="lead fw-normal mb-4 w-md-85 fs-6 text-justify manrope-paragrafi-regular">
                     Certificazioni, abilitazioni di legge e attestazioni riconosciute: lavoriamo secondo
                     standard verificabili, con la garanzia che ogni progetto sia conforme dalla progettazione
                     al collaudo.

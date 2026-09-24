@@ -1,5 +1,5 @@
 <section class="py-4 bg-light macro-section" id="lavora-con-noi">
-    <div class="container-fluid text-start section-padding-md py-5">
+    <div class="container-fluid px-4 px-md-0 text-start section-padding-md py-5">
         <div class="row g-4">
             <div class="col-12 col-md-7">
                 <span class="badge text-bg-primary-inverso px-0 mt-0 mb-3 text-uppercase align-self-start">Lavora con noi</span>
@@ -26,7 +26,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="cv-privacy" name="privacy" required>
                             <label class="form-check-label fs-7" for="cv-privacy">
-                                Ho letto l'<a href="legal/privacy-policy.php" class="text-primary">informativa privacy</a> e acconsento al trattamento dei dati per finalità di selezione del personale.
+                                Ho letto l'<a href="sezioni/legal/privacy-policy.php" class="text-primary">informativa privacy</a> e acconsento al trattamento dei dati per finalità di selezione del personale.
                             </label>
                         </div>
                     </div>
