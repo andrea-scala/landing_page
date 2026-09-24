@@ -2,3 +2,7 @@ old/
 docs/
 *backup*
 repomix*
+# Upload utenti: mai versionare CV/dati personali (privacy + dimensione repo)
+uploads/*
+!uploads/candidature/.htaccess
+!uploads/.gitkeep

@@ -1,3 +1,13 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+$csrf_token = bin2hex(random_bytes(32));
+$_SESSION['csrf_token'] = $csrf_token;
+
+$cv_status = $_GET['cv_status'] ?? null;
+$cv_msg    = $_GET['cv_msg'] ?? '';
+?>
 <section class="py-4 bg-light macro-section" id="lavora-con-noi">
     <div class="container-fluid px-4 px-md-0 text-start section-padding-md py-5">
         <div class="row g-4">
@@ -9,10 +19,28 @@
             </div>
 
             <div class="col-12 col-md-5">
-                <form class="row g-3" action="invia-candidatura.php" method="post" enctype="multipart/form-data">
+                <?php if ($cv_status === 'ok'): ?>
+                    <div class="alert alert-success rounded-0" role="alert">
+                        Candidatura inviata con successo. Ti ricontatteremo al più presto.
+                    </div>
+                <?php elseif ($cv_status === 'error'): ?>
+                    <div class="alert alert-danger rounded-0" role="alert">
+                        <?= $cv_msg !== '' ? htmlspecialchars($cv_msg) : 'Si è verificato un errore, riprova.' ?>
+                    </div>
+                <?php endif; ?>
+
+                <form class="row g-3" action="invia-candidatura.php" method="post" enctype="multipart/form-data" novalidate>
+                    <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($csrf_token) ?>">
+
+                    <!-- Honeypot anti-spam: campo nascosto via CSS, non deve mai essere compilato -->
+                    <div class="d-none" aria-hidden="true">
+                        <label for="cv-website">Lascia vuoto questo campo</label>
+                        <input type="text" id="cv-website" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+
                     <div class="col-12 col-md-6">
                         <label for="cv-nome" class="form-label fs-7">Nome e cognome</label>
-                        <input type="text" class="form-control rounded-0" id="cv-nome" name="nome" required>
+                        <input type="text" class="form-control rounded-0" id="cv-nome" name="nome" maxlength="150" required>
                     </div>
                     <div class="col-12 col-md-6">
                         <label for="cv-email" class="form-label fs-7">Email</label>
@@ -20,7 +48,9 @@
                     </div>
                     <div class="col-12">
                         <label for="cv-file" class="form-label fs-7">Curriculum (PDF, max 5MB)</label>
-                        <input type="file" class="form-control rounded-0" id="cv-file" name="cv" accept="application/pdf" required>
+                        <input type="file" class="form-control rounded-0" id="cv-file" name="cv" accept="application/pdf" required
+                               aria-describedby="cv-file-help">
+                        <div id="cv-file-help" class="form-text fs-7">Formato accettato: PDF. Dimensione massima 5MB.</div>
                     </div>
                     <div class="col-12">
                         <div class="form-check">

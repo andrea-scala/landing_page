@@ -42,3 +42,14 @@ body {
 footer {
     margin-top: auto;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Rispetta la preferenza di sistema "riduci animazioni" per accessibilità (WCAG 2.3.3) */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
