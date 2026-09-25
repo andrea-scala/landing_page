@@ -19,7 +19,7 @@ $c = getContent('home', [
       <div class="col-12 col-lg-hero-cta d-flex column-gap-3">
         <?php foreach ($c['cta'] as $btn): ?>
           <a href="<?= citytel_e($btn['link'] ?? '#') ?>"
-             class="btn btn-primary btn-lg my-5 rounded-pill fs-6 px-lg-4 py-lg-3 p-3 flex-grow-1 flex-basis-0">
+             class="btn btn-primary btn-lg my-5 rounded-pill fs-7 fs-lg-6 px-lg-4 py-lg-3 p-3 flex-grow-1 flex-basis-0">
             <?= citytel_e($btn['testo'] ?? '') ?>
           </a>
         <?php endforeach; ?>
