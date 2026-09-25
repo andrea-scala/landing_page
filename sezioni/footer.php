@@ -1,7 +1,7 @@
 <!-- ===========================
      FOOTER LEGALE + MAPPA
 =========================== -->
-<footer class="bg-tech-dark text-white">
+<footer class="bg-tech-dark text-white" id="footer">
     <div style="height:320px; overflow:hidden">
         <iframe src="https://www.google.com/maps?q=Via+Macedonia+120,+80049+Somma+Vesuviana+NA&output=embed"
             style="width:100%; height:100%; border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"

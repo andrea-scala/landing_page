@@ -10,14 +10,17 @@
     font-size: calc(2rem + 2.1vw) !important;
     font-weight: 300;
 }
+
 @media (min-width: 1200px) {
     .display-5 {
         font-size: 5rem !important;
     }
 }
+
 h1.display-5.mt-4.mb-0.fw-bold.w-md-65 {
     line-height: 1.1;
 }
+
 /* ===== TIMELINE ORIZZONTALE ===== */
 .timeline-horizontal::before {
     content: "";
@@ -29,6 +32,7 @@ h1.display-5.mt-4.mb-0.fw-bold.w-md-65 {
     background-color: #0d6efd87;
     z-index: 0;
 }
+
 .timeline-dot {
     width: 16px;
     height: 16px;
@@ -39,16 +43,51 @@ h1.display-5.mt-4.mb-0.fw-bold.w-md-65 {
     z-index: 1;
     top: 6px;
 }
+
 /* ===== FONT SIZE HELPER ===== */
 .fs-7 {
-    font-size: 0.95rem !important; /* ~12px */
+    font-size: 0.95rem !important;
+    /* ~12px */
 }
+
 .fs-8 {
-    font-size: 0.90rem !important; /* ~11px */
+    font-size: 0.90rem !important;
+    /* ~11px */
 }
+
+#hero{
+    background-color: var(--color-bg-light);
+}
+
 @media (min-width: 768px) {
     .mx-md-5 {
         margin-right: calc(3rem * 2.3) !important;
         margin-left: calc(3rem * 2.3) !important;
+    }
+
+
+
+    #hero {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        background-image: url('../../assets/img/hero_bg.jpg')!important;
+    }
+
+    #hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg,
+                rgba(255, 255, 255, 0.75) 0%,
+                rgba(255, 255, 255, 0.35) 55%,
+                transparent 65%);
+        z-index: 0;
+    }
+
+    #hero>.container-fluid {
+        position: relative;
+        z-index: 1;
     }
 }

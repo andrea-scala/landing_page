@@ -20,7 +20,7 @@ section {
     background-color: var(--color-bg-light);
 }
 .bg-tech-dark {
-    background-color: var(--color-bg-dark);
+    background-color: var(--color-bg-dark)!important;
     color: white;
 }
 .bg-tech-dark h2,

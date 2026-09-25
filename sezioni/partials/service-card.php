@@ -1,4 +1,4 @@
-<div class="card service-card w-100 w-md-80 h-100 py-5 px-5 text-center rounded-0 d-flex flex-column gap-3 gap-md-1">
+<div class="card service-card w-100 w-md-80 h-100 py-5 px-5 text-center rounded-2 d-flex flex-column gap-3 gap-md-1">
     <?= $icon_svg ?>
     <h5 class="m-0"><?= htmlspecialchars($title) ?></h5>
     <div class="text-primary">

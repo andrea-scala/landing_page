@@ -1,0 +1,66 @@
+{
+    "badge": "Servizi",
+    "titolo": "Reti, impianti, sicurezza.",
+    "sottotitolo": "Massima qualità e affidabilità in ogni progetto: soluzioni su misura per ogni sfida tecnologica, dalla progettazione alla messa in servizio.",
+    "evidenza": [
+        {
+            "icon": "antenna",
+            "title": "Progettazione FTTH",
+            "items": [
+                "Fibra ottica fino a casa del cliente",
+                "Piani di Numerazione Internet TIM e Open Fiber",
+                "Progettazione su misura"
+            ]
+        },
+        {
+            "icon": "code",
+            "title": "Sviluppo software",
+            "items": [
+                "Applicazioni personalizzate",
+                "Gestionali su misura per le esigenze operative dell'azienda"
+            ]
+        },
+        {
+            "icon": "tools",
+            "title": "Impianti",
+            "items": ["Progettazione", "Installazione", "Messa in servizio"]
+        },
+        {
+            "icon": "network",
+            "title": "Cablaggi e reti LAN/WAN",
+            "items": ["Reti dati robuste e scalabili", "Manutenzione apparati attivi"]
+        },
+        {
+            "icon": "plug",
+            "title": "Posa e collaudo",
+            "items": ["Posa e giunzione", "Terminazione e collaudo", "Bassa latenza, alta affidabilità"]
+        },
+        {
+            "icon": "road",
+            "title": "Infrastrutture stradali e ripristini",
+            "items": ["Opere stradali", "Ripristini a norma", "Standard di qualità e sicurezza"]
+        }
+    ],
+    "altri": [
+        {
+            "icon": "solar-panel",
+            "title": "Impianti fotovoltaici",
+            "items": ["Installazione", "Manutenzione", "Alta efficienza energetica"]
+        },
+        {
+            "icon": "flame",
+            "title": "Sicurezza e antincendio",
+            "items": ["Impianti antincendio", "Antintrusione", "Controllo accessi"]
+        },
+        {
+            "icon": "video",
+            "title": "Videosorveglianza",
+            "items": ["Progettazione sistemi", "Controllo continuo degli ambienti"]
+        },
+        {
+            "icon": "cpu",
+            "title": "Cavi e precablati",
+            "items": ["Cavi preconnettorizzati", "Quadristica precablata testata e pronta all'uso"]
+        }
+    ]
+}

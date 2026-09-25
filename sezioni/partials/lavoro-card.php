@@ -1,13 +1,15 @@
-<div class="card lavoro-card w-100 h-100 rounded-0 d-flex flex-column overflow-hidden">
-    <img class="w-100" style="height:140px;object-fit:cover"
-         src="./assets/img/<?= htmlspecialchars($img) ?>" alt="<?= htmlspecialchars($title) ?>">
-    <div class="p-3 d-flex flex-column align-items-start flex-grow-1">
-        <h5 class="fs-6 fw-bold mb-1"><?= htmlspecialchars($title) ?></h5>
-        <p class="fs-7 text-secondary flex-grow-1 mb-2"><?= htmlspecialchars($description) ?></p>
-        <a href="<?= htmlspecialchars($url) ?>" target="_blank" rel="noopener"
-           class="fs-7 text-primary text-decoration-none">
-            Vai al sito <i class="bi bi-box-arrow-up-right ms-1"></i>
-        </a>
+<div class="card rounded-0 h-100 border-1 rounded-2 p-4 py-4 w-100 w-md-70">
+    <div class="img-container d-flex flex-column justify-content-center" style="min-height: 50px; height: 50px;">
+        <img src="./assets/img/<?= htmlspecialchars($img) ?>" class="card-img-top"
+            alt="<?= htmlspecialchars($title) ?>">
+    </div>
+    <div class="text-primary px-2">
+        <hr>
+    </div>
+    <div class="card-body flex-grow-1 d-flex flex-column justify-content-between gap-3 text-start p-0">
+        <!-- <h5 class="card-title"><?= htmlspecialchars($title) ?></h5> -->
+        <p class="card-text"><?= htmlspecialchars($description) ?></p>
+        <a href="<?= htmlspecialchars($url) ?>" target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary btn-lg rounded-pill fs-6  flex-basis-0">Vai al sito</a>
     </div>
 </div>
-

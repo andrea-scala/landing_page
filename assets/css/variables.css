@@ -1,6 +1,6 @@
 :root {
     /* ===== COLOR SYSTEM ===== */
-    --color-primary: #0d6efd;
+    --color-primary: #0b5ed7; /* invece di #0d6efd — sale sopra 4.5:1 su #f8f9fa */
     --color-primary-dark: #0a58ca;
     --color-text: #343a40;
     --color-border: #d8dee4;

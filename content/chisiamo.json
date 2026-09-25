@@ -1,0 +1,11 @@
+{
+    "badge": "Chi siamo",
+    "titolo": "Competenza tecnica, affidabilità totale.",
+    "paragrafo": "Citytel Sistem Srl nasce nel 2007 dall'esperienza ventennale di un team di tecnici specializzati in telecomunicazioni. Dal 2013 disponiamo di un laboratorio dedicato alla produzione di bretelle ottiche, pigtail e cablaggi ferroviari premontati. Dal 2023 abbiamo ampliato l'offerta con la progettazione FTTH e lo sviluppo software su misura. Lavoriamo con enti pubblici e aziende private, garantendo precisione, flessibilità e affidabilità in ogni progetto.",
+    "img_alt": "Team tecnico Citytel Sistem al lavoro",
+    "timeline": [
+        { "anno": "2007", "testo": "Entriamo sul mercato" },
+        { "anno": "2013", "testo": "Apriamo il nostro laboratorio" },
+        { "anno": "2023", "testo": "Nuove aree di competenza (FTTH, software, servizi su misura)" }
+    ]
+}

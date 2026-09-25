@@ -1,0 +1,25 @@
+{
+    "badge": "Lavori",
+    "titolo": "I nostri lavori",
+    "sottotitolo": "Le nostre attività raccontate nel dettaglio, ognuna sul proprio portale.",
+    "lista": [
+        {
+            "img": "loghi/logo-sestante.png",
+            "title": "EasySestante",
+            "description": "La piattaforma modulare per il monitoraggio intelligente di pazienti, risorse e ambienti.",
+            "url": "https:"
+        },
+        {
+            "img": "loghi/logo-easytrack.png",
+            "title": "EasyTrack",
+            "description": "La piattaforma modulare per il monitoraggio intelligente di pazienti, risorse e ambienti.",
+            "url": "https:"
+        },
+        {
+            "img": "loghi/logo-sestante.png",
+            "title": "EasySestante",
+            "description": "La piattaforma modulare per il monitoraggio intelligente di pazienti, risorse e ambienti.",
+            "url": "https:"
+        }
+    ]
+}

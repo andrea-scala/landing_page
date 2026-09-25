@@ -13,7 +13,7 @@ $cv_msg    = $_GET['cv_msg'] ?? '';
         <div class="row g-4">
             <div class="col-12 col-md-7">
                 <span class="badge text-bg-primary-inverso px-0 mt-0 mb-3 text-uppercase align-self-start">Lavora con noi</span>
-                <h1 class="mb-3 fw-bold">Entra nel team Citytel Sistem</h1>
+                <h1 class="mb-2 fw-bold">Entra nel team Citytel Sistem</h1>
                 <p class="lead w-md-65 fw-normal fs-6 text-justify manrope-paragrafi-regular m-0">Invia la tua candidatura:
                     valutiamo profili tecnici per i nostri progetti in ambito telecomunicazioni e impianti.</p>
             </div>
