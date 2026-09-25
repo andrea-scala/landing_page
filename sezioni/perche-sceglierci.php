@@ -12,13 +12,13 @@
             </div>
             <div class="col-12 col-lg-5">
                 <div class="row g-3">
-                    <div class="col-6 d-flex flex-column p-3 gap-1 m-0">
+                    <div class="col-12 col-lg-6 d-flex flex-column p-3 gap-1 m-0">
                         <span class="badge text-bg-primary-inverso px-0 mt-0 mb-2 text-uppercase align-self-start">CERTIFICAZIONI E NORMATIVE</span>
                         <span class="fs-7 fw-medium">ISO 9001 · 14001 · 45001</span>
                         <span class="fs-7 fw-medium">Legge 46/90 — cat. a-g</span>
                         <span class="fs-7 fw-medium">SOA OS19/III · OS30/II · OS5/I</span>
                     </div>
-                    <div class="col-6 d-flex flex-column p-3 gap-1 m-0">
+                    <div class="col-12 col-lg-6 d-flex flex-column p-3 gap-1 m-0">
                         <span class="badge text-bg-primary-inverso px-0 mt-0 mb-2 text-uppercase align-self-start">QUALIFICHE OPERATORI</span>
                         <span class="fs-7 fw-medium">TIM</span>
                         <span class="fs-7 fw-medium">Fastweb</span>
