@@ -17,7 +17,7 @@
     }
 }
 
-h1.display-5.mt-4.mb-0.fw-bold.w-md-65 {
+h1.display-5.mt-4.mb-0.fw-bold.w-lg-65 {
     line-height: 1.1;
 }
 
@@ -60,7 +60,7 @@ h1.display-5.mt-4.mb-0.fw-bold.w-md-65 {
 }
 
 @media (min-width: 768px) {
-    .mx-md-5 {
+    .mx-lg-5 {
         margin-right: calc(3rem * 2.3) !important;
         margin-left: calc(3rem * 2.3) !important;
     }

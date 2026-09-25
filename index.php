@@ -46,7 +46,7 @@
          NAVBAR
     =========================== -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-        <div class="container-fluid mx-md-5">
+        <div class="container-fluid mx-lg-5">
             <a class="navbar-brand fw-bold" href="#">
                 <img alt="placeholder_alt_text" class="img-fluid" style="height:50px;width:auto"
                     src="./assets/img/loghi/logo-citytel.png">

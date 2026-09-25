@@ -1,4 +1,4 @@
-<div class="card competenze-card w-100 w-md-55 p-4 text-center rounded-0 d-flex flex-column gap-3 gap-md-1">
+<div class="card competenze-card w-100 w-lg-55 p-4 text-center rounded-0 d-flex flex-column gap-3 gap-lg-1">
     <?= $icon_svg ?>
     <h6 class="m-0"><?= htmlspecialchars($title) ?></h6>
     <div class="text-primary">

@@ -49,7 +49,7 @@ $csrfToken = citytel_admin_csrf_token();
 <body class="bg-light">
 <div class="container py-5">
     <div class="row justify-content-center">
-        <div class="col-12 col-sm-8 col-md-5 col-lg-4">
+        <div class="col-12 col-sm-8 col-lg-5 col-lg-4">
             <h1 class="h4 mb-4 text-center">Pannello Admin</h1>
 
             <?php if ($errorMessage !== ''): ?>

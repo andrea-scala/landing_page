@@ -9,16 +9,16 @@ $cv_status = $_GET['cv_status'] ?? null;
 $cv_msg    = $_GET['cv_msg'] ?? '';
 ?>
 <section class="py-4 bg-light macro-section" id="lavora-con-noi">
-    <div class="container-fluid px-4 px-md-0 text-start section-padding-md py-5">
+    <div class="container-fluid px-4 px-lg-0 text-start section-padding-lg py-5">
         <div class="row g-4">
-            <div class="col-12 col-md-7">
+            <div class="col-12 col-lg-7">
                 <span class="badge text-bg-primary-inverso px-0 mt-0 mb-3 text-uppercase align-self-start">Lavora con noi</span>
                 <h1 class="mb-2 fw-bold">Entra nel team Citytel Sistem</h1>
-                <p class="lead w-md-65 fw-normal fs-6 text-justify manrope-paragrafi-regular m-0">Invia la tua candidatura:
+                <p class="lead w-lg-65 fw-normal fs-6 text-justify manrope-paragrafi-regular m-0">Invia la tua candidatura:
                     valutiamo profili tecnici per i nostri progetti in ambito telecomunicazioni e impianti.</p>
             </div>
 
-            <div class="col-12 col-md-5">
+            <div class="col-12 col-lg-5">
                 <?php if ($cv_status === 'ok'): ?>
                     <div class="alert alert-success rounded-0" role="alert">
                         Candidatura inviata con successo. Ti ricontatteremo al più presto.
@@ -38,11 +38,11 @@ $cv_msg    = $_GET['cv_msg'] ?? '';
                         <input type="text" id="cv-website" name="website" tabindex="-1" autocomplete="off">
                     </div>
 
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-lg-6">
                         <label for="cv-nome" class="form-label fs-7">Nome e cognome</label>
                         <input type="text" class="form-control rounded-0" id="cv-nome" name="nome" maxlength="150" required>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-lg-6">
                         <label for="cv-email" class="form-label fs-7">Email</label>
                         <input type="email" class="form-control rounded-0" id="cv-email" name="email" required>
                     </div>

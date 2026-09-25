@@ -1,4 +1,4 @@
-<div class="card rounded-0 h-100 border-1 rounded-2 p-4 py-4 w-100 w-md-70">
+<div class="card rounded-0 h-100 border-1 rounded-2 p-4 py-4 w-100 w-lg-70">
     <div class="img-container d-flex flex-column justify-content-center" style="min-height: 50px; height: 50px;">
         <img src="./assets/img/<?= htmlspecialchars($img) ?>" class="card-img-top"
             alt="<?= htmlspecialchars($title) ?>">
