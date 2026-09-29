@@ -25,23 +25,32 @@ h1.display-5.mt-4.mb-0.fw-bold.w-lg-65 {
 .timeline-horizontal::before {
     content: "";
     position: absolute;
-    top: 13px;
+    top: 24px;
     left: 17.66%;
     right: 17.66%;
     height: 2px;
-    background-color: #0d6efd87;
+    background-color: var(--color-border);
     z-index: 0;
 }
-
-.timeline-dot {
-    width: 16px;
-    height: 16px;
+.timeline-icon {
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    background-color: var(--bs-primary);
-    border: 3px solid #fff;
+    background: #fff;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
     position: relative;
     z-index: 1;
-    top: 6px;
+}
+/* Icona SVG inline dentro il cerchio della timeline (colore ereditato via currentColor) */
+.icon-timeline {
+    width: 24px;
+    height: 24px;
+    stroke-width: 1.5;
 }
 
 /* ===== FONT SIZE HELPER ===== */

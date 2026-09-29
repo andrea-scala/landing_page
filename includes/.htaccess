@@ -1,0 +1,3 @@
+# Gli helper sono solo logica PHP: mai raggiungibili direttamente via URL.
+# Apache 2.4+
+Require all denied

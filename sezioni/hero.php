@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/partials/content-helper.php';
+require_once __DIR__ . '/../includes/content-helper.php';
 
 $c = getContent('home', [
     'badge'       => '',

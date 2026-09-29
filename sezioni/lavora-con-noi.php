@@ -1,14 +1,4 @@
-<?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-$csrf_token = bin2hex(random_bytes(32));
-$_SESSION['csrf_token'] = $csrf_token;
-
-$cv_status = $_GET['cv_status'] ?? null;
-$cv_msg    = $_GET['cv_msg'] ?? '';
-?>
-<section class="py-4 bg-light macro-section" id="lavora-con-noi">
+<section class="py-4 bg-white macro-section" id="lavora-con-noi">
     <div class="container-fluid px-4 px-lg-0 text-start section-padding-lg py-5">
         <div class="row g-4">
             <div class="col-12 col-lg-7">
@@ -19,19 +9,7 @@ $cv_msg    = $_GET['cv_msg'] ?? '';
             </div>
 
             <div class="col-12 col-lg-5">
-                <?php if ($cv_status === 'ok'): ?>
-                    <div class="alert alert-success rounded-0" role="alert">
-                        Candidatura inviata con successo. Ti ricontatteremo al più presto.
-                    </div>
-                <?php elseif ($cv_status === 'error'): ?>
-                    <div class="alert alert-danger rounded-0" role="alert">
-                        <?= $cv_msg !== '' ? htmlspecialchars($cv_msg) : 'Si è verificato un errore, riprova.' ?>
-                    </div>
-                <?php endif; ?>
-
-                <form class="row g-3" action="invia-candidatura.php" method="post" enctype="multipart/form-data" novalidate>
-                    <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($csrf_token) ?>">
-
+                <form class="row g-3" novalidate>
                     <!-- Honeypot anti-spam: campo nascosto via CSS, non deve mai essere compilato -->
                     <div class="d-none" aria-hidden="true">
                         <label for="cv-website">Lascia vuoto questo campo</label>

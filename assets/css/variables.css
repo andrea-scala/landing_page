@@ -1,11 +1,23 @@
 :root {
     /* ===== COLOR SYSTEM ===== */
-    --color-primary: #8984ef; /* invece di #0d6efd — sale sopra 4.5:1 su #f8f9fa */
+    /* --color-primary: #8984ef; 
     --color-primary-dark: #3a3973;
     --color-text: #474554;
     --color-border: #d8dee4;
     --color-bg-light: #e8f4ff;
-    --color-bg-dark: #3a3973;
+    --color-bg-dark: #3a3973; */
+
+
+    --color-primary: #6B5CE7;
+    /* Viola vivido (ben visibile come colore) */
+    --color-primary-dark: #3A3973;
+    /* Usato per hover o elementi scuri */
+    --color-text: #232333;
+    --color-border: #E5E4F0;
+    --color-bg-light: #FAFAFE;
+    --color-bg-dark: #1A192D;
+
+
     /* ===== TYPOGRAPHY ===== */
     --font-body: 'Manrope', sans-serif;
     --font-heading: 'Poppins', sans-serif;
@@ -16,11 +28,11 @@
     --space-lg: 2rem;
     --space-xl: 4rem;
     /* ===== MARGIN ===== */
-    --hero-margin-top: 4.8rem;
+    --hero-margin-top: 4.36rem;
     /* ===== RADIUS ===== */
     --radius-lg: 12px;
     /* ===== SHADOWS ===== */
-    --shadow-hover: 0 6px 20px rgba(0,0,0,0.08);
+    --shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.08);
     /* ===== PADDING =====
        ATTENZIONE: 20rem = 320px. Verifica sia voluto,
        altrimenti riduci (es. 4-8rem). */

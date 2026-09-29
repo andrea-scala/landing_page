@@ -1,4 +1,4 @@
-<section class="py-4 macro-section bg-light" id="perche-sceglierci">
+<section class="py-4 macro-section bg-white" id="perche-sceglierci">
     <div class="container-fluid px-4 px-lg-0 section-padding-lg py-5">
         <div class="row align-items-center g-4 mb-4">
             <div class="col-12 col-lg-7">

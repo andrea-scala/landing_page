@@ -125,3 +125,7 @@
 .logo-strip>* {
     flex: 0 0 auto;
 }
+
+.nav-link:focus, .nav-link:hover {
+    color: var(--color-primary);
+}

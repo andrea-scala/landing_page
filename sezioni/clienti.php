@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/partials/content-helper.php';
+require_once __DIR__ . '/../includes/content-helper.php';
 
 $c = getContent('clienti', [
     'badge'       => 'Clienti',
@@ -8,7 +8,7 @@ $c = getContent('clienti', [
     'lista'       => [],
 ]);
 ?>
-<section class="py-4 bg-white macro-section" id="clienti">
+<section class="py-4 bg-light macro-section" id="clienti">
     <div class="container-fluid px-4 px-lg-0 text-start section-padding-lg py-5">
         <span class="badge text-bg-primary-inverso px-0 mt-0 mb-3 text-uppercase align-self-start"><?= citytel_e($c['badge']) ?></span>
         <h1 class="mb-2 fw-bold w-lg-65"><?= citytel_e($c['titolo']) ?></h1>

@@ -1,0 +1,3 @@
+# I JSON dei contenuti li legge solo PHP lato server: blocco accesso diretto via URL.
+# Apache 2.4+
+Require all denied

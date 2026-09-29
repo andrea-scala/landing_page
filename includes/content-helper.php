@@ -11,7 +11,7 @@ declare(strict_types=1);
  * Richiede PHP >= 8.1 (usa array_is_list()).
  */
 
-const CITYTEL_CONTENT_DIR = __DIR__ . '/../../content/';
+const CITYTEL_CONTENT_DIR = __DIR__ . '/../content/';
 
 if (!function_exists('citytel_valid_page_name')) {
     /**
