@@ -58,50 +58,6 @@ if (!function_exists('citytel_load_json_file')) {
     }
 }
 
-if (!function_exists('citytel_write_json_file')) {
-    /**
-     * Scrive un array come JSON pretty-printed su file, con lock esclusivo
-     * per evitare corruzioni in caso di salvataggi concorrenti.
-     *
-     * @return bool true se la scrittura è andata a buon fine.
-     */
-    function citytel_write_json_file(string $filePath, array $data): bool
-    {
-        $json = json_encode(
-            $data,
-            JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
-        );
-
-        if ($json === false) {
-            error_log(sprintf('content-helper: json_encode fallito per "%s" — %s', $filePath, json_last_error_msg()));
-            return false;
-        }
-
-        $handle = fopen($filePath, 'c+');
-
-        if ($handle === false) {
-            error_log(sprintf('content-helper: impossibile aprire "%s" in scrittura', $filePath));
-            return false;
-        }
-
-        $ok = false;
-
-        if (flock($handle, LOCK_EX)) {
-            ftruncate($handle, 0);
-            rewind($handle);
-            $ok = fwrite($handle, $json) !== false;
-            fflush($handle);
-            flock($handle, LOCK_UN);
-        } else {
-            error_log(sprintf('content-helper: impossibile acquisire il lock su "%s"', $filePath));
-        }
-
-        fclose($handle);
-
-        return $ok;
-    }
-}
-
 if (!function_exists('getContent')) {
     /**
      * Carica i contenuti editabili di una pagina/sezione dal relativo file JSON.
