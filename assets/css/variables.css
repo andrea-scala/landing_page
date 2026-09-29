@@ -1,11 +1,11 @@
 :root {
     /* ===== COLOR SYSTEM ===== */
-    --color-primary: #0b5ed7; /* invece di #0d6efd — sale sopra 4.5:1 su #f8f9fa */
-    --color-primary-dark: #0a58ca;
-    --color-text: #343a40;
+    --color-primary: #8984ef; /* invece di #0d6efd — sale sopra 4.5:1 su #f8f9fa */
+    --color-primary-dark: #3a3973;
+    --color-text: #474554;
     --color-border: #d8dee4;
     --color-bg-light: #e8f4ff;
-    --color-bg-dark: #0a3d62;
+    --color-bg-dark: #3a3973;
     /* ===== TYPOGRAPHY ===== */
     --font-body: 'Manrope', sans-serif;
     --font-heading: 'Poppins', sans-serif;

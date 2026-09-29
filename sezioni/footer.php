@@ -13,7 +13,7 @@
         <div class="row g-4">
             <div class="col-lg-5">
                 <h5 class="fw-bold mb-3">Citytel Sistem Srl</h5>
-                <p class="mb-1">Via Macedonia, 120 - 80049 Somma Vesuviana (NA)</p>
+                <p class="mb-1">Via Pigno, 159 - 80049 Somma Vesuviana (NA)</p>
                 <p class="mb-1">P.IVA: 05810491216</p>
                 <p class="mb-1">Capitale sociale: € 50.000,00 i.v.</p>
                 <p class="mb-0">REA: NA - 77825</p>
@@ -33,6 +33,8 @@
                 <h6 class="fw-bold mb-3">Contatti</h6>
                 <p class="mb-1">PEC: <a href="mailto:citytel.sistem@legalmail.it"
                         class="text-white">citytel.sistem@legalmail.it</a></p>
+                <p class="mb-1"><a href="mailto:info@citytelsistem.it" class="text-white">info@citytelsistem.it</a></p>
+                <p class="mb-1"><a href="mailto:amministrazione@citytelsistem.it" class="text-white">amministrazione@citytelsistem.it</a></p>
                 <p class="mb-0">Tel: <a href="tel:+390818988777" class="text-white">+39 0818988777</a></p>
             </div>
         </div>

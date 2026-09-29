@@ -23,44 +23,74 @@
         {
             "icon": "tools",
             "title": "Impianti",
-            "items": ["Progettazione", "Installazione", "Messa in servizio"]
+            "items": [
+                "Progettazione",
+                "Installazione",
+                "Messa in servizio",
+                "Collaudo"
+            ]
         },
         {
             "icon": "network",
             "title": "Cablaggi e reti LAN/WAN",
-            "items": ["Reti dati robuste e scalabili", "Manutenzione apparati attivi"]
+            "items": [
+                "Reti dati robuste e scalabili",
+                "Manutenzione apparati attivi"
+            ]
         },
         {
             "icon": "plug",
             "title": "Posa e collaudo",
-            "items": ["Posa e giunzione", "Terminazione e collaudo", "Bassa latenza, alta affidabilità"]
+            "items": [
+                "Posa e giunzione",
+                "Terminazione e collaudo",
+                "Bassa latenza, alta affidabilità"
+            ]
         },
         {
-            "icon": "road",
-            "title": "Infrastrutture stradali e ripristini",
-            "items": ["Opere stradali", "Ripristini a norma", "Standard di qualità e sicurezza"]
+            "icon": "video",
+            "title": "Videosorveglianza",
+            "items": [
+                "Progettazione sistemi",
+                "Controllo continuo degli ambienti"
+            ]
         }
     ],
     "altri": [
         {
             "icon": "solar-panel",
             "title": "Impianti fotovoltaici",
-            "items": ["Installazione", "Manutenzione", "Alta efficienza energetica"]
+            "items": [
+                "Installazione",
+                "Manutenzione",
+                "Alta efficienza energetica"
+            ]
         },
         {
             "icon": "flame",
             "title": "Sicurezza e antincendio",
-            "items": ["Impianti antincendio", "Antintrusione", "Controllo accessi"]
+            "items": [
+                "Impianti antincendio",
+                "Antintrusione",
+                "Controllo accessi"
+            ]
         },
         {
-            "icon": "video",
-            "title": "Videosorveglianza",
-            "items": ["Progettazione sistemi", "Controllo continuo degli ambienti"]
+            "icon": "road",
+            "title": "Infrastrutture stradali e ripristini",
+            "items": [
+                "Opere stradali",
+                "Ripristini a norma",
+                "Standard di qualità e sicurezza"
+            ]
         },
         {
             "icon": "cpu",
             "title": "Cavi e precablati",
-            "items": ["Cavi preconnettorizzati", "Quadristica precablata testata e pronta all'uso"]
+            "items": [
+                "Cavi preconnettorizzati",
+                "Quadristica precablata testata e pronta all'uso"
+            ]
         }
     ]
 }

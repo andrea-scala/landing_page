@@ -9,19 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- SEO -->
     <meta name="description"
-        content="EasyTrack: Monitoraggio, Sicurezza e Ottimizzazione per infrastrutture e processi sanitari.">
-    <meta name="author" content="EasyTrack">
+        content="CityTel Sistem Srl è un'azienda specializzata in telecomunicazioni e impianti, con un team tecnico esperto e qualificato. Offriamo soluzioni innovative e personalizzate per soddisfare le esigenze dei nostri clienti.">
+    <meta name="author" content="CityTel Sistem Srl">
     <!-- Open Graph -->
-    <meta property="og:title" content="EasyTrack ® Monitoraggio, Sicurezza e Ottimizzazione">
+    <meta property="og:title" content="CityTel Sistem Srl">
     <meta property="og:description"
-        content="Soluzione integrata per monitoraggio, sicurezza e ottimizzazione operativa.">
+        content="CityTel Sistem Srl è un'azienda specializzata in telecomunicazioni e impianti, con un team tecnico esperto e qualificato. Offriamo soluzioni innovative e personalizzate per soddisfare le esigenze dei nostri clienti.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/assets/img/og-image.jpg">
-    <meta property="og:url" content="https://www.easytrack.it">
+    <meta property="og:url" content="https://www.citytel.it">
     <!-- Favicon -->
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/icons/favicon/site.webmanifest">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-    <title>EasyTrack® Monitoraggio, Sicurezza e Ottimizzazione</title>
+    <title>CityTel Sistem Srl</title>
     <!-- ===== FRAMEWORKS ===== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -47,9 +51,9 @@
     =========================== -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
         <div class="container-fluid mx-lg-5">
-            <a class="navbar-brand fw-bold" href="#">
+            <a class="navbar-brand fw-bold pb-0" href="#">
                 <img alt="placeholder_alt_text" class="img-fluid" style="height:50px;width:auto"
-                    src="./assets/img/loghi/logo-citytel.png">
+                    src="./assets/img/loghi/logo-citytel.svg">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
