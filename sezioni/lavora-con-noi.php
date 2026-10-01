@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary rounded-pill align-self-center px-3 py-2">Invia candidatura</button>
+                        <button type="submit" class="btn btn-primary rounded-pill align-self-center px-4 py-2">Invia candidatura</button>
                     </div>
                 </form>
             </div>

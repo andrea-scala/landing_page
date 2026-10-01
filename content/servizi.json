@@ -4,7 +4,7 @@
     "sottotitolo": "Massima qualità e affidabilità in ogni progetto: soluzioni su misura per ogni sfida tecnologica, dalla progettazione alla messa in servizio.",
     "evidenza": [
         {
-            "icon": "antenna",
+            "icon": "route",
             "title": "Progettazione FTTH",
             "items": [
                 "Fibra ottica fino a casa del cliente",
@@ -13,7 +13,7 @@
             ]
         },
         {
-            "icon": "code",
+            "icon": "terminal",
             "title": "Sviluppo software",
             "items": [
                 "Applicazioni personalizzate",
@@ -31,7 +31,7 @@
             ]
         },
         {
-            "icon": "network",
+            "icon": "sitemap",
             "title": "Cablaggi e reti LAN/WAN",
             "items": [
                 "Reti dati robuste e scalabili",
@@ -39,7 +39,7 @@
             ]
         },
         {
-            "icon": "plug",
+            "icon": "bolt",
             "title": "Posa e collaudo",
             "items": [
                 "Posa e giunzione",
@@ -58,7 +58,7 @@
     ],
     "altri": [
         {
-            "icon": "solar-panel",
+            "icon": "sun-electricity",
             "title": "Impianti fotovoltaici",
             "items": [
                 "Installazione",
@@ -76,7 +76,7 @@
             ]
         },
         {
-            "icon": "road",
+            "icon": "cone",
             "title": "Infrastrutture stradali e ripristini",
             "items": [
                 "Opere stradali",
@@ -85,7 +85,7 @@
             ]
         },
         {
-            "icon": "cpu",
+            "icon": "plug",
             "title": "Cavi e precablati",
             "items": [
                 "Cavi preconnettorizzati",

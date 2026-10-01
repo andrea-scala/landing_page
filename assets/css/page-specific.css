@@ -100,3 +100,16 @@ h1.display-5.mt-4.mb-0.fw-bold.w-lg-65 {
         z-index: 1;
     }
 }
+
+#lavoro-card img{
+    height: 50px!important;
+}
+
+#lavoro-card a{
+    color: var(--color-primary)!important;
+    text-align: end;
+    text-decoration: none;
+}
+#lavoro-card a:hover{
+    color: var(--color-primary-dark)!important;
+}

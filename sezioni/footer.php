@@ -1,52 +1,142 @@
+<?php
+require_once __DIR__ . '/../includes/icon-helper.php';
+require_once __DIR__ . '/../includes/content-helper.php';
+
+$c = getContent('footer', [
+    'info' => [
+        'titolo' => 'Citytel Sistem Srl',
+        'voci' => [],
+    ],
+    'mappa' => [
+        'src' => '',
+        'titolo' => 'Mappa della sede',
+    ],
+    'sezioni' => [
+        'titolo' => 'Sezioni',
+        'voci' => [],
+    ],
+    'contatti' => [
+        'titolo' => 'Contatti',
+        'voci' => [],
+    ],
+    'social' => [
+        'titolo' => 'Social',
+        'voci' => [],
+    ],
+    'legale' => [
+        'copyright' => 'Tutti i diritti riservati',
+        'voci' => [],
+    ],
+]);
+
+$info = $c['info'] ?? [];
+$infoTitolo = $info['titolo'] ?? 'Citytel Sistem Srl';
+$infoVoci = $info['voci'] ?? [];
+
+$mappa = $c['mappa'] ?? [];
+$mappaSrc = $mappa['src'] ?? '';
+$mappaTitolo = $mappa['titolo'] ?? 'Mappa della sede';
+
+$sezioni = $c['sezioni'] ?? [];
+$sezioniTitolo = $sezioni['titolo'] ?? 'Sezioni';
+$sezioniVoci = $sezioni['voci'] ?? [];
+
+$contatti = $c['contatti'] ?? [];
+$contattiTitolo = $contatti['titolo'] ?? 'Contatti';
+$contattiVoci = $contatti['voci'] ?? [];
+
+$social = $c['social'] ?? [];
+$socialTitolo = $social['titolo'] ?? 'Social';
+$socialVoci = $social['voci'] ?? [];
+
+$legale = $c['legale'] ?? [];
+$legaleCopyright = $legale['copyright'] ?? '';
+$legaleVoci = $legale['voci'] ?? [];
+?>
 <!-- ===========================
      FOOTER LEGALE + MAPPA
 =========================== -->
 <footer class="bg-tech-dark text-white" id="footer">
     <div style="height:320px; overflow:hidden">
-        <iframe src="https://www.google.com/maps?q=Via+Macedonia+120,+80049+Somma+Vesuviana+NA&output=embed"
-            style="width:100%; height:100%; border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            title="Sede Citytel Sistem Srl - Via Macedonia 120, Somma Vesuviana (NA)">
+        <iframe src="<?= citytel_e($mappaSrc) ?>" style="width:100%; height:100%; border:0" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="<?= citytel_e($mappaTitolo) ?>">
         </iframe>
     </div>
 
-    <div class="container py-5">
+    <div class="container-fluid d-flex flex-column pt-5 px-5">
         <div class="row g-4">
-            <div class="col-lg-5">
-                <h5 class="fw-bold mb-3">Citytel Sistem Srl</h5>
-                <p class="mb-1">Via Pigno, 159 - 80049 Somma Vesuviana (NA)</p>
-                <p class="mb-1">P.IVA: 05810491216</p>
-                <p class="mb-1">Capitale sociale: € 50.000,00 i.v.</p>
-                <p class="mb-0">REA: NA - 77825</p>
-            </div>
-            <div class="col-lg-3">
-                <h6 class="fw-bold mb-3">Sezioni</h6>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#chi-siamo" class="text-white text-decoration-none">Chi siamo</a></li>
-                    <li class="mb-2"><a href="#servizi" class="text-white text-decoration-none">Servizi</a></li>
-                    <li class="mb-2"><a href="#lavori" class="text-white text-decoration-none">Lavori</a></li>
-                    <li class="mb-2"><a href="#perche-sceglierci" class="text-white text-decoration-none">Perché
-                            sceglierci</a></li>
-                    <li class="mb-2"><a href="#clienti" class="text-white text-decoration-none">Clienti</a></li>
+            <div class="col-lg-4">
+                <h6 class="fw-bold mb-3"><?= citytel_e($infoTitolo) ?></h6>
+                <ul class="list-group">
+                    <?php foreach ($infoVoci as $v): ?>
+                        <li class="list-group-item bg-transparent border-0 px-0 py-1 text-white">
+                            <?php if (!empty($v['titolo'])): ?>
+                                <?= citytel_e($v['titolo']) ?>:
+                            <?php endif; ?>
+                            <?php if (!empty($v['href'])): ?>
+                                <a href="<?= citytel_e($v['href']) ?>"
+                                    class="text-white"><?= citytel_e($v['testo'] ?? '') ?></a>
+                            <?php else: ?>
+                                <?= citytel_e($v['testo'] ?? '') ?>
+                            <?php endif; ?>
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
-            <div class="col-lg-4">
-                <h6 class="fw-bold mb-3">Contatti</h6>
-                <p class="mb-1">PEC: <a href="mailto:citytel.sistem@legalmail.it"
-                        class="text-white">citytel.sistem@legalmail.it</a></p>
-                <p class="mb-1"><a href="mailto:info@citytelsistem.it" class="text-white">info@citytelsistem.it</a></p>
-                <p class="mb-1"><a href="mailto:amministrazione@citytelsistem.it" class="text-white">amministrazione@citytelsistem.it</a></p>
-                <p class="mb-0">Tel: <a href="tel:+390818988777" class="text-white">+39 0818988777</a></p>
+
+            <div class="col-lg-3">
+                <h6 class="fw-bold mb-3"><?= citytel_e($sezioniTitolo) ?></h6>
+                <ul class="list-group">
+                    <?php foreach ($sezioniVoci as $v): ?>
+                        <li class="list-group-item bg-transparent border-0 px-0 py-1">
+                            <a href="<?= citytel_e($v['href'] ?? '#') ?>"
+                                class="text-white text-decoration-none"><?= citytel_e($v['titolo'] ?? '') ?></a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+
+            <div class="col-lg-3">
+                <h6 class="fw-bold mb-3"><?= citytel_e($contattiTitolo) ?></h6>
+                <ul class="list-group">
+                    <?php foreach ($contattiVoci as $v): ?>
+                        <li class="list-group-item bg-transparent border-0 px-0 py-1 text-white">
+                            <?= citytel_e($v['titolo'] ?? '') ?>: <a href="<?= citytel_e($v['href'] ?? '#') ?>"
+                                class="text-white"><?= citytel_e($v['testo'] ?? '') ?></a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+
+            <div class="col-lg-2">
+                <h6 class="fw-bold mb-3"><?= citytel_e($socialTitolo) ?></h6>
+                <ul class="list-group list-group-horizontal">
+                    <?php foreach ($socialVoci as $v): ?>
+                        <li class="list-group-item bg-transparent border-0 ps-0">
+                            <a href="<?= citytel_e($v['href'] ?? '#') ?>" target="_blank" rel="noopener noreferrer"
+                                aria-label="<?= citytel_e($v['ariaLabel'] ?? '') ?>"><?= citytel_load_icon($v['icona'] ?? '', 'text-white', 'social') ?></a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
             </div>
         </div>
 
-        <hr class="border-secondary mt-4 mb-3">
-
-        <p class="small text-center mb-0">
-            &copy; <?php echo date('Y'); ?> Citytel Sistem Srl. Tutti i diritti riservati |
-            <a href="sezioni/legal/privacy-policy.php" class="text-white text-decoration-underline">Privacy Policy</a> |
-            <a href="sezioni/legal/cookie-policy.php" class="text-white text-decoration-underline">Cookie Policy</a> |
-            <a href="sezioni/legal/accessibilita.php" class="text-white text-decoration-underline">Dichiarazione di
-                Accessibilità</a>
-        </p>
+        <hr class="border-secondary mt-4 mb-0">
+        <div id="copyright_container" class="row py-2 gx-0 align-items-center justify-content-center">
+            <div class="col-12 col-lg-auto">
+                <h6 class="small fw-normal text-center mb-2 mb-lg-0 me-lg-4">&copy; <?= date('Y') ?>
+                    <?= citytel_e($legaleCopyright) ?></h6>
+            </div>
+            <div class="col-12 col-lg-auto">
+                <ul class="list-group small list-group-horizontal justify-content-center flex-wrap">
+                    <?php foreach ($legaleVoci as $v): ?>
+                        <li class="list-group-item bg-transparent border-0 text-center py-1">
+                            <a href="<?= citytel_e($v['href'] ?? '#') ?>"
+                                class="text-white text-decoration-underline"><?= citytel_e($v['titolo'] ?? '') ?></a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        </div>
     </div>
 </footer>

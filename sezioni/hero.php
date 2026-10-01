@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../includes/content-helper.php';
 
-$c = getContent('home', [
+$c = getContent('hero', [
     'badge'       => '',
     'titolo'      => '',
     'sottotitolo' => '',
