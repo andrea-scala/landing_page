@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="./assets/css/layout-utils.css">
     <link rel="stylesheet" href="./assets/css/spacing-overrides.css">
     <link rel="stylesheet" href="./assets/css/page-specific.css">
+    <link rel="stylesheet" href="./assets/css/smooth-css/style.css">
 </head>
 
 <body>
@@ -85,6 +86,7 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/smooth-js/main.js"></script>
 </body>
 
 </html>
