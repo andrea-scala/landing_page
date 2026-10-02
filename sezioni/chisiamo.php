@@ -25,7 +25,7 @@ $c = getContent('chisiamo', [
                 <div class="row g-0 text-center">
                     <?php foreach ($c['timeline'] as $tappa): ?>
                         <div class="col-4">
-                            <div class="timeline-icon mx-auto mb-3">
+                            <div class="timeline-icon-div mx-auto mb-3">
                                 <?php // Icona SVG inline (decorativa): l'helper ritorna il markup completo, niente <i class="bi ..."> ?>
                                 <?= citytel_load_icon($tappa['icon'] ?? '', 'icon-timeline', 'timeline') ?>
                             </div>

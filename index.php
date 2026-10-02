@@ -81,6 +81,7 @@
         <?php require 'sezioni/perche-sceglierci.php'; ?>
         <?php require 'sezioni/clienti.php'; ?>
         <?php require 'sezioni/lavora-con-noi.php'; ?>
+        <?php require 'sezioni/partials/back-to-top.php'; ?>
     </main>
     <?php require 'sezioni/footer.php'; ?>
     <!-- Bootstrap JS -->
