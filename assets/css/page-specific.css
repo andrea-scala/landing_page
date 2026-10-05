@@ -32,6 +32,7 @@ h1.display-5.mt-4.mb-0.fw-bold.w-lg-65 {
     background-color: var(--color-border);
     z-index: 0;
 }
+
 .timeline-icon-div {
     width: 48px;
     height: 48px;
@@ -46,6 +47,7 @@ h1.display-5.mt-4.mb-0.fw-bold.w-lg-65 {
     position: relative;
     z-index: 1;
 }
+
 /* Icona SVG inline dentro il cerchio della timeline (colore ereditato via currentColor) */
 .icon-timeline {
     width: 24px;
@@ -65,7 +67,7 @@ h1.display-5.mt-4.mb-0.fw-bold.w-lg-65 {
     /* ~11px */
 }
 
-#hero{
+#hero {
     background-color: var(--color-bg-light);
 }
 
@@ -83,7 +85,8 @@ h1.display-5.mt-4.mb-0.fw-bold.w-lg-65 {
         background-repeat: no-repeat;
         position: relative;
         /* background-image: url('../../assets/img/hero_bg (3).jpg')!important; */
-        background-color: #fff
+        /* background-color: #fff */
+        height: calc(100vh - var(--hero-margin-top) - 1px)
     }
 
     #hero::before {
@@ -101,17 +104,40 @@ h1.display-5.mt-4.mb-0.fw-bold.w-lg-65 {
         position: relative;
         z-index: 1;
     }
+
+
 }
 
-#lavoro-card img{
-    height: 50px!important;
+#lavoro-card img {
+    height: 50px !important;
 }
 
-#lavoro-card a{
-    color: var(--color-primary)!important;
+#lavoro-card a {
+    color: var(--color-primary) !important;
     text-align: end;
     text-decoration: none;
 }
-#lavoro-card a:hover{
-    color: var(--color-primary-dark)!important;
+
+#lavoro-card a:hover {
+    color: var(--color-primary-dark) !important;
+}
+
+/* 
+.card.service-card h6{
+
+} */
+
+@media screen and (max-width: 767px) {
+    .card.service-card h6 {
+        display: block;
+        /* Forza l'elemento a comportarsi come un blocco */
+        white-space: nowrap;
+        /* Impedisce al testo di andare a capo */
+        overflow: hidden;
+        /* Nasconde la parte di testo in eccesso */
+        text-overflow: ellipsis;
+        /* Aggiunge i tre puntini (...) alla fine del taglio */
+
+        max-width: 100%;
+    }
 }

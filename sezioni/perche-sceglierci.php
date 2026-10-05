@@ -3,7 +3,7 @@
         <div class="row align-items-center g-4 mb-4">
             <div class="col-12 col-lg-7">
                 <span class="badge text-bg-primary-inverso px-0 mt-0 mb-3 text-uppercase align-self-start">Perché sceglierci</span>
-                <h1 class="mb-2 fw-bold w-lg-65">Perché scegliere Citytel Sistem</h1>
+                <h2 class="mb-2 fw-bold w-lg-65">Perché scegliere Citytel Sistem</h1>
                 <p class="lead fw-normal mb-4 w-lg-70 fs-6 text-justify manrope-paragrafi-regular">
                     Certificazioni, abilitazioni di legge e attestazioni riconosciute: lavoriamo secondo
                     standard verificabili, con la garanzia che ogni progetto sia conforme dalla progettazione
