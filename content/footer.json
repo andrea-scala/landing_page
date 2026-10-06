@@ -21,30 +21,30 @@
     },
     "mappa": {
         "src": "https://www.google.com/maps?q=Via+Pigno+159,+80049+Somma+Vesuviana+NA&output=embed",
-        "titolo": "Sede Citytel Sistem Srl - Via Pigno, 159, Somma Vesuviana (NAa)"
+        "titolo": "Sede Citytel Sistem Srl - Via Pigno, 159, Somma Vesuviana (NA)"
     },
     "sezioni": {
         "titolo": "Sezioni",
         "voci": [
             {
                 "titolo": "Chi siamo",
-                "href": "#chi-siamo"
+                "href": "/#chi-siamo"
             },
             {
                 "titolo": "Servizi",
-                "href": "#servizi"
+                "href": "/#servizi"
             },
             {
                 "titolo": "Lavori",
-                "href": "#lavori"
+                "href": "/#lavori"
             },
             {
                 "titolo": "Perché sceglierci",
-                "href": "#perche-sceglierci"
+                "href": "/#perche-sceglierci"
             },
             {
                 "titolo": "Clienti",
-                "href": "#clienti"
+                "href": "/#clienti"
             }
         ]
     },
@@ -113,15 +113,15 @@
         "voci": [
             {
                 "titolo": "Privacy Policy",
-                "href": "sezioni/legal/privacy-policy.php"
+                "href": "/sezioni/legal/privacy-policy.php"
             },
             {
                 "titolo": "Cookie Policy",
-                "href": "sezioni/legal/cookie-policy.php"
+                "href": "/sezioni/legal/cookie-policy.php"
             },
             {
                 "titolo": "Dichiarazione di Accessibilità",
-                "href": "sezioni/legal/accessibilita.php"
+                "href": "/sezioni/legal/accessibilita.php"
             }
         ]
     }

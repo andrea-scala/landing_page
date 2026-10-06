@@ -1,15 +1,14 @@
+<?php $pageTitle = 'Dichiarazione di Accessibilità - Citytel Sistem Srl'; ?>
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dichiarazione di Accessibilità - Citytel Sistem Srl</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/variables.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
+    <?php require __DIR__ . '/../partials/head.php'; ?>
 </head>
 <body>
-<div class="container py-5" style="max-width: 800px;">
+<?php require __DIR__ . '/../partials/navbar.php'; ?>
+<main class="navbar-offset">
+<section class="bg-white macro-section">
+<div class="container max-w-800">
     <h1 class="mb-4">Dichiarazione di Accessibilità</h1>
     <p><em>Ultimo aggiornamento: <?php echo date('d/m/Y'); ?></em></p>
     <p>
@@ -49,7 +48,11 @@
     <p>
         Il Titolare si impegna a rispondere alle segnalazioni entro un termine ragionevole.
     </p>
-    <a href="/" class="btn btn-primary mt-4">&larr; Torna al sito</a>
 </div>
+</section>
+</main>
+<?php require __DIR__ . '/../footer.php'; ?>
+<!-- Bootstrap JS (serve al toggler della navbar) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

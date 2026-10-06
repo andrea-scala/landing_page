@@ -21,6 +21,10 @@
 .hero-mt {
     margin-top: var(--hero-margin-top) !important;
 }
+/* Offset sotto la navbar fixed-top per pagine senza hero (es. pagine legali). */
+.navbar-offset {
+    margin-top: var(--hero-margin-top);
+}
 .badge {
     letter-spacing: 0.1em !important;
 }
@@ -37,5 +41,3 @@
 /* .row {
     --bs-gutter-x: 0 !important;
 } */
-
-

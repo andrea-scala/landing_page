@@ -1,5 +1,5 @@
 <div class="card rounded-0 h-100 border-1 rounded-2 px-5 py-5 w-100" id="lavoro-card">
-    <div class="img-container" style="min-height: 50px; height: 50px;">
+    <div class="img-container lavoro-card-logo">
         <img src="./assets/img/<?= htmlspecialchars($img) ?>" class="card-img-top img-fluid"
             alt="<?= htmlspecialchars($title) ?>">
     </div>

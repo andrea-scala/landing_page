@@ -1,78 +1,18 @@
 <?php if (session_status() === PHP_SESSION_NONE) {
     session_start();
-} ?>
+}
+// Parametri del partial head (home: con Open Graph).
+$pageOg = true;
+?>
 <!DOCTYPE html>
 <html lang="it">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- SEO -->
-    <meta name="description"
-        content="CityTel Sistem Srl è un'azienda specializzata in telecomunicazioni e impianti, con un team tecnico esperto e qualificato. Offriamo soluzioni innovative e personalizzate per soddisfare le esigenze dei nostri clienti.">
-    <meta name="author" content="CityTel Sistem Srl">
-    <!-- Open Graph -->
-    <meta property="og:title" content="CityTel Sistem Srl">
-    <meta property="og:description"
-        content="CityTel Sistem Srl è un'azienda specializzata in telecomunicazioni e impianti, con un team tecnico esperto e qualificato. Offriamo soluzioni innovative e personalizzate per soddisfare le esigenze dei nostri clienti.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="/assets/img/og-image.jpg">
-    <meta property="og:url" content="https://www.citytel.it">
-    <!-- Favicon -->
-    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/img/icons/favicon/site.webmanifest">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-    <title>CityTel Sistem Srl</title>
-    <!-- ===== FRAMEWORKS ===== -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- ===== FONTS ===== -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- ===== DESIGN SYSTEM LAYER ===== -->
-    <link rel="stylesheet" href="./assets/css/variables.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/components.css">
-    <link rel="stylesheet" href="./assets/css/layout-utils.css">
-    <link rel="stylesheet" href="./assets/css/spacing-overrides.css">
-    <link rel="stylesheet" href="./assets/css/page-specific.css">
-    <link rel="stylesheet" href="./assets/css/smooth-css/style.css">
+    <?php require __DIR__ . '/sezioni/partials/head.php'; ?>
 </head>
 
 <body>
-    <!-- ===========================
-         NAVBAR
-    =========================== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-        <div class="container-fluid mx-lg-5">
-            <a class="navbar-brand fw-bold pb-0" href="#">
-                <img alt="placeholder_alt_text" class="img-fluid" style="height:50px;width:auto"
-                    src="./assets/img/loghi/logo-citytel.svg">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#chi-siamo">Chi siamo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#lavori">Lavori</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#perche-sceglierci">Perchè sceglierci</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#clienti">Clienti</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#lavora-con-noi">Lavora con noi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#footer">Contatti</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php require __DIR__ . '/sezioni/partials/navbar.php'; ?>
     <main>
         <?php require 'sezioni/hero.php'; ?>
         <?php require 'sezioni/chisiamo.php'; ?>

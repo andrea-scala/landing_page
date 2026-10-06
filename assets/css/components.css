@@ -74,6 +74,39 @@
     padding: 5rem 0;
 }
 
+/* ===== NAVBAR ===== */
+/* Logo in navbar: altezza fissa, larghezza proporzionale. */
+.navbar-logo {
+    height: 50px;
+    width: auto;
+}
+
+/* ===== HERO ===== */
+/* Video decorativo di sfondo della hero (ridotto al 90%). */
+.hero-video {
+    scale: .9;
+}
+
+/* ===== FOOTER ===== */
+/* Contenitore della mappa Google embed: altezza fissa, iframe a riempimento. */
+.footer-map {
+    height: 320px;
+    overflow: hidden;
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ===== LAVORI ===== */
+/* Contenitore del logo nella card lavoro: altezza fissa a 50px. */
+.lavoro-card-logo {
+    min-height: 50px;
+    height: 50px;
+}
+
 /* ===== ICON DIVIDER ===== */
 .section-divider-icon {
     width: 100%;

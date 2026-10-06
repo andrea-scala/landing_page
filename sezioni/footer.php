@@ -57,8 +57,8 @@ $legaleVoci = $legale['voci'] ?? [];
      FOOTER LEGALE + MAPPA
 =========================== -->
 <footer class="bg-tech-dark text-white" id="footer">
-    <div style="height:320px; overflow:hidden">
-        <iframe src="<?= citytel_e($mappaSrc) ?>" style="width:100%; height:100%; border:0" loading="lazy"
+    <div class="footer-map">
+        <iframe src="<?= citytel_e($mappaSrc) ?>" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade" title="<?= citytel_e($mappaTitolo) ?>">
         </iframe>
     </div>
