@@ -1,55 +1,62 @@
 /* =============================================
-   BASE
-   Reset/default per elementi HTML nudi (body, h1-h6, section).
-   Nessuna classe qui: solo tag e helper bg globali.
+   BASE & RESET STYLES
    ============================================= */
+
+/* ---------------------------------------------
+   1. TAGS & TYPOGRAPHY RESETS
+   --------------------------------------------- */
 body {
-    font-family: var(--font-body);
-    color: var(--color-text);
+  font-family: var(--font-body);
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
-    font-weight: 600;
+  font-family: var(--font-heading);
+  font-weight: 600;
 }
+
 section {
-    padding-top: var(--space-xl);
-    padding-bottom: var(--space-xl);
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
 }
-/* ===== BACKGROUND VARIANTS ===== */
+
+footer {
+  margin-top: auto;
+}
+
+/* ---------------------------------------------
+   2. GLOBAL BACKGROUND VARIANTS
+   --------------------------------------------- */
 .bg-tech-light {
-    background-color: var(--color-bg-light);
+  background-color: var(--color-bg-light);
 }
+
 .bg-tech-dark {
-    background-color: var(--color-bg-dark)!important;
-    color: white;
+  background-color: var(--color-bg-dark) !important;
+  color: #fff;
 }
+
 .bg-tech-dark h2,
 .bg-tech-dark h3,
 .bg-tech-dark h4,
 .bg-tech-dark p,
 .bg-tech-dark li {
-    color: white;
+  color: #fff;
 }
 
-html, body {
-    height: 100%;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-footer {
-    margin-top: auto;
-}
-
+/* ---------------------------------------------
+   3. ACCESSIBILITY & SCROLL
+   --------------------------------------------- */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-/* Rispetta la preferenza di sistema "riduci animazioni" per accessibilità (WCAG 2.3.3) */
+/* Rispetta la preferenza di sistema "riduci animazioni" (WCAG 2.3.3) */
 @media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
+  html {
+    scroll-behavior: auto;
+  }
 }

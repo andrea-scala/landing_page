@@ -7,3 +7,4 @@ uploads/*
 !uploads/candidature/.htaccess
 !uploads/.gitkeep
 *unused*
+*.sh

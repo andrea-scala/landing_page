@@ -1,172 +1,202 @@
+/* =============================================
+   COMPONENTS & UI ELEMENTS
+   ============================================= */
+
+/* ---------------------------------------------
+   1. CARDS & CONTAINERS
+   --------------------------------------------- */
 .card {
-    border-color: var(--color-primary);
-    border-radius: calc(var(--radius-lg) * var(--brm)) !important;
-    transition: all .2s ease-in-out;
-    corner-shape: squircle !important
+  /* border-color: var(--color-primary); */
+  border-radius: calc(var(--radius-lg) * var(--brm)) !important;
+  transition: all 0.2s ease-in-out;
+  corner-shape: squircle !important;
 }
 
 .card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
 }
 
 .card h5 {
-    min-height: 3em;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    align-items: center;
+  min-height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-img {
-    border-radius: calc(var(--radius-lg) * var(--brm)) !important;
-    corner-shape: squircle !important
+.card img,
+.card-img-top {
+  border-radius: calc(var(--radius-lg) * var(--brm)) !important;
+  corner-shape: squircle !important;
 }
 
-.icon-service,
-.icon-service-sm {
-    width: 36px;
-    height: 36px;
-    stroke: var(--color-primary);
-    stroke-width: 1;
-    align-self: center;
+.card a{
+    color: var(--color-primary)!important;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
 }
 
-@media (min-width:768px) {
-    .icon-service {
-        width: 40px;
-        height: 40px
-    }
-
-    .card.service-card ul:not(.list-group-sm) {
-        min-height: 10.5em
-    }
-
-    .hr-sm {
-        margin: .7rem 0 !important
-    }
-}
-
-.section-title {
-    margin-bottom: var(--space-lg);
-    font-weight: 700;
-}
-
+/* ---------------------------------------------
+   2. BUTTONS & CTA
+   --------------------------------------------- */
 .btn-primary {
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .btn-primary:hover {
-    background-color: var(--color-primary-dark);
-    border-color: var(--color-primary-dark);
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
 }
 
 .cta-section {
-    background-color: var(--color-primary);
-    color: white;
-    padding: 5rem 0;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 5rem 0;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 1030;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+}
+
+#btn-back-to-top .icon-back-to-top {
+  width: 26px;
+  height: 26px;
+  stroke: currentColor;
+  flex-shrink: 0;
+  stroke-width: 1.5;
+}
+
+
+/* ---------------------------------------------
+   3. ICONS & BRANDING
+   --------------------------------------------- */
+.icon-service,
+.icon-service-sm {
+  width: 36px;
+  height: 36px;
+  stroke: var(--color-primary);
+  stroke-width: 1;
+  align-self: center;
 }
 
 .navbar-logo {
-    height: 50px;
-    width: auto;
-}
-
-.hero-video {
-    scale: .9;
-}
-
-.footer-map {
-    height: 320px;
-    overflow: hidden;
-}
-
-.footer-map iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
+  height: 50px;
+  width: auto;
 }
 
 .lavoro-card-logo {
-    min-height: 50px;
-    height: 50px;
+  min-height: 50px;
+  height: 50px;
+}
+
+.hero-video {
+  scale: 0.9;
+}
+
+
+/* ---------------------------------------------
+   4. SECTIONS, MAPS & DIVIDERS
+   --------------------------------------------- */
+.section-title {
+  margin-bottom: var(--space-lg);
+  font-weight: 700;
+}
+
+.footer-map {
+  height: 320px;
+  overflow: hidden;
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .section-divider-icon {
-    width: 100%;
-    text-align: center;
-    margin: var(--space-lg) 0;
-    border-bottom: 1px solid #d0d7de;
+  width: 100%;
+  text-align: center;
+  margin: var(--space-lg) 0;
+  border-bottom: 1px solid #d0d7de;
 }
 
 .section-divider-icon i {
-    padding: 0 .5rem;
-    font-size: 1.6rem;
-}
-
-.logo-client {
-    filter: grayscale(1);
-    opacity: .7;
-    width: auto;
-    transition: filter .2s, opacity .2s;
-}
-
-.logo-client:hover {
-    filter: none;
-    opacity: 1;
-}
-
-.logo-strip {
-    display: flex;
-    width: max-content;
-    animation: scroll-logos 20s linear infinite;
-}
-
-.logo-strip:hover {
-    animation-play-state: paused;
-}
-
-@keyframes scroll-logos {
-    from {
-        transform: translateX(0)
-    }
-
-    to {
-        transform: translateX(-50%)
-    }
-}
-
-.logo-strip>* {
-    flex: 0 0 auto;
+  padding: 0 0.5rem;
+  font-size: 1.6rem;
 }
 
 .nav-link:focus,
 .nav-link:hover {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
-#btn-back-to-top {
-    position: fixed;
-    right: 1.5rem;
-    bottom: 1.5rem;
-    z-index: 1030;
-    display: none;
-    align-items: center;
-    justify-content: center;
+
+/* ---------------------------------------------
+   5. LOGOS SLIDER & PARTNERS
+   --------------------------------------------- */
+.logo-client {
+  filter: grayscale(1);
+  opacity: 0.7;
+  width: auto;
+  transition: filter 0.2s, opacity 0.2s;
+}
+
+.logo-client:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.logo-strip {
+  display: flex;
+  width: max-content;
+  animation: scroll-logos 20s linear infinite;
+}
+
+.logo-strip:hover {
+  animation-play-state: paused;
+}
+
+.logo-strip > * {
+  flex: 0 0 auto;
+}
+
+@keyframes scroll-logos {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* ---------------------------------------------
+   6. RESPONSIVE BREAKPOINTS
+   --------------------------------------------- */
+@media (min-width: 768px) {
+  .icon-service {
     width: 40px;
     height: 40px;
-    padding: 0;
-    border-radius: calc(50%/2 * var(--brm));
-    corner-shape: squircle;
-    border: none;
-    color: #fff
-}
+  }
 
-#btn-back-to-top .icon-back-to-top {
-    width: 26px;
-    height: 26px;
-    stroke: currentColor;
-    flex-shrink: 0;
-    stroke-width: 1.5;
+  .card.service-card ul:not(.list-group-sm) {
+    min-height: 10.5em;
+  }
+
+  .hr-sm {
+    margin: 0.7rem 0 !important;
+  }
 }

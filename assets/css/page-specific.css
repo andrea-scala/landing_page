@@ -1,95 +1,43 @@
 /* =============================================
-   PAGE-SPECIFIC
-   Stili legati a componenti/pagine precise, non riusabili
-   altrove (display-5 hero, timeline, fs-7).
-   NB: il selettore h1.display-5... è molto specifico e fragile:
-   si rompe se cambi anche una sola classe nell'HTML del titolo.
-   Consigliato sostituirlo con una classe dedicata, es. .hero-title.
+   PAGE-SPECIFIC UTILITIES & COMPONENTS
    ============================================= */
-.display-5 {
-    font-size: calc(2rem + 2.1vw) !important;
-    font-weight: 300;
-}
 
-@media (min-width: 1200px) {
-    .display-5 {
-        font-size: 5rem !important;
-    }
-}
-
-h1.display-5.mt-4.mb-0.fw-bold.w-lg-65 {
-    line-height: 1.1;
-}
-
-/* ===== TIMELINE ORIZZONTALE ===== */
-.timeline-horizontal::before {
-    content: "";
-    position: absolute;
-    top: 24px;
-    left: 17.66%;
-    right: 17.66%;
-    height: 2px;
-    background-color: var(--color-border);
-    z-index: 0;
-}
-
-.timeline-icon-div {
-    width: 48px;
-    height: 48px;
-    border-radius: calc(50% * var(--brm));
-    corner-shape: squircle;                  /* fallback per browser che supportano corner-shape */
-    background: #fff;
-    border: 2px solid var(--color-primary);
-    color: var(--color-primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    position: relative;
-    z-index: 1;
-}
-
-/* Icona SVG inline dentro il cerchio della timeline (colore ereditato via currentColor) */
-.icon-timeline {
-    width: 24px;
-    height: 24px;
-    stroke-width: 1.5;
-}
-
-
-/* ===== FONT SIZE HELPER ===== */
-.fs-7 {
-    font-size: 0.95rem !important;
-    /* ~12px */
-}
-
-.fs-8 {
-    font-size: 0.90rem !important;
-    /* ~11px */
-}
-
+/* =============================================
+   HERO COMPONENT & TITLE
+   ============================================= */
 #hero {
     background-color: var(--color-bg-light);
 }
 
+.hero-title {
+  font-size: calc(2.5rem + 2.5vw) !important;
+  line-height: 1.1 !important;
+  font-weight: 700 !important;
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .hero-title {
+    font-size: 4.5rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 5rem !important;
+  }
+}
+
 @media (min-width: 768px) {
-    .mx-lg-5 {
-        margin-right: calc(3rem * 2.3) !important;
-        margin-left: calc(3rem * 2.3) !important;
-    }
-
-
-
     #hero {
+        position: relative;
+        min-height: calc(100vh - var(--hero-margin-top, 0px) - 1px);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        position: relative;
-        /* background-image: url('../../assets/img/hero_bg (3).jpg')!important; */
-        /* background-color: #fff */
-        height: calc(100vh - var(--hero-margin-top) - 1px)
     }
 
+    /* Overlay sfumato per leggibilità testo su immagini/video */
     #hero::before {
         content: "";
         position: absolute;
@@ -105,40 +53,104 @@ h1.display-5.mt-4.mb-0.fw-bold.w-lg-65 {
         position: relative;
         z-index: 1;
     }
-
-
 }
 
+@media (min-width: 1200px) {
+    .hero-title {
+        font-size: 5rem;
+    }
+}
+
+
+/* ---------------------------------------------
+   2. TIMELINE HORIZONTAL
+   --------------------------------------------- */
+.timeline-horizontal {
+    position: relative;
+}
+
+.timeline-horizontal::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 17.66%;
+    right: 17.66%;
+    height: 2px;
+    background-color: var(--color-border);
+    z-index: 0;
+}
+
+.timeline-icon-div {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.icon-timeline {
+    width: 24px;
+    height: 24px;
+    stroke-width: 1.5;
+}
+
+
+/* ---------------------------------------------
+   3. FONT SIZE UTILITIES (Estensione Bootstrap)
+   --------------------------------------------- */
+.fs-7 {
+    font-size: 0.875rem !important;
+}
+
+/* 14px */
+.fs-8 {
+    font-size: 0.75rem !important;
+}
+
+/* 12px */
+
+
+/* ---------------------------------------------
+   4. CARDS & OTHER COMPONENTS
+   --------------------------------------------- */
 .lavoro-card img {
-    height: 50px !important;
+    height: 50px;
+    object-fit: contain;
 }
 
 .lavoro-card a {
-    color: var(--color-primary) !important;
-    text-align: end;
+    color: var(--color-primary);
+    text-align: right;
     text-decoration: none;
+    transition: color 0.2s ease-in-out;
 }
 
 .lavoro-card a:hover {
-    color: var(--color-primary-dark) !important;
+    color: var(--color-primary-dark);
 }
 
-/* 
-.card.service-card h6{
-
-} */
-
-@media screen and (max-width: 767px) {
-    .card.service-card h6 {
+/* Truncate titoli service card su mobile (< 768px) */
+@media (max-width: 767.98px) {
+    .service-card h6 {
         display: block;
-        /* Forza l'elemento a comportarsi come un blocco */
         white-space: nowrap;
-        /* Impedisce al testo di andare a capo */
         overflow: hidden;
-        /* Nasconde la parte di testo in eccesso */
         text-overflow: ellipsis;
-        /* Aggiunge i tre puntini (...) alla fine del taglio */
-
         max-width: 100%;
+    }
+}
+
+/* Spaziatura responsive custom */
+@media (min-width: 768px) {
+    .mx-md-custom {
+        margin-right: calc(3rem * 2.3) !important;
+        margin-left: calc(3rem * 2.3) !important;
     }
 }

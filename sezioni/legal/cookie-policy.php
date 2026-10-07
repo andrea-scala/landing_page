@@ -8,7 +8,7 @@
 <?php require __DIR__ . '/../partials/navbar.php'; ?>
 <main class="navbar-offset">
 <section class="bg-white macro-section">
-<div class="container max-w-800">
+<div class="container max-w-800 mx-auto">
     <h1 class="mb-4">Cookie Policy</h1>
     <p><em>Ultimo aggiornamento: <?php echo date('d/m/Y'); ?></em></p>
     <h2 class="h4 mt-4">1. Cosa sono i cookie</h2>

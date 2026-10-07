@@ -15,8 +15,8 @@ $pageOg = true;
     <?php require __DIR__ . '/sezioni/partials/navbar.php'; ?>
     <main>
         <?php require 'sezioni/hero.php'; ?>
-        <?php require 'sezioni/chisiamo.php'; ?>
         <?php require 'sezioni/servizi.php'; ?>
+        <?php require 'sezioni/chisiamo.php'; ?>
         <?php require 'sezioni/lavori.php'; ?>
         <?php require 'sezioni/perche-sceglierci.php'; ?>
         <?php require 'sezioni/clienti.php'; ?>

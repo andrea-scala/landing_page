@@ -1,47 +1,57 @@
+/* =============================================
+   LAYOUT & UTILITIES OVERRIDES
+   ============================================= */
+
+/* ---------------------------------------------
+   1. SIZING & CONTAINER UTILITIES
+   --------------------------------------------- */
+/* Max-width helper (abbinare con .mx-auto nell'HTML se si desidera centrare) */
 .max-w-800 {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-justify {
-    text-align: justify !important;
-}
-
-.macro-section {
-    scroll-margin-top: 80px;
-}
-
-.hero-mt {
-    margin-top: var(--hero-margin-top) !important;
-}
-
-.navbar-offset {
-    margin-top: var(--hero-margin-top);
-}
-
-.badge {
-    letter-spacing: .1em !important;
-}
-
-.text-bg-primary-inverso {
-    color: var(--color-primary) !important;
-    background-color: transparent !important;
+  max-width: 800px;
 }
 
 .w-70 {
-    width: 70% !important;
+  width: 70% !important;
 }
 
 .flex-basis-0 {
-    flex-basis: 0 !important;
+  flex-basis: 0 !important;
+}
+
+
+/* ---------------------------------------------
+   2. SPACING & SCROLL OFFSETS
+   --------------------------------------------- */
+.macro-section {
+  scroll-margin-top: 80px;
+}
+
+.hero-mt,
+.navbar-offset {
+  margin-top: var(--hero-margin-top) !important;
+}
+
+
+/* ---------------------------------------------
+   3. TYPOGRAPHY & BADGES
+   --------------------------------------------- */
+.badge {
+  letter-spacing: 0.1em !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+
+/* ---------------------------------------------
+   4. CUSTOM COLOR VARIANTS
+   --------------------------------------------- */
+.text-bg-primary-inverso {
+  color: var(--color-primary) !important;
+  background-color: transparent !important;
 }
 
 .text-primary {
-    --bs-text-opacity: 1;
-    color: rgba(var(--color-primary), var(--bs-text-opacity)) !important;
+  color: var(--color-primary) !important;
 }
