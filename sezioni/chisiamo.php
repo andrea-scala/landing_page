@@ -17,7 +17,7 @@ $c = getContent('chisiamo', [
             <h2 class="mb-2 fw-bold w-lg-65"><?= citytel_e($c['titolo']) ?></h1>
             <p class="lead fw-normal mb-4 w-lg-65 fs-6 text-justify manrope-paragrafi-regular"><?= citytel_e($c['paragrafo']) ?></p>
         </div>
-        <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center px-lg-6 order-2 order-lg-1">
+        <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center px-lg-6 order-1  order-lg-2">
             <img src="./assets/img/chi-siamo.jpg" class="img-fluid img-responsive rounded-2" alt="<?= citytel_e($c['img_alt']) ?>">
         </div>
         <div class="col-12 order-3">

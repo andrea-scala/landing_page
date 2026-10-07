@@ -36,7 +36,8 @@ h1.display-5.mt-4.mb-0.fw-bold.w-lg-65 {
 .timeline-icon-div {
     width: 48px;
     height: 48px;
-    border-radius: 50%;
+    border-radius: calc(50% * var(--brm));
+    corner-shape: squircle;                  /* fallback per browser che supportano corner-shape */
     background: #fff;
     border: 2px solid var(--color-primary);
     color: var(--color-primary);
@@ -108,17 +109,17 @@ h1.display-5.mt-4.mb-0.fw-bold.w-lg-65 {
 
 }
 
-#lavoro-card img {
+.lavoro-card img {
     height: 50px !important;
 }
 
-#lavoro-card a {
+.lavoro-card a {
     color: var(--color-primary) !important;
     text-align: end;
     text-decoration: none;
 }
 
-#lavoro-card a:hover {
+.lavoro-card a:hover {
     color: var(--color-primary-dark) !important;
 }
 

@@ -46,9 +46,8 @@ $pageOg          ??= false;
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon/favicon-16x16.png">
     <link rel="manifest" href="/assets/img/icons/favicon/site.webmanifest">
     <!-- ===== FRAMEWORKS ===== -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
     <!-- ===== FONTS ===== -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,10 +56,10 @@ $pageOg          ??= false;
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- ===== DESIGN SYSTEM LAYER ===== -->
-    <link rel="stylesheet" href="/assets/css/variables.css">
-    <link rel="stylesheet" href="/assets/css/base.css">
-    <link rel="stylesheet" href="/assets/css/components.css">
-    <link rel="stylesheet" href="/assets/css/layout-utils.css">
-    <link rel="stylesheet" href="/assets/css/spacing-overrides.css">
-    <link rel="stylesheet" href="/assets/css/page-specific.css">
-    <link rel="stylesheet" href="/assets/css/smooth-css/style.css">
+    <link rel="stylesheet" href="/assets/min/css/variables.min.css">
+    <link rel="stylesheet" href="/assets/min/css/base.min.css">
+    <link rel="stylesheet" href="/assets/min/css/components.min.css">
+    <link rel="stylesheet" href="/assets/min/css/layout-utils.min.css">
+    <link rel="stylesheet" href="/assets/min/css/spacing-overrides.min.css">
+    <link rel="stylesheet" href="/assets/min/css/page-specific.min.css">
+    <link rel="stylesheet" href="/assets/min/css/smooth-css/style.min.css">

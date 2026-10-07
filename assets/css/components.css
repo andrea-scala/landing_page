@@ -1,12 +1,8 @@
-/* =============================================
-   COMPONENTS
-   Componenti riusabili (card, bottoni, cta, divider, icone).
-   ============================================= */
-/* ===== CARD ===== */
 .card {
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    transition: all 0.2s ease-in-out;
+    border-color: var(--color-primary);
+    border-radius: calc(var(--radius-lg) * var(--brm)) !important;
+    transition: all .2s ease-in-out;
+    corner-shape: squircle !important
 }
 
 .card:hover {
@@ -22,6 +18,11 @@
     align-items: center;
 }
 
+img {
+    border-radius: calc(var(--radius-lg) * var(--brm)) !important;
+    corner-shape: squircle !important
+}
+
 .icon-service,
 .icon-service-sm {
     width: 36px;
@@ -31,32 +32,26 @@
     align-self: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
     .icon-service {
         width: 40px;
-        height: 40px;
+        height: 40px
     }
 
     .card.service-card ul:not(.list-group-sm) {
-        min-height: 10.5em;
-    }
-
-    .card.competenze-card ul {
-        min-height: 8em;
+        min-height: 10.5em
     }
 
     .hr-sm {
-        margin: 0.7rem 0 !important;
+        margin: .7rem 0 !important
     }
 }
 
-/* ===== SECTION TITLE ===== */
 .section-title {
     margin-bottom: var(--space-lg);
     font-weight: 700;
 }
 
-/* ===== BUTTONS ===== */
 .btn-primary {
     background-color: var(--color-primary);
     border-color: var(--color-primary);
@@ -67,28 +62,21 @@
     border-color: var(--color-primary-dark);
 }
 
-/* ===== CTA SECTION ===== */
 .cta-section {
     background-color: var(--color-primary);
     color: white;
     padding: 5rem 0;
 }
 
-/* ===== NAVBAR ===== */
-/* Logo in navbar: altezza fissa, larghezza proporzionale. */
 .navbar-logo {
     height: 50px;
     width: auto;
 }
 
-/* ===== HERO ===== */
-/* Video decorativo di sfondo della hero (ridotto al 90%). */
 .hero-video {
     scale: .9;
 }
 
-/* ===== FOOTER ===== */
-/* Contenitore della mappa Google embed: altezza fissa, iframe a riempimento. */
 .footer-map {
     height: 320px;
     overflow: hidden;
@@ -100,14 +88,11 @@
     border: 0;
 }
 
-/* ===== LAVORI ===== */
-/* Contenitore del logo nella card lavoro: altezza fissa a 50px. */
 .lavoro-card-logo {
     min-height: 50px;
     height: 50px;
 }
 
-/* ===== ICON DIVIDER ===== */
 .section-divider-icon {
     width: 100%;
     text-align: center;
@@ -116,10 +101,7 @@
 }
 
 .section-divider-icon i {
-    /* NB: "top" qui non ha effetto senza position relative/absolute.
-       Aggiungi "position: relative;" se vuoi sollevare l'icona,
-       altrimenti rimuovi la riga. */
-    padding: 0 0.5rem;
+    padding: 0 .5rem;
     font-size: 1.6rem;
 }
 
@@ -147,11 +129,11 @@
 
 @keyframes scroll-logos {
     from {
-        transform: translateX(0);
+        transform: translateX(0)
     }
 
     to {
-        transform: translateX(-50%);
+        transform: translateX(-50%)
     }
 }
 
@@ -159,33 +141,32 @@
     flex: 0 0 auto;
 }
 
-.nav-link:focus, .nav-link:hover {
+.nav-link:focus,
+.nav-link:hover {
     color: var(--color-primary);
 }
 
-
 #btn-back-to-top {
-  position: fixed;
-  right: 1.5rem;
-  bottom: 1.5rem;
-  z-index: 1030;
-  display: none;                          /* il JS lo porta a flex */
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  border-radius: 50%/2;
-  border: none;
-  color: #fff;                            /* icona bianca via currentColor */
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 1030;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: calc(50%/2 * var(--brm));
+    corner-shape: squircle;
+    border: none;
+    color: #fff
 }
 
-/* Lo sfondo non è ridefinito qui: arriva da .btn-primary
-   (primary, e primary-dark in :hover), quindi l'hover è identico agli altri bottoni. */
-
 #btn-back-to-top .icon-back-to-top {
-  width: 24px;
-  height: 24px;
-  stroke: currentColor;
-  flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    stroke: currentColor;
+    flex-shrink: 0;
+    stroke-width: 1.5;
 }
