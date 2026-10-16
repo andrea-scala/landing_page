@@ -29,23 +29,23 @@
         "voci": [
             {
                 "titolo": "Chi siamo",
-                "href": "/#chi-siamo"
+                "href": "chi-siamo"
             },
             {
                 "titolo": "Servizi",
-                "href": "/#servizi"
+                "href": "servizi"
             },
             {
                 "titolo": "Lavori",
-                "href": "/#lavori"
+                "href": "lavori"
             },
             {
                 "titolo": "Perché sceglierci",
-                "href": "/#perche-sceglierci"
+                "href": "perche-sceglierci"
             },
             {
                 "titolo": "Clienti",
-                "href": "/#clienti"
+                "href": "clienti"
             }
         ]
     },

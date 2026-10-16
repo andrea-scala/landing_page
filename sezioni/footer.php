@@ -58,8 +58,8 @@ $legaleVoci = $legale['voci'] ?? [];
 =========================== -->
 <footer class="bg-tech-dark text-white" id="footer">
     <div class="footer-map">
-        <iframe src="<?= citytel_e($mappaSrc) ?>" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" title="<?= citytel_e($mappaTitolo) ?>">
+        <iframe src="<?= citytel_e($mappaSrc) ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="<?= citytel_e($mappaTitolo) ?>">
         </iframe>
     </div>
 
@@ -88,8 +88,16 @@ $legaleVoci = $legale['voci'] ?? [];
                 <h6 class="fw-bold mb-3"><?= citytel_e($sezioniTitolo) ?></h6>
                 <ul class="list-group">
                     <?php foreach ($sezioniVoci as $v): ?>
+                        <?php
+                        // Nel JSON basta l'id della sezione (es. "chi-siamo"). Qui si costruisce il
+                        // link completo "/#chi-siamo", che funziona sia dalla home sia dalle pagine
+                        // legali. ltrim() toglie eventuali "/" e "#" iniziali, quindi il vecchio
+                        // formato "/#chi-siamo" continua a funzionare: non serve cambiare tutto
+                        // il JSON in un colpo solo.
+                        $ancora = ltrim((string) ($v['href'] ?? ''), '/#');
+                        ?>
                         <li class="list-group-item bg-transparent border-0 px-0 py-1">
-                            <a href="<?= citytel_e($v['href'] ?? '#') ?>"
+                            <a href="<?= citytel_e("/#{$ancora}") ?>"
                                 class="text-white text-decoration-none"><?= citytel_e($v['titolo'] ?? '') ?></a>
                         </li>
                     <?php endforeach; ?>
@@ -125,7 +133,8 @@ $legaleVoci = $legale['voci'] ?? [];
         <div id="copyright_container" class="row py-2 gx-0 align-items-center justify-content-center">
             <div class="col-12 col-lg-auto">
                 <h6 class="small fw-normal text-center mb-2 mb-lg-0 me-lg-4">&copy; <?= date('Y') ?>
-                    <?= citytel_e($legaleCopyright) ?></h6>
+                    <?= citytel_e($legaleCopyright) ?>
+                </h6>
             </div>
             <div class="col-12 col-lg-auto">
                 <ul class="list-group small list-group-horizontal justify-content-center flex-wrap">
