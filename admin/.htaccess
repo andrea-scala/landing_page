@@ -1,0 +1,6 @@
+# config.php e storage.php sono solo logica interna: mai raggiungibili via URL.
+# Gli endpoint (leggi.php, salva.php, sezioni.php) li includono lo stesso.
+# Apache 2.4+
+<FilesMatch "^(config|storage)\.php$">
+    Require all denied
+</FilesMatch>
