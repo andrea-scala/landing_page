@@ -1,0 +1,3 @@
+# Script da riga di comando: mai raggiungibili via URL.
+# Apache 2.4+
+Require all denied
