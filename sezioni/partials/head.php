@@ -46,7 +46,7 @@ $pageOg          ??= false;
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon/favicon-16x16.png">
     <link rel="manifest" href="/assets/img/icons/favicon/site.webmanifest">
     <!-- ===== FRAMEWORKS ===== -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
     <!-- ===== FONTS ===== -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
