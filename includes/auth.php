@@ -105,6 +105,13 @@ function avviaSessioneAdmin(): void
  */
 function adminLoggato(): bool
 {
+    // Nessun cookie di sessione (e nessuna sessione già aperta in questa
+    // richiesta): non può esserci un admin loggato, quindi NON si avvia la
+    // sessione. Evita che richieste anonime creino un file di sessione ciascuna.
+    if (session_status() !== PHP_SESSION_ACTIVE && !isset($_COOKIE['CITYTEL_ADMIN'])) {
+        return false;
+    }
+
     avviaSessioneAdmin();
     return ($_SESSION['admin'] ?? false) === true;
 }
