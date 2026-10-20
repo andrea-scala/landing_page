@@ -253,7 +253,8 @@ body>.navbar .btn:focus-visible {
 }
 
 /* Terziaria: Ripristina */
-#btn-reset {
+#btn-reset,
+#btn-logout {
   --bs-btn-color: var(--color-text);
   --bs-btn-bg: transparent;
   --bs-btn-border-color: transparent;

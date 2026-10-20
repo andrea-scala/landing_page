@@ -12,7 +12,11 @@ declare(strict_types=1);
  * ha sia i dati (qui) sia lo schema (sezioni/*.js).
  */
 
+require_once __DIR__ . '/../includes/auth.php';
 require_once __DIR__ . '/storage.php';
+
+// Solo admin loggati: altrimenti risponde 401 (JSON) ed esce subito.
+richiediAdmin('api');
 
 header('Content-Type: application/json; charset=utf-8');
 

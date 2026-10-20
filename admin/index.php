@@ -1,11 +1,28 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * PAGINA DELL'EDITOR (solo admin)
+ * Senza sessione valida richiediAdmin() rimanda al login ed esce subito,
+ * prima che venga stampato qualsiasi HTML dell'editor.
+ */
+require_once __DIR__ . '/../includes/auth.php';
+
+richiediAdmin();
+
+header('Cache-Control: no-store');
+header('X-Frame-Options: DENY');
+header('X-Content-Type-Options: nosniff');
+?>
 <!DOCTYPE html>
 <html lang="it">
 
 <head>
     <meta charset="utf-8">
     <title>Editor Contenuti</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
+    <meta name="csrf-token" content="<?= htmlspecialchars(tokenCsrf(), ENT_QUOTES, 'UTF-8') ?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -37,6 +54,12 @@
                 <button type="button" id="btn-save" class="btn btn-primary">
                     <i class="bi bi-save"></i> Salva sul server
                 </button>
+                <form method="post" action="/admin/logout.php" class="m-0">
+                    <input type="hidden" name="csrf" value="<?= htmlspecialchars(tokenCsrf(), ENT_QUOTES, 'UTF-8') ?>">
+                    <button type="submit" id="btn-logout" class="btn btn-outline-secondary rounded-pill fs-7 px-3">
+                        <i class="bi bi-box-arrow-right"></i> Esci
+                    </button>
+                </form>
             </div>
         </div>
     </nav>

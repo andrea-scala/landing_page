@@ -11,10 +11,14 @@ declare(strict_types=1);
  * e scrive il file. La whitelist delle sezioni non è più qui: è in storage.php
  * ed è "una sezione esiste se esiste il suo JSON".
  *
- * NOTA: nessuna autenticazione (da aggiungere quando faremo l'area admin).
+ * ACCESSO: solo admin loggati (vedi includes/auth.php).
  */
 
+require_once __DIR__ . '/../includes/auth.php';
 require_once __DIR__ . '/storage.php';
+
+// Solo admin loggati: altrimenti risponde 401 (JSON) ed esce subito.
+richiediAdmin('api');
 
 header('Content-Type: application/json; charset=utf-8');
 
@@ -22,6 +26,17 @@ header('Content-Type: application/json; charset=utf-8');
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
     echo json_encode(['success' => false, 'messaggio' => 'Metodo non consentito.']);
+    exit;
+}
+
+// Token CSRF: l'editor lo manda nell'intestazione X-CSRF-Token.
+// Senza, un sito esterno potrebbe far salvare dati dal browser di un admin loggato.
+if (!csrfValido($_SERVER['HTTP_X_CSRF_TOKEN'] ?? null)) {
+    http_response_code(403);
+    echo json_encode([
+        'success' => false,
+        'messaggio' => 'Token di sicurezza non valido. Ricarica la pagina.',
+    ]);
     exit;
 }
 

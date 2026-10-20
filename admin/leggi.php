@@ -11,10 +11,14 @@ declare(strict_types=1);
  * pulsante Salva resta disabilitato, per non sovrascrivere mai un file
  * reale con dati sbagliati.
  *
- * NOTA: nessuna autenticazione (da aggiungere quando faremo l'area admin).
+ * ACCESSO: solo admin loggati (vedi includes/auth.php).
  */
 
+require_once __DIR__ . '/../includes/auth.php';
 require_once __DIR__ . '/storage.php';
+
+// Solo admin loggati: altrimenti risponde 401 (JSON) ed esce subito.
+richiediAdmin('api');
 
 header('Content-Type: application/json; charset=utf-8');
 

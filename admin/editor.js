@@ -26,7 +26,9 @@ const selettore = document.getElementById('sezione-select');
 const pulsanteCopia = document.getElementById('btn-copy');
 const pulsanteReset = document.getElementById('btn-reset');
 const pulsanteSalva = document.getElementById('btn-save');
-
+// Token CSRF: il server lo scrive nella pagina (meta "csrf-token") e lo
+// vuole indietro, nell'intestazione X-CSRF-Token, a ogni salvataggio.
+const tokenCsrf = document.querySelector('meta[name="csrf-token"]').content;
 
 // --------------------------------------------------------------------------
 // Messaggi di validazione in italiano
@@ -104,6 +106,15 @@ function mostraErrore(testo) {
 //   - il server risponde con success:false o con uno status di errore.
 async function chiediJson(url, opzioni = {}) {
   const risposta = await fetch(url, opzioni);
+
+  // 401 = sessione scaduta. Non si rimanda al login da qui: chi sta salvando
+  // perderebbe le modifiche. Si avvisa, e si lascia il tempo di copiare il JSON.
+  if (risposta.status === 401) {
+    throw new Error(
+      'Sessione scaduta. Usa «Copia JSON» per non perdere le modifiche, ' +
+      'poi accedi di nuovo da /admin/login.php e ricarica la pagina.'
+    );
+  }
 
   let risultato;
   try {
@@ -305,7 +316,10 @@ pulsanteSalva.addEventListener('click', async () => {
       'salva.php?sezione=' + encodeURIComponent(sezioneAttiva),
       {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRF-Token': tokenCsrf
+        },
         body: JSON.stringify(dati)
       }
     );
