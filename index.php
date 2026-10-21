@@ -26,7 +26,7 @@ $pageOg = true;
     </main>
     <?php require 'sezioni/footer.php'; ?>
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/min/js/main.min.js"></script>
     <script src="./assets/min/js/smooth-js/main.min.js"></script>
 </body>

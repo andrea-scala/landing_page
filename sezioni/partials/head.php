@@ -45,16 +45,10 @@ $pageOg          ??= false;
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon/favicon-16x16.png">
     <link rel="manifest" href="/assets/img/icons/favicon/site.webmanifest">
-    <!-- ===== FRAMEWORKS ===== -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
-    <!-- ===== FONTS ===== -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- ===== FRAMEWORKS (ospitati in locale: nessuna richiesta a terzi) ===== -->
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ===== FONTS (ospitati in locale) ===== -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
     <!-- ===== DESIGN SYSTEM LAYER ===== -->
     <link rel="stylesheet" href="/assets/min/css/variables.min.css">
     <link rel="stylesheet" href="/assets/min/css/base.min.css">
