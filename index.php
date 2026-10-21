@@ -20,7 +20,8 @@ $pageOg = true;
         <?php require 'sezioni/lavori.php'; ?>
         <?php require 'sezioni/perche-sceglierci.php'; ?>
         <?php require 'sezioni/clienti.php'; ?>
-        <?php require 'sezioni/lavora-con-noi.php'; ?>
+        <?php /* Nascosta finché non esiste il backend delle candidature (fase 4):
+   require 'sezioni/lavora-con-noi.php'; */ ?>
         <?php require 'sezioni/partials/back-to-top.php'; ?>
     </main>
     <?php require 'sezioni/footer.php'; ?>

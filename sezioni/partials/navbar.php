@@ -25,7 +25,9 @@
                 <li class="nav-item"><a class="nav-link" href="/#lavori">Lavori</a></li>
                 <li class="nav-item"><a class="nav-link" href="/#perche-sceglierci">Perchè sceglierci</a></li>
                 <li class="nav-item"><a class="nav-link" href="/#clienti">Clienti</a></li>
+                                <?php /* Nascosto finché non esiste il backend delle candidature (fase 4)
                 <li class="nav-item"><a class="nav-link" href="/#lavora-con-noi">Lavora con noi</a></li>
+                */ ?>
                 <li class="nav-item"><a class="nav-link" href="/#footer">Contatti</a></li>
             </ul>
         </div>
